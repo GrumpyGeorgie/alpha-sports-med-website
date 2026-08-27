@@ -1,0 +1,79 @@
+---
+import home from '../../../data/home.json';
+
+const bookingUrl = home.site.bookingUrl.startsWith('#') ? `/${home.site.bookingUrl}` : home.site.bookingUrl;
+const mapUrl = 'https://www.google.com/maps/search/?api=1&query=Alpha+Sports+Medicine+109+Blackshaws+Rd+Newport+VIC+3015';
+const conditions = [
+  ['Back pain', '/conditions/back-pain/', 'fa-user-injured'],
+  ['Neck pain and headaches', '/conditions/neck-pain/', 'fa-brain'],
+  ['Running injuries', '/conditions/running-injuries/', 'fa-running'],
+  ['Shoulder pain', '/conditions/shoulder-pain/', 'fa-dumbbell'],
+  ['Hip pain', '/conditions/hip-pain/', 'fa-walking'],
+  ['Tendon pain', '/conditions/tendonitis-tendinopathy/', 'fa-link']
+];
+const services = [
+  ['Osteopathy', '/services/osteopathy/', 'fa-hands'],
+  ['Physiotherapy', '/locations/newport/physiotherapy/', 'fa-user-md'],
+  ['Chiropractic', '/locations/newport/chiropractic/', 'fa-bone'],
+  ['Myotherapy', '/services/myotherapy/', 'fa-hand-sparkles'],
+  ['Exercise physiology', '/services/exercise-physiology/', 'fa-heartbeat'],
+  ['Dietetics', '/services/dietetics/', 'fa-apple-alt'],
+  ['Clinical Pilates', '/services/clinical-pilates/', 'fa-child'],
+  ['Strength and conditioning', '/services/strength-conditioning/', 'fa-dumbbell'],
+  ['Paediatric osteopathy', '/services/paediatric-osteopathy/', 'fa-baby'],
+  ['Online consultations', '/services/online-consults/', 'fa-laptop-medical']
+];
+const faqs = [
+  ['Do I need a referral or GP care plan?', 'No. You can book directly. If you have a GP care plan, WorkCover or TAC claim, let us know when you make your appointment.'],
+  ['Can I claim on private health?', 'Most eligible services can be claimed on site. Your rebate depends on your extras cover, so check the details with your health fund.'],
+  ['Which Newport practitioner should I book with?', 'Choose the practitioner whose area of interest best matches your needs, or call our team and we can help point you in the right direction.'],
+  ['Can I see an osteopath and physiotherapist at the same clinic?', 'Yes. Newport brings several disciplines together, so care can be coordinated when another perspective would support your plan.'],
+  ['Is the clinic close to public transport?', 'The clinic is a short walk from Newport Station, served by the Werribee and Williamstown lines.']
+];
+const schema = {'@context':'https://schema.org','@graph':[{'@type':['MedicalClinic','LocalBusiness'],name:'Alpha Sports Medicine Newport',url:'https://alpha-sports-med-prototype.pages.dev/locations/newport/',telephone:'+61 3 9962 5539',image:'https://alpha-sports-med-prototype.pages.dev/assets/images/locations/newport-storefront.jpg',address:{'@type':'PostalAddress',streetAddress:'109 Blackshaws Rd',addressLocality:'Newport',addressRegion:'VIC',postalCode:'3015',addressCountry:'AU'}},{'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:'https://alpha-sports-med-prototype.pages.dev/'},{'@type':'ListItem',position:2,name:'Locations',item:'https://alpha-sports-med-prototype.pages.dev/#locations'},{'@type':'ListItem',position:3,name:'Newport'}]},{'@type':'FAQPage',mainEntity:faqs.map(([name,text])=>({'@type':'Question',name,acceptedAnswer:{'@type':'Answer',text}}))}]};
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Osteopath Newport | Alpha Sports Medicine</title>
+  <meta name="description" content="Osteopathy on Blackshaws Rd, Newport, with a full allied health team under one roof. Find the right practitioner and book online." />
+  <link rel="canonical" href="https://alpha-sports-med-prototype.pages.dev/locations/newport/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/style.css?v=20260827-4" /><link rel="stylesheet" href="/assets/css/location.css?v=20260827-1" />
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner"><a href="/" class="site-header__logo" aria-label="Alpha Sports Medicine home"><img src="/assets/images/alpha-icon.png" alt="" class="site-header__logo-icon" /><img src="/assets/images/alpha-logo-lockup.webp" alt="Alpha Sports Medicine" class="site-header__logo-full" /></a><div class="site-header__actions"><a class="site-header__phone" href={home.site.phoneHref}><span class="site-header__phone-icon"><i class="fas fa-phone-alt" aria-hidden="true"></i></span><span class="site-header__phone-text"> {home.site.phoneDisplay}</span></a><a href={bookingUrl} class="btn btn--primary">Book online</a><button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button></div></div>
+    <div class="site-header__nav-row"><nav class="site-header__nav" aria-label="Primary"><a href="/">Home</a><a href="/about/">Meet Us</a><a href="/#services">What We Do</a><a href="/#who-we-support">Who We Support</a><a href="/#conditions">Conditions</a><a href="/#getting-started">Getting Started</a><a href="/#locations" aria-current="page">Locations</a><a href="/contact/">Contact Us</a></nav></div>
+    <nav class="mobile-nav" aria-label="Mobile"><a href="/">Home</a><a href="/about/">Meet Us</a><a href="/#services">What We Do</a><a href="/#conditions">Conditions</a><a href="/#locations">Locations</a><a href="/contact/">Contact Us</a></nav>
+  </header>
+  <main>
+    <section class="location-hero">
+      <div class="location-hero__inner">
+        <div class="location-hero__copy"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/#locations">Our clinics</a><span>/</span><span>Newport</span></nav><p class="eyebrow eyebrow--left">Alpha Sports Medicine · Newport</p><h1>Osteopath in Newport</h1><p class="location-hero__subhead">Alpha's largest clinic brings a deep osteopathy team and a full allied health crew together on Blackshaws Road.</p><p class="location-hero__address"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 109 Blackshaws Rd, Newport VIC 3015</p><div class="btn-group"><a href={bookingUrl} class="btn btn--primary">Book an appointment <i class="fas fa-arrow-right" aria-hidden="true"></i></a><a href={home.site.phoneHref} class="btn btn--outline"><i class="fas fa-phone-alt" aria-hidden="true"></i> Call {home.site.phoneDisplay}</a></div></div>
+        <figure class="location-hero__image"><img src="/assets/images/locations/newport-storefront.jpg" alt="Alpha Sports Medicine clinic entrance on Blackshaws Road in Newport" /><figcaption><a href={mapUrl} target="_blank" rel="noopener noreferrer"><i class="fas fa-directions" aria-hidden="true"></i> Get directions</a></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section location-intro"><div class="section-head section-head--left"><span class="section-head__ghost">LOCAL</span><p class="eyebrow eyebrow--left">Care close to home</p><h2>Get back to what you love, in Newport</h2></div><div class="location-intro__copy"><p>A parkrun without the niggle. A full session at your local gym. Keeping up with the kids on the weekend. Whatever you are working towards, our Newport team is here to help you move towards it.</p><p>If something keeps returning, our osteopaths take the time to understand the whole picture, provide hands-on care and build a practical plan around your goals.</p><a href="/services/osteopathy/" class="btn btn--outline-navy">Explore osteopathy <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></section>
+
+    <section class="section section--alt location-team"><figure><img src="/assets/images/team/alpha-team-group.jpg" alt="Alpha Sports Medicine clinical team at Newport" loading="lazy" /></figure><div><p class="eyebrow eyebrow--left">One connected team</p><h2>More of the right people in one place</h2><p>Newport is Alpha's largest team. Osteopaths work alongside physiotherapy, chiropractic, dietetics and exercise-led care, making it easier to involve another discipline when it genuinely supports your plan.</p><p>Your care is still led by one clear plan, with each recommendation explained along the way.</p><a href="/about/" class="btn btn--primary">Meet the Alpha team <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></section>
+
+    <section class="section"><div class="section-head"><span class="section-head__ghost">SUPPORT</span><p class="eyebrow">Common reasons to visit</p><h2>What brings people to Newport</h2><p>Start with what sounds closest to what you are dealing with.</p></div><div class="card-grid location-condition-grid">{conditions.map(([title,href,icon])=><a href={href} class="condition-card"><span class="condition-card__icon"><i class={`fas ${icon}`} aria-hidden="true"></i></span><span class="condition-card__label">{title}</span></a>)}</div></section>
+
+    <section class="section section--navy"><div class="section-head"><span class="section-head__ghost">CARE</span><p class="eyebrow">Services at Newport</p><h2>A broad allied health team under one roof</h2><p>Osteopathy leads the way, with other disciplines close by when your care needs them.</p></div><div class="location-service-grid">{services.map(([title,href,icon])=><a href={href}><span><i class={`fas ${icon}`} aria-hidden="true"></i></span><strong>{title}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></a>)}</div><div class="location-note"><h3>Looking for clinical Pilates?</h3><p>Our clinical Pilates is practitioner-guided and rehabilitation-focused. It is designed around individual goals rather than run as a general group fitness class.</p></div></section>
+
+    <section class="section location-community"><div><p class="eyebrow eyebrow--left">Newport, specifically</p><h2>Part of the neighbourhood</h2><p>Newport is Alpha's community heartland. Our team supports active people from Newport, Williamstown, Spotswood, Yarraville and Altona North, from everyday movement through to local sport.</p><div class="btn-group"><a href="/discover-newport/" class="btn btn--outline-navy">Explore Newport <i class="fas fa-arrow-right" aria-hidden="true"></i></a><a href="/runwest-run-club/" class="btn btn--outline-navy">RunWest Run Club <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></div><div class="location-community__mark"><i class="fas fa-map-marked-alt" aria-hidden="true"></i><strong>Newport</strong><span>Melbourne's inner west</span></div></section>
+
+    <section class="section section--alt" id="visit"><div class="section-head"><span class="section-head__ghost">VISIT</span><p class="eyebrow">Getting here</p><h2>Find the Newport clinic</h2></div><div class="visit-grid"><article class="visit-card visit-card--map" style="background-image:url('/assets/images/locations/newport-storefront.jpg')"><div><h3>109 Blackshaws Rd</h3><p>Newport VIC 3015</p><a href={mapUrl} target="_blank" rel="noopener noreferrer" class="btn btn--primary">Open in Google Maps <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div></article><article class="visit-card"><span class="visit-card__icon"><i class="fas fa-clock" aria-hidden="true"></i></span><h3>Opening hours</h3><dl class="hours"><div><dt>Monday–Tuesday</dt><dd>8am–8pm</dd></div><div><dt>Wednesday</dt><dd>9am–7pm</dd></div><div><dt>Thursday</dt><dd>9:30am–7:30pm</dd></div><div><dt>Friday</dt><dd>8am–6:30pm</dd></div><div><dt>Saturday</dt><dd>8:30am–1pm</dd></div><div><dt>Sunday</dt><dd>Closed</dd></div></dl></article><article class="visit-card"><span class="visit-card__icon"><i class="fas fa-train" aria-hidden="true"></i></span><h3>Public transport</h3><p>A short walk from Newport Station on the Werribee and Williamstown lines.</p><hr /><h3>Questions before you visit?</h3><p><a href={home.site.phoneHref}>{home.site.phoneDisplay}</a></p></article></div></section>
+
+    <section class="section"><div class="section-head"><span class="section-head__ghost">FAQ</span><p class="eyebrow">Good to know</p><h2>Newport clinic FAQs</h2></div><div class="faq__list">{faqs.map(([q,a])=><details class="faq__item"><summary><span>{q}</span></summary><div class="faq__answer"><p>{a}</p></div></details>)}</div></section>
+    <section class="section section--navy closing-cta"><div class="section-head"><span class="section-head__ghost">NEWPORT</span><p class="eyebrow">Your next step</p><h2>Book at Newport</h2><p>Book with one of our Newport practitioners, or call and we will help you find the right person.</p></div><div class="btn-group"><a href={bookingUrl} class="btn btn--primary">Book an appointment <i class="fas fa-arrow-right" aria-hidden="true"></i></a><a href={home.site.phoneHref} class="btn btn--outline">Call {home.site.phoneDisplay}</a></div></section>
+  </main>
+  <footer class="site-footer"><div class="site-footer__inner"><div class="site-footer__grid"><div><a href="/" class="site-footer__logo"><img src="/assets/images/alpha-logo-lockup.webp" alt="Alpha Sports Medicine" /></a><p>Multidisciplinary sports medicine clinics across Melbourne. Care built around your goals.</p></div><div><h5>Clinics</h5><ul><li><a href="/locations/ascot-vale/">Ascot Vale</a></li><li><a href="/locations/newport/">Newport</a></li><li><a href="/locations/bacchus-marsh/">Bacchus Marsh</a></li><li><a href="https://maps.app.goo.gl/bBiEZyTG2B6cS8ry8">Hawthorn</a></li></ul></div><div><h5>About</h5><ul><li><a href="/about/">Our clinic</a></li><li><a href="/about/team/">Meet the team</a></li><li><a href="/about/qualifications/">Qualifications</a></li></ul></div><div><h5>Contact</h5><ul><li><a href={home.site.phoneHref}>{home.site.phoneDisplay}</a></li><li><a href="/contact/">Contact us</a></li><li><a href={bookingUrl}>Book online</a></li></ul></div></div><div class="site-footer__bottom"><p>&copy; 2026 Alpha Sports Medicine.</p></div></div></footer>
+  <script is:inline src="/assets/js/main.js"></script>
+</body></html>
