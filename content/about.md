@@ -26,11 +26,11 @@ Alpha Sports Medicine started in 2017 with two osteopaths and one stubborn idea:
 **H2:** It didn't start with success
 
 **Copy:**
-Before Alpha, our founder Dr Ashton Wilson was so disheartened by his first job as an osteopath that he seriously looked into becoming a jellyfish keeper at SeaWorld. In his words:
+Before Alpha, our founder Dr Ashton Wilson was so disheartened by her first job as an osteopath that she seriously looked into becoming a jellyfish keeper at SeaWorld. In her words:
 
 > "I was so disheartened by my first experience as an osteo I applied to be a jellyfish keeper at SeaWorld. I felt so lost within this profession, like I didn't fit the mould. So I decided to make my own."
 
-In 2017 he saw the gap in Melbourne's west between traditional allied health and real, exercise-based rehab. He didn't just want to fill it. He wanted to build the clinic he could never find for himself: a place where practitioners wore activewear, where hands-on treatment and the fitness world actually worked together, and where active people got back to doing what they love.
+In 2017 she saw the gap in Melbourne's west between traditional allied health and real, exercise-based rehab. She didn't just want to fill it. She wanted to build the clinic she could never find for herself: a place where practitioners wore activewear, where hands-on treatment and the fitness world actually worked together, and where active people got back to doing what they love.
 
 Dr Will Krithararis built his foundation in aged care and during his graduate year at Alpha, then went away to grow into a senior, leadership role. But he always wanted more:
 

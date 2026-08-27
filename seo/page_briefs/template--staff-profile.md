@@ -149,7 +149,7 @@ The staff profiles are the **highest-consequence compliance surface in the build
 
 First person or close to it. These should sound like the practitioner, not like the marketing team describing the practitioner — the playbook's authenticity value and its "no corporate scripts" instruction apply most directly here. Different profiles should genuinely sound different; that variation is the asset.
 
-Keep the founders' profiles consistent with the playbook material rather than rewriting it. Ashton's origin story and Will's "I wanted more" line are already strong, already in his own words, and already approved — use them.
+Keep the founders' profiles consistent with the playbook material rather than rewriting it. Ashton's origin story and Will's "I wanted more" line are already strong, already in their own words, and already approved — use them.
 
 And still no "performance" — founder-flagged. Use "getting back to what you love".
 

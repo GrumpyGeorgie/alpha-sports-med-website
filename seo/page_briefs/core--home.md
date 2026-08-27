@@ -91,7 +91,7 @@ Mostly navigational — verify the brand and find the booking button. The commer
 **Direction:** Faces build the "authentic, fun to be around" brand attribute faster than any paragraph. Show 4–6 practitioners with discipline and one human detail, then link out to the full team.
 **Key points:**
 - Lead with the founders — Dr Ashton Wilson and Dr Will Krithararis, Alpha since 2017
-- One line of founder story is worth including here: Ashton built the clinic he could never find for himself. Do not use the SeaWorld quote on the homepage; it belongs on /about/.
+- One line of founder story is worth including here: Ashton built the clinic she could never find for herself. Do not use the SeaWorld quote on the homepage; it belongs on /about/.
 - Links to /about/team/ and individual /staff/ profiles
 
 ### 8. Community

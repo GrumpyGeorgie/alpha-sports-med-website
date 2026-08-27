@@ -110,8 +110,8 @@ At 1,600 words this is the longest condition page on the site. That is correct a
 - **"I was called lazy. I was called weak. I was made to feel like I was making it up."** — keep this line verbatim. It is the whole reader's experience in three sentences.
 - Gave up the sport at 14; didn't connect the dots until 30
 - Studying osteopathy and finding that the model taught — pain comes from restriction — fell apart for someone whose joints moved too far
-- Reading the clinical descriptions and recognising his own biography
-- What changed in how he manages his own body: strengthening over stretching, stacking under load rather than hanging on end-range
+- Reading the clinical descriptions and recognising her own biography
+- What changed in how she manages her own body: strengthening over stretching, stacking under load rather than hanging on end-range
 - Attribute clearly with name, discipline and a link to `/staff/dr-ashton-wilson/`
 - **AHPRA note:** this is a practitioner's own account of their own condition, not a patient testimonial. Keep it that way — no outcome claims, and it must not be framed as evidence that treatment works.
 
@@ -237,7 +237,7 @@ Ashton's blog post owns `joint hypermobility` (8,100, informational) and must **
 1. **Blocking — is the hypermobility consult offered at all three clinics or Newport and online only?** The 2026-03 material says Newport + online. Section 12 and the booking block depend on this. If it is Newport-only, the page needs to say so plainly and the `/locations/newport/` brief should carry a cross-link.
 2. **Blocking — is there a distinct "hypermobility consultation" as a bookable service type in Cliniko, with its own duration and fee?** The 2026-03 material implies yes. If it exists, it should be named, priced or at least duration-stated on this page, and it changes the CTA. If it doesn't, the page must not imply a specialty service that can't be booked.
 3. Which practitioners beyond Ashton work with hypermobility, and does anyone hold specific post-graduate training in hypermobility or chronic pain? Name it.
-4. Is Ashton comfortable with his personal health information sitting on a commercial condition page in perpetuity, under his name and photo? **This is the page's foundation and it must be an explicit, documented consent — not an assumption from a blog draft.** Confirm in writing.
+4. Is Ashton comfortable with her personal health information sitting on a commercial condition page in perpetuity, under her name and photo? **This is the page's foundation and it must be an explicit, documented consent — not an assumption from a blog draft.** Confirm in writing.
 5. Does Alpha have referral relationships with rheumatologists, geneticists or a hypermobility-aware GP network in Melbourne's west? Naming a pathway would be a significant trust signal.
 6. **Blog schedule conflict:** "Hypermobility and Physio: Managing EDS" targets `hypermobility physio` (170), colliding with this page's primary keyword. Re-scope or drop. Needs a decision before the blog is commissioned.
 7. Confirm whether the clinic wants to pursue the full EDS informational cluster (33,100/mo) with dedicated blog content. **Recommendation: yes.** It is the largest low-competition opportunity in the keyword map and this page is a ready-made conversion destination for it.

@@ -1,0 +1,72 @@
+{
+  "seo": {
+    "title": "About Alpha Sports Medicine | Multidisciplinary Care Melbourne",
+    "description": "Meet the multidisciplinary team behind Alpha Sports Medicine and learn how our patient-centred approach supports care across four Melbourne clinics."
+  },
+  "hero": {
+    "eyebrow": "About Alpha Sports Medicine",
+    "heading": "Collaborative care, built around you",
+    "subheading": "Alpha Sports Medicine brings hands-on treatment, exercise rehabilitation and practical guidance together in one coordinated plan—so your care reflects your goals, your circumstances and the life you want to get back to."
+  },
+  "overview": {
+    "eyebrow": "One connected team",
+    "heading": "A multidisciplinary clinic with a clear purpose",
+    "paragraphs": [
+      "Established in 2017, Alpha Sports Medicine is a growing allied health group supporting active people across Melbourne. Our practitioners work across osteopathy, physiotherapy, chiropractic, myotherapy, exercise physiology, clinical Pilates, strength and conditioning, dietetics and online care.",
+      "That breadth matters because health rarely fits neatly into one discipline. When your care would benefit from another perspective, our team can collaborate under the same roof and keep the plan moving in the same direction."
+    ]
+  },
+  "values": [
+    {
+      "icon": "fa-comments",
+      "title": "Active listening",
+      "copy": "Your goals and concerns shape your care. We take the time to understand what matters to you before recommending a plan."
+    },
+    {
+      "icon": "fa-handshake",
+      "title": "Respectful care",
+      "copy": "We explain our thinking, discuss your options and make decisions with you—not for you."
+    },
+    {
+      "icon": "fa-users",
+      "title": "Teamwork",
+      "copy": "Our practitioners communicate across disciplines so treatment and rehabilitation remain connected."
+    },
+    {
+      "icon": "fa-map-marker-alt",
+      "title": "Community connection",
+      "copy": "We value the clubs, gyms, families and neighbourhoods around our clinics, and we take an active role in them."
+    }
+  ],
+  "approach": [
+    {
+      "number": "01",
+      "title": "Understand the whole picture",
+      "copy": "We start with a proper conversation about your history, your current challenge and what you want to return to."
+    },
+    {
+      "number": "02",
+      "title": "Build a clear plan",
+      "copy": "Your practitioner explains what they are seeing and recommends care that fits your needs, schedule and goals."
+    },
+    {
+      "number": "03",
+      "title": "Work together",
+      "copy": "Hands-on treatment and exercise rehabilitation can be coordinated across the Alpha team when that supports your care."
+    },
+    {
+      "number": "04",
+      "title": "Review and adapt",
+      "copy": "We measure progress, revisit the plan and adjust it with you as your capacity and goals change."
+    }
+  ],
+  "leadership": {
+    "heading": "A culture shaped by clinical care and collaboration",
+    "copy": "Founder and osteopath Dr Ashton Wilson leads Alpha with a focus on excellent patient experiences and a workplace where practitioners can do their best work. She has shaped a team culture that values curiosity, honest communication and shared responsibility for each person's care."
+  },
+  "closing": {
+    "eyebrow": "Your next step",
+    "heading": "Find the right support for your goals",
+    "copy": "Meet our practitioners, explore our four Melbourne clinics or book an appointment when you are ready."
+  }
+}

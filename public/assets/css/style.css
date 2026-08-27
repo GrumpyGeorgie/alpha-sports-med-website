@@ -754,6 +754,45 @@ h1, h2, h3, h4, h5, h6 {
   flex-shrink: 0;
 }
 
+/* --- Shared approach card grid --- */
+.about-approach__grid {
+  max-width: var(--width-wide);
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+  list-style: none;
+}
+
+.about-approach-card {
+  position: relative;
+  padding: var(--space-6);
+  border-top: 3px solid var(--color-primary);
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.about-approach-card > span {
+  display: block;
+  margin-bottom: var(--space-5);
+  color: var(--color-primary);
+  font: 700 var(--font-size-large)/1 var(--font-heading);
+}
+
+.about-approach-card p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+@media (min-width: 768px) {
+  .about-approach__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1100px) {
+  .about-approach__grid { grid-template-columns: repeat(4, 1fr); }
+}
+
 /* --- How we work / steps --- */
 .steps {
   max-width: var(--width-wide);

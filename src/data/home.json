@@ -1,0 +1,25 @@
+{
+  "seo": {
+    "title": "Alpha Sports Medicine | Osteo, Physio & Chiro Melbourne",
+    "description": "Pain that keeps coming back? Alpha Sports Medicine combines hands-on treatment with exercise rehab across four Melbourne clinics. Book online."
+  },
+  "site": {
+    "phoneDisplay": "(03) 9962 5539",
+    "phoneHref": "tel:0399625539",
+    "bookingUrl": "#book"
+  },
+  "hero": {
+    "eyebrow": "Alpha Sports Medicine",
+    "heading": "The pain keeps coming back. We find out why.",
+    "subheading": "You've tried things. A few appointments, a sheet of exercises, maybe told to rest it. And here you are, still working around the same problem. At Alpha Sports Medicine we run hands-on treatment and exercise rehab as one plan — so we can get to the root of it, not just quiet it down for a fortnight.",
+    "image": "/assets/images/hero-cutout-2-cropped.png",
+    "imageAlt": "Alpha Sports Medicine practitioner smiling, holding a rugby ball",
+    "captionName": "Meet Ashton Wilson",
+    "captionTitle": "Director in Osteopathy"
+  },
+  "closing": {
+    "eyebrow": "Ready when you are",
+    "heading": "If you've been let down before, we get it",
+    "copy": "There's no pressure here. When you're ready, we're ready. We'll listen, we'll find the root of it, and we'll have your back through the whole thing."
+  }
+}

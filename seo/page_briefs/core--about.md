@@ -43,7 +43,7 @@ Navigational and evaluative. Nobody types this to learn about osteopathy. They t
 **Direction:** This is the story section and the best copy on the page. Use Ashton's own words — the jellyfish keeper line is disarming, memorable and completely on-brand for "fun, authentic, takes the work seriously not themselves". It also earns the reader's trust because it starts with failure, not success.
 **Key points:**
 - Quote (verify permission to publish): *"I was so disheartened by my first experience as an osteo I applied to be a jellyfish keeper at SeaWorld. I felt so lost within this profession, like I didn't fit the mould. So I decided to make my own."*
-- 2017: Ashton saw the gap in Melbourne's west between traditional allied health and exercise-based rehab. He didn't want to fill the gap — he wanted to build the clinic he could never find.
+- 2017: Ashton saw the gap in Melbourne's west between traditional allied health and exercise-based rehab. She didn't want to fill the gap — she wanted to build the clinic she could never find.
 - Will's arc: aged care, graduate year at Alpha, left to build senior/leadership experience, came back to co-found. Quote: *"3 years into my work as just an Osteopath, I wanted more."*
 - Started at Maidstone, which became Ascot Vale. Three clinics now.
 - The two patient promises side by side: Ashton wants patients to feel *seen and heard*; Will wants them to feel *empowered*. Validation and empowerment. Name this as the two halves of the Alpha experience.
