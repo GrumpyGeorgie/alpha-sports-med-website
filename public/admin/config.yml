@@ -4,6 +4,9 @@ backend:
   name: github
   repo: GrumpyGeorgie/alpha-sports-med-website
   branch: main
+  base_url: https://alpha-sports-med-prototype.pages.dev
+  auth_endpoint: api/auth
+  site_domain: alpha-sports-med-prototype.pages.dev
 
 local_backend: true
 site_url: https://alpha-sports-med-prototype.pages.dev

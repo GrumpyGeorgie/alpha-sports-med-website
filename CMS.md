@@ -16,13 +16,19 @@ the repository working tree.
 
 ## Production authentication
 
-The production site uses Decap's GitHub backend. Before production publishing
-is enabled, configure a dedicated GitHub OAuth provider and add its secure
-`base_url` and `auth_endpoint` values to `public/admin/config.yml`.
+The production site uses Decap's GitHub backend with Cloudflare Pages Functions
+at `/api/auth` and `/api/callback`. Configure these encrypted bindings in both
+the production and preview environments of the Pages project:
 
-Do not place a GitHub client secret or access token in this repository or in the
-browser bundle. The OAuth provider must keep the client secret server-side,
-validate the OAuth `state`, and restrict access to approved editors.
+- `GITHUB_CLIENT_ID`
+- `GITHUB_CLIENT_SECRET`
+
+The registered GitHub OAuth callback is
+`https://alpha-sports-med-prototype.pages.dev/api/callback`.
+
+Do not place the GitHub client secret or an access token in this repository or
+in the browser bundle. The callback validates a short-lived OAuth `state` cookie
+and only returns credentials to the configured CMS origin.
 
 CMS commits to `main`; the GitHub Actions workflow builds Astro and deploys the
 result to the existing `alpha-sports-med-prototype` Cloudflare Pages project.
