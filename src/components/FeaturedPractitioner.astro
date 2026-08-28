@@ -1,0 +1,88 @@
+---
+import { getCollection } from 'astro:content';
+import home from '../data/home.json';
+
+interface Props {
+  context: 'service' | 'condition';
+  slug: string;
+  variant?: 'hero' | 'section';
+}
+
+const { context, slug, variant = 'section' } = Astro.props;
+const practitioners = await getCollection('practitioners');
+const matches = practitioners
+  .filter(({ data }) => data.featureOnLinkedPages && data[context === 'service' ? 'services' : 'conditions'].includes(slug))
+  .sort((a, b) => a.data.featurePriority - b.data.featurePriority);
+const practitioner = matches[0]?.data;
+const bookingUrl = practitioner?.bookingUrl && practitioner.bookingUrl !== '#book'
+  ? practitioner.bookingUrl
+  : home.site.bookingUrl.startsWith('#') ? `/${home.site.bookingUrl}` : home.site.bookingUrl;
+const locationLabel = practitioner?.locations.map((location) => location.replaceAll('-', ' ')).join(' · ');
+const isHero = variant === 'hero';
+---
+
+<section class:list={['practitioner-feature', `practitioner-feature--${variant}`, { section: !isHero, 'section--alt': !isHero }]} aria-label={practitioner ? `Meet ${practitioner.name}` : 'Meet the Alpha Sports Medicine team'}>
+  <div class="practitioner-feature__inner">
+    <div class="practitioner-feature__media">
+      {practitioner?.videoUrl ? (
+        <video controls preload="metadata" poster={practitioner.videoPoster || practitioner.portrait} aria-label={`Introduction from ${practitioner.name}`}>
+          <source src={practitioner.videoUrl} />
+          Your browser does not support embedded video.
+        </video>
+      ) : (
+        <img src={practitioner?.portrait || '/assets/images/team/alpha-team-group.jpg'} alt={practitioner?.portraitAlt || 'Alpha Sports Medicine practitioners'} loading={isHero ? 'eager' : 'lazy'} fetchpriority={isHero ? 'high' : 'auto'} />
+      )}
+      {practitioner && <span class="practitioner-feature__media-label"><i class="fas fa-user-md" aria-hidden="true"></i> Your care team</span>}
+    </div>
+    <div class="practitioner-feature__copy">
+      <p class="eyebrow eyebrow--left">{practitioner ? 'Meet a practitioner' : 'A connected team'}</p>
+      <h2>{practitioner ? `Meet ${practitioner.shortName}` : 'The right practitioner for your goals'}</h2>
+      {practitioner ? (
+        <>
+          <p class="practitioner-feature__role">{practitioner.role}</p>
+          <p>{practitioner.intro}</p>
+          {locationLabel && <p class="practitioner-feature__locations"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {locationLabel}</p>}
+          <div class="btn-group">
+            <a href={practitioner.profileUrl} class:list={['btn', isHero ? 'btn--outline' : 'btn--outline-navy']}>Meet {practitioner.shortName} <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a href={bookingUrl} class="btn btn--primary">Book an appointment</a>
+          </div>
+        </>
+      ) : (
+        <>
+          <p>We will match you with a practitioner whose service, clinical interests and location fit what you need.</p>
+          <div class="btn-group">
+            <a href="/about/" class:list={['btn', isHero ? 'btn--outline' : 'btn--outline-navy']}>Meet Alpha <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a href={bookingUrl} class="btn btn--primary">Book an appointment</a>
+          </div>
+        </>
+      )}
+    </div>
+  </div>
+</section>
+
+<style>
+  .practitioner-feature__inner { max-width: var(--width-wide); margin: auto; display: grid; align-items: center; gap: var(--space-8); }
+  .practitioner-feature__media { position: relative; min-width: 0; overflow: hidden; border-radius: var(--radius-xl); background: var(--color-navy); }
+  .practitioner-feature__media img, .practitioner-feature__media video { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center top; }
+  .practitioner-feature__media-label { position: absolute; left: var(--space-4); bottom: var(--space-4); padding: var(--space-2) var(--space-3); display: inline-flex; align-items: center; gap: var(--space-2); color: #fff; background: rgba(23,43,55,.9); border-radius: var(--radius-md); font-weight: 700; }
+  .practitioner-feature__media-label i { color: var(--color-primary); }
+  .practitioner-feature__copy > p:not(.eyebrow) { color: var(--color-muted); line-height: 1.65; }
+  .practitioner-feature__role { margin-bottom: var(--space-3); color: var(--color-navy) !important; font-family: var(--font-heading); font-weight: 700; }
+  .practitioner-feature__locations { text-transform: capitalize; }
+  .practitioner-feature__locations i { margin-right: var(--space-2); color: var(--color-primary); }
+  .practitioner-feature__copy .btn-group { margin-top: var(--space-6); }
+  .practitioner-feature--hero { padding: 0; color: #fff; }
+  .practitioner-feature--hero .practitioner-feature__inner { display: block; }
+  .practitioner-feature--hero .practitioner-feature__media { border: 1px solid rgba(255,255,255,.18); border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+  .practitioner-feature--hero .practitioner-feature__copy { padding: var(--space-5); background: rgba(23,43,55,.78); border: 1px solid rgba(255,255,255,.18); border-top: 0; border-radius: 0 0 var(--radius-xl) var(--radius-xl); backdrop-filter: blur(10px); }
+  .practitioner-feature--hero .eyebrow { margin-bottom: var(--space-2); color: var(--color-primary); }
+  .practitioner-feature--hero h2, .practitioner-feature--hero .practitioner-feature__role { color: #fff !important; }
+  .practitioner-feature--hero h2 { margin-bottom: var(--space-2); font-size: var(--font-size-large); }
+  .practitioner-feature--hero .practitioner-feature__role { font-size: .95rem; }
+  .practitioner-feature--hero .practitioner-feature__copy > p:not(.eyebrow) { color: rgba(255,255,255,.76); line-height: 1.5; }
+  .practitioner-feature--hero .practitioner-feature__locations { display: none; }
+  .practitioner-feature--hero .btn-group { gap: var(--space-3); }
+  .practitioner-feature--hero .btn { min-height: 44px; padding: .7rem 1rem; font-size: .94rem; }
+  @media (min-width: 768px) { .practitioner-feature--section .practitioner-feature__inner { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1024px) { .practitioner-feature--hero .practitioner-feature__media img, .practitioner-feature--hero .practitioner-feature__media video { aspect-ratio: 16 / 10; } }
+</style>

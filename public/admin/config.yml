@@ -114,6 +114,74 @@ collections:
               - { label: Eyebrow, name: eyebrow, widget: string }
               - { label: Heading, name: heading, widget: string }
               - { label: Copy, name: copy, widget: text }
+  - label: Practitioners
+    name: practitioners
+    folder: src/content/practitioners
+    create: true
+    extension: json
+    format: json
+    identifier_field: name
+    summary: "{{name}} — {{modality}}"
+    slug: "{{slug}}"
+    fields:
+      - { label: Full name, name: name, widget: string }
+      - { label: First name, name: shortName, widget: string }
+      - { label: Role, name: role, widget: string }
+      - { label: Primary modality, name: modality, widget: string }
+      - { label: Profile page URL, name: profileUrl, widget: string }
+      - { label: Booking URL, name: bookingUrl, widget: string, required: false }
+      - { label: Portrait image, name: portrait, widget: image }
+      - { label: Portrait alt text, name: portraitAlt, widget: string }
+      - { label: Short video URL, name: videoUrl, widget: string, required: false, hint: "Optional. Leave blank to show the portrait instead." }
+      - { label: Video poster image, name: videoPoster, widget: image, required: false }
+      - { label: Short introduction, name: intro, widget: text }
+      - label: Services
+        name: services
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - { label: Osteopathy, value: osteopathy }
+          - { label: Physiotherapy, value: physiotherapy }
+          - { label: Chiropractic, value: chiropractic }
+          - { label: Myotherapy, value: myotherapy }
+          - { label: Exercise physiology, value: exercise-physiology }
+          - { label: Clinical Pilates, value: clinical-pilates }
+          - { label: Strength and conditioning, value: strength-conditioning }
+          - { label: Dietetics, value: dietetics }
+          - { label: Paediatric osteopathy, value: paediatric-osteopathy }
+          - { label: Online consultations, value: online-consults }
+      - label: Conditions and clinical interests
+        name: conditions
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - { label: Knee pain, value: knee-pain }
+          - { label: Back pain, value: back-pain }
+          - { label: Neck pain, value: neck-pain }
+          - { label: Headaches, value: headaches }
+          - { label: Shoulder pain, value: shoulder-pain }
+          - { label: Hip pain, value: hip-pain }
+          - { label: Foot pain and plantar fasciitis, value: foot-pain-plantar-fasciitis }
+          - { label: TMJ and jaw pain, value: tmj-jaw-pain }
+          - { label: Running injuries, value: running-injuries }
+          - { label: Sports injuries, value: sports-injuries }
+          - { label: Pregnancy-related pain, value: pregnancy-pain }
+          - { label: Hypermobility, value: hypermobility }
+      - label: Locations
+        name: locations
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - { label: Ascot Vale, value: ascot-vale }
+          - { label: Newport, value: newport }
+          - { label: Bacchus Marsh, value: bacchus-marsh }
+          - { label: Hawthorn, value: hawthorn }
+          - { label: Online, value: online }
+      - { label: Feature on linked pages, name: featureOnLinkedPages, widget: boolean, default: true }
+      - { label: Feature priority, name: featurePriority, widget: number, value_type: int, min: 1, max: 100, default: 50, hint: "Lower numbers appear first when more than one practitioner matches." }
   - label: Copy drafts
     name: copy_drafts
     files:

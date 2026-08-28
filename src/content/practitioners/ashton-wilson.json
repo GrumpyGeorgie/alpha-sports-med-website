@@ -1,0 +1,18 @@
+{
+  "name": "Dr Ashton Wilson",
+  "shortName": "Ashton",
+  "role": "Osteopath, strength and rehabilitation coach",
+  "modality": "Osteopathy",
+  "profileUrl": "/staff/dr-ashton-wilson/",
+  "bookingUrl": "#book",
+  "portrait": "/assets/images/team/ashton-wilson.jpg",
+  "portraitAlt": "Dr Ashton Wilson, osteopath and founder of Alpha Sports Medicine",
+  "videoUrl": "",
+  "videoPoster": "",
+  "intro": "Ashton combines clear explanations, hands-on osteopathic care and progressive rehabilitation, with a plan shaped around what you want to return to.",
+  "services": ["osteopathy", "strength-conditioning", "online-consults"],
+  "conditions": ["hypermobility", "sports-injuries", "running-injuries", "foot-pain-plantar-fasciitis", "tmj-jaw-pain"],
+  "locations": ["newport"],
+  "featureOnLinkedPages": true,
+  "featurePriority": 10
+}
