@@ -3,15 +3,16 @@ import { getCollection } from 'astro:content';
 import home from '../data/home.json';
 
 interface Props {
-  context: 'service' | 'condition';
+  context: 'service' | 'condition' | 'location';
   slug: string;
   variant?: 'hero' | 'section';
 }
 
 const { context, slug, variant = 'section' } = Astro.props;
 const practitioners = await getCollection('practitioners');
+const relationshipKey = context === 'service' ? 'services' : context === 'condition' ? 'conditions' : 'locations';
 const matches = practitioners
-  .filter(({ data }) => data.featureOnLinkedPages && data[context === 'service' ? 'services' : 'conditions'].includes(slug))
+  .filter(({ data }) => data.featureOnLinkedPages && data[relationshipKey].includes(slug))
   .sort((a, b) => a.data.featurePriority - b.data.featurePriority);
 const practitioner = matches[0]?.data;
 const bookingUrl = practitioner?.bookingUrl && practitioner.bookingUrl !== '#book'

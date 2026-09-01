@@ -1,5 +1,6 @@
 ---
 import home from '../../../data/home.json';
+import FeaturedPractitioner from '../../../components/FeaturedPractitioner.astro';
 
 const bookingUrl = home.site.bookingUrl.startsWith('#') ? `/${home.site.bookingUrl}` : home.site.bookingUrl;
 const mapUrl = 'https://www.google.com/maps/search/?api=1&query=Alpha+Sports+Medicine+109+Blackshaws+Rd+Newport+VIC+3015';
@@ -54,8 +55,8 @@ const schema = {'@context':'https://schema.org','@graph':[{'@type':['MedicalClin
   <main>
     <section class="location-hero">
       <div class="location-hero__inner">
-        <div class="location-hero__copy"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/#locations">Our clinics</a><span>/</span><span>Newport</span></nav><p class="eyebrow eyebrow--left">Alpha Sports Medicine · Newport</p><h1>Osteopath in Newport</h1><p class="location-hero__subhead">Alpha's largest clinic brings a deep osteopathy team and a full allied health crew together on Blackshaws Road.</p><p class="location-hero__address"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 109 Blackshaws Rd, Newport VIC 3015</p><div class="btn-group"><a href={bookingUrl} class="btn btn--primary">Book an appointment <i class="fas fa-arrow-right" aria-hidden="true"></i></a><a href={home.site.phoneHref} class="btn btn--outline"><i class="fas fa-phone-alt" aria-hidden="true"></i> Call {home.site.phoneDisplay}</a></div></div>
-        <figure class="location-hero__image"><img src="/assets/images/locations/newport-storefront.jpg" alt="Alpha Sports Medicine clinic entrance on Blackshaws Road in Newport" /><figcaption><a href={mapUrl} target="_blank" rel="noopener noreferrer"><i class="fas fa-directions" aria-hidden="true"></i> Get directions</a></figcaption></figure>
+        <div class="location-hero__copy"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/#locations">Our clinics</a><span>/</span><span>Newport</span></nav><p class="eyebrow eyebrow--left">Alpha Sports Medicine · Newport</p><h1>Osteopath in Newport</h1><p class="location-hero__subhead">Alpha's largest clinic brings a deep osteopathy team and a full allied health crew together on Blackshaws Road.</p><a class="location-hero__address" href={mapUrl} target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 109 Blackshaws Rd, Newport VIC 3015 <i class="fas fa-external-link-alt" aria-hidden="true"></i></a><div class="btn-group"><a href={bookingUrl} class="btn btn--primary">Book an appointment <i class="fas fa-arrow-right" aria-hidden="true"></i></a><a href={home.site.phoneHref} class="btn btn--outline"><i class="fas fa-phone-alt" aria-hidden="true"></i> Call {home.site.phoneDisplay}</a></div></div>
+        <FeaturedPractitioner context="location" slug="newport" variant="hero" />
       </div>
     </section>
 
