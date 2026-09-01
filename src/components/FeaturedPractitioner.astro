@@ -32,13 +32,13 @@ const isHero = variant === 'hero';
       ) : (
         <img src={practitioner?.portrait || '/assets/images/team/alpha-team-group.jpg'} alt={practitioner?.portraitAlt || 'Alpha Sports Medicine practitioners'} loading={isHero ? 'eager' : 'lazy'} fetchpriority={isHero ? 'high' : 'auto'} />
       )}
-      {practitioner && isHero && (
+      {isHero && (
         <>
           <span class="practitioner-feature__caption">
-            <span class="practitioner-feature__caption-name">Meet {practitioner.name.replace(/^Dr\s+/, '')}</span>
-            <span class="practitioner-feature__caption-title">{practitioner.role}</span>
+            <span class="practitioner-feature__caption-name">{practitioner ? `Meet ${practitioner.name.replace(/^Dr\s+/, '')}` : 'Meet the Alpha team'}</span>
+            <span class="practitioner-feature__caption-title">{practitioner ? practitioner.role : 'Care matched to your goals'}</span>
           </span>
-          {practitioner.videoUrl ? (
+          {practitioner?.videoUrl ? (
             <button type="button" class="practitioner-feature__play" data-practitioner-play aria-label={`Play introduction from ${practitioner.name}`}><i class="fas fa-play" aria-hidden="true"></i></button>
           ) : (
             <span class="practitioner-feature__play" aria-hidden="true"><i class="fas fa-play"></i></span>
