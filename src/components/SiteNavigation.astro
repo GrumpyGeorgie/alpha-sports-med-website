@@ -1,0 +1,35 @@
+---
+interface Props {
+  variant?: 'desktop' | 'mobile';
+}
+
+const { variant = 'desktop' } = Astro.props;
+const navClass = variant === 'mobile' ? 'mobile-nav' : 'site-header__nav';
+const label = variant === 'mobile' ? 'Mobile' : 'Primary';
+---
+
+<nav class={navClass} aria-label={label}>
+  <a href="/">Home</a>
+  <details class="nav-group">
+    <summary>Meet Us</summary>
+    <div class="nav-group__menu">
+      <a href="/about/">About Alpha</a>
+      <a href="/staff/dr-ashton-wilson/">Dr Ashton Wilson</a>
+    </div>
+  </details>
+  <details class="nav-group">
+    <summary>Conditions</summary>
+    <div class="nav-group__menu">
+      <a href="/services/osteopathy/">Osteopathy</a>
+      <a href="/conditions/knee-pain/">Knee Pain</a>
+    </div>
+  </details>
+  <a href="/#getting-started">Getting Started</a>
+  <details class="nav-group">
+    <summary>Locations</summary>
+    <div class="nav-group__menu">
+      <a href="/locations/newport/">Newport</a>
+    </div>
+  </details>
+  <a href="/contact/">Contact Us</a>
+</nav>

@@ -1,5 +1,6 @@
 ---
 import home from "../data/home.json";
+import SiteNavigation from "../components/SiteNavigation.astro";
 ---
 
 <!DOCTYPE html>
@@ -36,28 +37,9 @@ import home from "../data/home.json";
       </div>
     </div>
     <div class="site-header__nav-row">
-      <nav class="site-header__nav" aria-label="Primary">
-        <a href="/">Home</a>
-        <a href="/about/">Meet Us</a>
-        <a href="#services">What We Do</a>
-        <a href="#who-we-support">Who We Support</a>
-        <a href="#conditions">Conditions</a>
-        <a href="#getting-started">Getting Started</a>
-        <a href="#locations">Locations</a>
-        <a href="/contact/">Contact Us</a>
-      </nav>
+      <SiteNavigation />
     </div>
-    <nav class="mobile-nav" aria-label="Mobile">
-      <a href="/">Home</a>
-      <a href="/about/">Meet Us</a>
-      <a href="#services">What We Do</a>
-      <a href="#who-we-support">Who We Support</a>
-      <a href="#conditions">Conditions</a>
-      <a href="#getting-started">Getting Started</a>
-      <a href="#locations">Locations</a>
-      <a href="/contact/">Contact Us</a>
-      <a href={home.site.phoneHref}><i class="fas fa-phone-alt" aria-hidden="true"></i> {home.site.phoneDisplay}</a>
-    </nav>
+    <SiteNavigation variant="mobile" />
   </header>
 
   <!-- 1. Hero -->
