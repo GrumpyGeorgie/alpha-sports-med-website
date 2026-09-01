@@ -419,6 +419,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-group summary {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
   color: var(--color-white);
   font-family: inherit;
   font-weight: 600;
@@ -440,7 +443,15 @@ h1, h2, h3, h4, h5, h6 {
 .site-header__nav .nav-group summary:hover { color: var(--color-primary); }
 
 .nav-group summary::-webkit-details-marker { display: none; }
-.nav-group summary::after { content: '⌄'; margin-left: .4rem; color: var(--color-primary); }
+.nav-group summary::after {
+  content: '⌄';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transform: translateY(-.08em);
+  color: var(--color-primary);
+}
 
 .nav-group__menu {
   display: grid;
