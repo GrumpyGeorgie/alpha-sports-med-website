@@ -17,7 +17,7 @@ media_folder: public/assets/images/uploads
 public_folder: /assets/images/uploads
 
 collections:
-  - label: Homepage
+  - label: Core pages — Homepage
     name: homepage
     files:
       - label: Homepage settings
@@ -56,7 +56,7 @@ collections:
               - { label: Eyebrow, name: eyebrow, widget: string }
               - { label: Heading, name: heading, widget: string }
               - { label: Copy, name: copy, widget: text }
-  - label: About page
+  - label: Core pages — About
     name: about_page
     files:
       - label: About page settings
@@ -114,7 +114,7 @@ collections:
               - { label: Eyebrow, name: eyebrow, widget: string }
               - { label: Heading, name: heading, widget: string }
               - { label: Copy, name: copy, widget: text }
-  - label: Practitioners
+  - label: Staff
     name: practitioners
     folder: src/content/practitioners
     create: true
@@ -182,11 +182,15 @@ collections:
           - { label: Online, value: online }
       - { label: Feature on linked pages, name: featureOnLinkedPages, widget: boolean, default: true }
       - { label: Feature priority, name: featurePriority, widget: number, value_type: int, min: 1, max: 100, default: 50, hint: "Lower numbers appear first when more than one practitioner matches." }
-  - label: Copy drafts
-    name: copy_drafts
+  - label: Services
+    name: services_pages
     files:
-      - { label: Home, name: home_copy, file: content/home.md, fields: [{ label: Body, name: body, widget: markdown }] }
-      - { label: About, name: about_copy, file: content/about.md, fields: [{ label: Body, name: body, widget: markdown }] }
-      - { label: Newport, name: newport_copy, file: content/newport.md, fields: [{ label: Body, name: body, widget: markdown }] }
-      - { label: Newport Physiotherapy, name: newport_physiotherapy_copy, file: content/newport-physiotherapy.md, fields: [{ label: Body, name: body, widget: markdown }] }
       - { label: Osteopathy, name: osteopathy_copy, file: content/osteopathy.md, fields: [{ label: Body, name: body, widget: markdown }] }
+  - label: Locations
+    name: location_pages
+    files:
+      - { label: Newport, name: newport_copy, file: content/newport.md, fields: [{ label: Body, name: body, widget: markdown }] }
+  - label: Conditions
+    name: condition_pages
+    files:
+      - { label: Knee pain, name: knee_pain_copy, file: content/knee-pain.md, fields: [{ label: Body, name: body, widget: markdown }] }
