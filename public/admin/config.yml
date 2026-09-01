@@ -17,103 +17,11 @@ media_folder: public/assets/images/uploads
 public_folder: /assets/images/uploads
 
 collections:
-  - label: Core pages — Homepage
-    name: homepage
+  - label: Core Pages
+    name: core_pages
     files:
-      - label: Homepage settings
-        name: home
-        file: src/data/home.json
-        format: json
-        fields:
-          - label: SEO
-            name: seo
-            widget: object
-            fields:
-              - { label: Page title, name: title, widget: string }
-              - { label: Meta description, name: description, widget: text }
-          - label: Site details
-            name: site
-            widget: object
-            fields:
-              - { label: Phone number, name: phoneDisplay, widget: string }
-              - { label: Phone link, name: phoneHref, widget: string }
-              - { label: Booking URL, name: bookingUrl, widget: string }
-          - label: Hero
-            name: hero
-            widget: object
-            fields:
-              - { label: Eyebrow, name: eyebrow, widget: string }
-              - { label: Heading, name: heading, widget: string }
-              - { label: Supporting copy, name: subheading, widget: text }
-              - { label: Image, name: image, widget: image }
-              - { label: Image alt text, name: imageAlt, widget: string }
-              - { label: Caption name, name: captionName, widget: string }
-              - { label: Caption title, name: captionTitle, widget: string }
-          - label: Closing call to action
-            name: closing
-            widget: object
-            fields:
-              - { label: Eyebrow, name: eyebrow, widget: string }
-              - { label: Heading, name: heading, widget: string }
-              - { label: Copy, name: copy, widget: text }
-  - label: Core pages — About
-    name: about_page
-    files:
-      - label: About page settings
-        name: about
-        file: src/data/about.json
-        format: json
-        fields:
-          - label: SEO
-            name: seo
-            widget: object
-            fields:
-              - { label: Page title, name: title, widget: string }
-              - { label: Meta description, name: description, widget: text }
-          - label: Hero
-            name: hero
-            widget: object
-            fields:
-              - { label: Eyebrow, name: eyebrow, widget: string }
-              - { label: Heading, name: heading, widget: string }
-              - { label: Supporting copy, name: subheading, widget: text }
-          - label: Overview
-            name: overview
-            widget: object
-            fields:
-              - { label: Eyebrow, name: eyebrow, widget: string }
-              - { label: Heading, name: heading, widget: string }
-              - label: Paragraphs
-                name: paragraphs
-                widget: list
-                field: { label: Paragraph, name: paragraph, widget: text }
-          - label: Values
-            name: values
-            widget: list
-            fields:
-              - { label: Icon class, name: icon, widget: string }
-              - { label: Title, name: title, widget: string }
-              - { label: Copy, name: copy, widget: text }
-          - label: Care approach
-            name: approach
-            widget: list
-            fields:
-              - { label: Number, name: number, widget: string }
-              - { label: Title, name: title, widget: string }
-              - { label: Copy, name: copy, widget: text }
-          - label: Leadership
-            name: leadership
-            widget: object
-            fields:
-              - { label: Heading, name: heading, widget: string }
-              - { label: Copy, name: copy, widget: text }
-          - label: Closing call to action
-            name: closing
-            widget: object
-            fields:
-              - { label: Eyebrow, name: eyebrow, widget: string }
-              - { label: Heading, name: heading, widget: string }
-              - { label: Copy, name: copy, widget: text }
+      - { label: Home, name: home_copy, file: content/home.md, fields: [{ label: Full page copy, name: body, widget: markdown }] }
+      - { label: About, name: about_copy, file: content/about.md, fields: [{ label: Full page copy, name: body, widget: markdown }] }
   - label: Staff
     name: practitioners
     folder: src/content/practitioners
