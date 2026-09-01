@@ -31,7 +31,7 @@ const isHero = variant === 'hero';
           Your browser does not support embedded video.
         </video>
       ) : (
-        <img src={practitioner?.portrait || '/assets/images/team/alpha-team-group.jpg'} alt={practitioner?.portraitAlt || 'Alpha Sports Medicine practitioners'} loading={isHero ? 'eager' : 'lazy'} fetchpriority={isHero ? 'high' : 'auto'} />
+        <img src={practitioner?.portrait || '/assets/images/hero-bg-2.webp'} alt={practitioner?.portraitAlt || "Dr Ashton Wilson from Alpha Sports Medicine"} loading={isHero ? 'eager' : 'lazy'} fetchpriority={isHero ? 'high' : 'auto'} />
       )}
       {isHero && (
         <>

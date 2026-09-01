@@ -1258,6 +1258,13 @@ h1, h2, h3, h4, h5, h6 {
     url('../images/hero-bg.jpg') center 30% / cover no-repeat;
 }
 
+.closing-cta--home { background-image: linear-gradient(rgba(23,43,55,.75), rgba(23,43,55,.85)), url('../images/hero-bg.jpg'); }
+.closing-cta--about { background-image: linear-gradient(rgba(23,43,55,.75), rgba(23,43,55,.88)), url('../images/locations/ascot-vale-storefront.jpg'); background-position: center 52%; }
+.closing-cta--osteopathy { background-image: linear-gradient(rgba(23,43,55,.72), rgba(23,43,55,.88)), url('../images/locations/hawthorn-clinic.jpg'); background-position: center 42%; }
+.closing-cta--knee { background-image: linear-gradient(rgba(23,43,55,.76), rgba(23,43,55,.88)), url('../images/hero-bg-2.webp'); background-position: center 24%; }
+.closing-cta--newport { background-image: linear-gradient(rgba(23,43,55,.72), rgba(23,43,55,.88)), url('../images/locations/newport-storefront.jpg'); background-position: center 44%; }
+.closing-cta--ashton { background-image: linear-gradient(rgba(23,43,55,.7), rgba(23,43,55,.9)), url('../images/team/ashton-wilson.jpg'); background-position: center 24%; }
+
 .closing-cta__head {
   max-width: var(--width-content);
   margin-bottom: 0;
