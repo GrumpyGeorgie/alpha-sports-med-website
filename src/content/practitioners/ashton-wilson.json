@@ -11,7 +11,7 @@
   "videoPoster": "",
   "intro": "Ashton combines clear explanations, hands-on osteopathic care and progressive rehabilitation, with a plan shaped around what you want to return to.",
   "services": ["osteopathy", "strength-conditioning", "online-consults"],
-  "conditions": ["hypermobility", "sports-injuries", "running-injuries", "foot-pain-plantar-fasciitis", "tmj-jaw-pain"],
+  "conditions": ["knee-pain", "hypermobility", "sports-injuries", "running-injuries", "foot-pain-plantar-fasciitis", "tmj-jaw-pain"],
   "locations": ["newport"],
   "featureOnLinkedPages": true,
   "featurePriority": 10
