@@ -420,10 +420,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-group summary {
   color: var(--color-white);
+  font-family: inherit;
   font-weight: 600;
+  font-size: inherit;
+  line-height: inherit;
   cursor: pointer;
   list-style: none;
 }
+
+.site-header__nav .nav-group summary {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.8125rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color var(--transition);
+}
+
+.site-header__nav .nav-group summary:hover { color: var(--color-primary); }
 
 .nav-group summary::-webkit-details-marker { display: none; }
 .nav-group summary::after { content: '⌄'; margin-left: .4rem; color: var(--color-primary); }
