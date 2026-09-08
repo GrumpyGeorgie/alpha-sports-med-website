@@ -1,23 +1,26 @@
 ---
 import home from '../../../data/home.json';
+import page from '../../../data/knee-pain.json';
 import FeaturedPractitioner from '../../../components/FeaturedPractitioner.astro';
 import SiteNavigation from '../../../components/SiteNavigation.astro';
 const bookingUrl = home.site.bookingUrl.startsWith('#') ? `/${home.site.bookingUrl}` : home.site.bookingUrl;
-const regions = [
+const regions = page.regions.map(({title,kicker,copy}) => [title,kicker,copy]);
+/*
   ['Front of the knee', 'Stairs, hills, squats or sitting', 'Pain around the kneecap is common in runners and active adults. It often appears when a recent increase in running, hills or gym work exceeds what the knee currently tolerates.'],
   ['Below the kneecap', 'Jumping, landing or the morning after', 'A very localised sore spot in the tendon below the kneecap can behave like patellar tendinopathy. It usually needs carefully progressed loading rather than complete rest.'],
   ['Inside the knee', 'Walking, twisting or getting out of the car', 'Pain along the inside joint line may relate to several structures, including an irritated meniscus, ligament or osteoarthritis. An assessment helps separate them.'],
   ['Outside the knee', 'A consistent point during a run or ride', 'Outside knee pain is common in runners and cyclists. Training load and movement patterns are considered together rather than blaming one tight structure.'],
   ['Behind the knee', 'Bending, straightening or swelling', 'Tightness or fullness behind the knee can have several causes, including a Baker’s cyst. New or unexplained swelling should be assessed.']
-];
-const process = [
+];*/
+const process = page.process.map(({number,title,copy}) => [number,title,copy]);
+/*
   ['01','Start with your story','What changed, what you have tried and what the knee has stopped you doing.'],
   ['02','Assess the whole chain','We examine the knee and how the hip, ankle and foot influence its workload.'],
   ['03','Explain it clearly','You leave understanding what we think is happening and what comes next.'],
   ['04','Settle what is irritable','Hands-on care may help symptoms while we introduce suitable movement.'],
   ['05','Build capacity','Progressive strength for the quadriceps, hips and calves is central for many presentations.'],
   ['06','Return to your goal','Running, stairs, squats, gardening or keeping up with the grandkids—the plan returns to real life.']
-];
+];*/
 const services = [
   ['Physiotherapy','Movement assessment and progressive rehabilitation.','/services/physiotherapy/','fa-user-md'],
   ['Exercise physiology','Supervised exercise for strength, function and confidence.','/services/exercise-physiology/','fa-heartbeat'],
@@ -28,7 +31,8 @@ const services = [
 const related = [
   ['ACL injuries','/conditions/sports-injuries/acl-injury/'],['Tendon pain','/conditions/tendonitis-tendinopathy/'],['Hip pain','/conditions/hip-pain/'],['Foot pain','/conditions/foot-pain-plantar-fasciitis/'],['Running injuries','/conditions/running-injuries/'],['Running assessment','/running-assessment/']
 ];
-const faqs = [
+const faqs = page.faqs.map(({question,answer}) => [question,answer]);
+/*
   ['Why does my knee hurt going down stairs?', 'Going downstairs asks the front of the knee to manage a relatively high load. Pain can appear when that demand exceeds current capacity, particularly after changes in running, hills, gym work or time away from activity.'],
   ['Why does my knee hurt after sitting?', 'A sore or stiff knee after sitting is common with kneecap-related pain and osteoarthritis. The pattern is useful information, but it does not identify one diagnosis by itself.'],
   ['Should I stop running with knee pain?', 'Not always. Many people can temporarily adjust distance, hills, speed or frequency while building capacity. Sudden swelling, instability, locking or an inability to bear weight needs assessment first.'],
@@ -38,13 +42,13 @@ const faqs = [
   ['Do I need a knee replacement?', 'That decision belongs with you and your surgeon. Replacement can be effective for advanced osteoarthritis that has not responded to conservative care; exercise and load management are commonly explored first.'],
   ['Do I need a referral?', 'No. You can book directly. If you have a GP care plan, WorkCover or TAC claim, mention it when booking so the team can guide you.'],
   ['How long does knee rehabilitation take?', 'Knee rehabilitation is usually measured in weeks to months, not days. The timeframe depends on the cause, how long symptoms have been present, your starting capacity and the goal you are returning to.']
-];
+];*/
 const schema = {'@context':'https://schema.org','@graph':[{'@type':'MedicalWebPage',name:'Knee Pain Treatment Melbourne',url:'https://alpha-sports-med-prototype.pages.dev/conditions/knee-pain/',about:{'@type':'MedicalCondition',name:'Knee pain'}},{'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:'https://alpha-sports-med-prototype.pages.dev/'},{'@type':'ListItem',position:2,name:'Conditions',item:'https://alpha-sports-med-prototype.pages.dev/#conditions'},{'@type':'ListItem',position:3,name:'Knee Pain'}]},{'@type':'FAQPage',mainEntity:faqs.map(([name,text])=>({'@type':'Question',name,acceptedAnswer:{'@type':'Answer',text}}))}]};
 ---
 <!doctype html><html lang="en"><head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Knee Pain Treatment Melbourne | Alpha Sports Medicine</title>
-  <meta name="description" content="Knee pain on stairs, running or squatting? Knees respond to appropriate loading, not rest alone. Assessment and rehabilitation across Melbourne." />
+  <title>{page.seo.title}</title>
+  <meta name="description" content={page.seo.description} />
   <link rel="canonical" href="https://alpha-sports-med-prototype.pages.dev/conditions/knee-pain/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -53,8 +57,8 @@ const schema = {'@context':'https://schema.org','@graph':[{'@type':'MedicalWebPa
 </head><body>
   <header class="site-header"><div class="site-header__inner"><a href="/" class="site-header__logo" aria-label="Alpha Sports Medicine home"><img src="/assets/images/alpha-icon.png" alt="" class="site-header__logo-icon" /><img src="/assets/images/alpha-logo-lockup.webp" alt="Alpha Sports Medicine" class="site-header__logo-full" /></a><div class="site-header__actions"><a class="site-header__phone" href={home.site.phoneHref}><span class="site-header__phone-icon"><i class="fas fa-phone-alt" aria-hidden="true"></i></span><span class="site-header__phone-text"> {home.site.phoneDisplay}</span></a><a href={bookingUrl} class="btn btn--primary">Book online</a><button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button></div></div><div class="site-header__nav-row"><SiteNavigation /></div><SiteNavigation variant="mobile" /></header>
   <main>
-    <section class="condition-hero"><div class="condition-hero__inner"><div><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/conditions/knee-pain/">Knee Pain</a><span>/</span><span>Knee pain</span></nav><p class="eyebrow eyebrow--left">Knee pain treatment · Melbourne</p><h1>Knee pain does not have to mean stopping</h1><p class="condition-hero__subhead">Knees respond to being loaded appropriately—not protected forever. We work out what is driving the pain and build back what your knee can tolerate.</p><div class="btn-group"><a href={bookingUrl} class="btn btn--primary">Book an appointment <i class="fas fa-arrow-right" aria-hidden="true"></i></a><a href={home.site.phoneHref} class="btn btn--outline"><i class="fas fa-phone-alt" aria-hidden="true"></i> Call {home.site.phoneDisplay}</a></div><div class="condition-trust"><span>No referral needed</span><span>Four Melbourne clinics</span><span>Health fund claiming</span></div></div><FeaturedPractitioner context="condition" slug="knee-pain" variant="hero" /></div></section>
-    <section class="section condition-urgent"><aside class="urgent-card"><span class="urgent-card__icon"><i class="fas fa-exclamation" aria-hidden="true"></i></span><div><p class="eyebrow eyebrow--left">When to seek urgent care</p><h2>Some knee symptoms need medical assessment first</h2><p>Seek urgent care if you cannot bear weight, the knee is badly swollen or deformed after an injury, or it is hot and red and you have a fever. A knee that locks or repeatedly gives way should also be assessed promptly.</p><a href="https://www.healthdirect.gov.au/knee-pain" target="_blank" rel="noopener noreferrer">Read Healthdirect guidance <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div></aside></section>
+    <section class="condition-hero"><div class="condition-hero__inner"><div><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/conditions/knee-pain/">Knee Pain</a><span>/</span><span>Knee pain</span></nav><p class="eyebrow eyebrow--left">{page.hero.eyebrow}</p><h1>{page.hero.heading}</h1><p class="condition-hero__subhead">{page.hero.subheading}</p><div class="btn-group"><a href={bookingUrl} class="btn btn--primary">Book an appointment <i class="fas fa-arrow-right" aria-hidden="true"></i></a><a href={home.site.phoneHref} class="btn btn--outline"><i class="fas fa-phone-alt" aria-hidden="true"></i> Call {home.site.phoneDisplay}</a></div><div class="condition-trust"><span>No referral needed</span><span>Four Melbourne clinics</span><span>Health fund claiming</span></div></div><FeaturedPractitioner context="condition" slug="knee-pain" variant="hero" /></div></section>
+    <section class="section condition-urgent"><aside class="urgent-card"><span class="urgent-card__icon"><i class="fas fa-exclamation" aria-hidden="true"></i></span><div><p class="eyebrow eyebrow--left">{page.urgent.eyebrow}</p><h2>{page.urgent.heading}</h2><p>{page.urgent.copy}</p><a href={page.urgent.linkUrl} target="_blank" rel="noopener noreferrer">{page.urgent.linkLabel} <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div></aside></section>
 
     <section class="section"><div class="section-head"><span class="section-head__ghost">WHERE</span><p class="eyebrow">Start with the pattern</p><h2>Where does your knee hurt?</h2><p>The location and activity that trigger pain provide useful clues. They are a starting point—not a diagnosis.</p></div><div class="knee-region-grid">{regions.map(([title,kicker,copy],i)=><article><span class="knee-region__number">0{i+1}</span><h3>{title}</h3><strong>{kicker}</strong><p>{copy}</p>{i===1&&<a href="/conditions/tendonitis-tendinopathy/">Learn about tendon pain <i class="fas fa-arrow-right" aria-hidden="true"></i></a>}</article>)}</div></section>
 
@@ -73,7 +77,7 @@ const schema = {'@context':'https://schema.org','@graph':[{'@type':'MedicalWebPa
     <section class="section section--alt"><div class="section-head"><span class="section-head__ghost">CLINICS</span><p class="eyebrow">Knee pain treatment in Melbourne</p><h2>See the team close to home</h2></div><div class="location-grid"><div class="location-card" style="background-image:url('/assets/images/locations/ascot-vale-storefront.jpg')"><h3>Ascot Vale</h3><p class="location-card__address"><i class="fas fa-map-marker-alt"></i> 246A Union Rd</p><a href="/locations/ascot-vale/" class="btn btn--primary">View clinic</a></div><div class="location-card" style="background-image:url('/assets/images/locations/newport-storefront.jpg')"><h3>Newport</h3><p class="location-card__address"><i class="fas fa-map-marker-alt"></i> 109 Blackshaws Rd</p><a href="/locations/newport/" class="btn btn--primary">View clinic</a></div><div class="location-card" style="background-image:url('/assets/images/locations/bacchus-marsh-storefront.jpg')"><h3>Bacchus Marsh</h3><p class="location-card__address"><i class="fas fa-map-marker-alt"></i> 3 Graham St</p><a href="/locations/bacchus-marsh/" class="btn btn--primary">View clinic</a></div><div class="location-card" style="background-image:url('/assets/images/locations/hawthorn-clinic.jpg')"><h3>Hawthorn</h3><p class="location-card__address"><i class="fas fa-map-marker-alt"></i> 432 Burwood Rd</p><a href="https://maps.app.goo.gl/bBiEZyTG2B6cS8ry8" class="btn btn--primary">View on Maps</a></div></div></section>
 
     <section class="section"><div class="section-head"><span class="section-head__ghost">FAQ</span><p class="eyebrow">Common questions</p><h2>Knee pain FAQs</h2></div><div class="faq__list">{faqs.map(([q,a])=><details class="faq__item"><summary><span>{q}</span></summary><div class="faq__answer"><p>{a}</p></div></details>)}</div></section>
-    <section class="section section--navy closing-cta closing-cta--knee"><div class="section-head"><span class="section-head__ghost">MOVE</span><p class="eyebrow">Your next step</p><h2>What have you stopped doing because of your knee?</h2><p class="closing-cta__copy">Tell us what you want to get back to. We will assess the knee, explain the options and build the next step with you.</p></div><div class="btn-group"><a href={bookingUrl} class="btn btn--primary">Book an appointment <i class="fas fa-arrow-right" aria-hidden="true"></i></a><a href={home.site.phoneHref} class="btn btn--outline">Call {home.site.phoneDisplay}</a></div></section>
+    <section class="section section--navy closing-cta closing-cta--knee"><div class="section-head"><span class="section-head__ghost">MOVE</span><p class="eyebrow">{page.closing.eyebrow}</p><h2>{page.closing.heading}</h2><p class="closing-cta__copy">{page.closing.copy}</p></div><div class="btn-group"><a href={bookingUrl} class="btn btn--primary">Book an appointment <i class="fas fa-arrow-right" aria-hidden="true"></i></a><a href={home.site.phoneHref} class="btn btn--outline">Call {home.site.phoneDisplay}</a></div></section>
   </main>
   <footer class="site-footer"><div class="site-footer__inner"><div class="site-footer__grid"><div><a href="/" class="site-footer__logo"><img src="/assets/images/alpha-logo-lockup.webp" alt="Alpha Sports Medicine" /></a><p>Multidisciplinary sports medicine clinics across Melbourne. Care built around your goals.</p></div><div><h5>Clinics</h5><ul><li><a href="/locations/ascot-vale/">Ascot Vale</a></li><li><a href="/locations/newport/">Newport</a></li><li><a href="/locations/bacchus-marsh/">Bacchus Marsh</a></li><li><a href="https://maps.app.goo.gl/bBiEZyTG2B6cS8ry8">Hawthorn</a></li></ul></div><div><h5>About</h5><ul><li><a href="/about/">Our clinic</a></li><li><a href="/about/team/">Meet the team</a></li><li><a href="/about/qualifications/">Qualifications</a></li></ul></div><div><h5>Contact</h5><ul><li><a href={home.site.phoneHref}>{home.site.phoneDisplay}</a></li><li><a href="/contact/">Contact us</a></li><li><a href={bookingUrl}>Book online</a></li></ul></div></div><div class="site-footer__bottom"><p>&copy; 2026 Alpha Sports Medicine.</p></div></div></footer>
   <script is:inline src="/assets/js/main.js"></script>

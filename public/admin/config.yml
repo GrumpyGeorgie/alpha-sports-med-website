@@ -19,9 +19,95 @@ public_folder: /assets/images/uploads
 collections:
   - label: Core Pages
     name: core_pages
+    format: json
+    extension: json
     files:
-      - { label: Home, name: home_copy, file: content/home.md, fields: [{ label: Full page copy, name: body, widget: markdown }] }
-      - { label: About, name: about_copy, file: content/about.md, fields: [{ label: Full page copy, name: body, widget: markdown }] }
+      - label: Home
+        name: home
+        file: src/data/home.json
+        fields:
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - { label: Page title, name: title, widget: string }
+              - { label: Meta description, name: description, widget: text }
+          - label: Contact and booking
+            name: site
+            widget: object
+            fields:
+              - { label: Phone number, name: phoneDisplay, widget: string }
+              - { label: Phone link, name: phoneHref, widget: string }
+              - { label: Booking URL, name: bookingUrl, widget: string }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Intro, name: subheading, widget: text }
+              - { label: Practitioner image, name: image, widget: image }
+              - { label: Image alt text, name: imageAlt, widget: string }
+              - { label: Caption name, name: captionName, widget: string }
+              - { label: Caption title, name: captionTitle, widget: string }
+          - label: Closing call to action
+            name: closing
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Copy, name: copy, widget: text }
+      - label: About
+        name: about
+        file: src/data/about.json
+        fields:
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - { label: Page title, name: title, widget: string }
+              - { label: Meta description, name: description, widget: text }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Intro, name: subheading, widget: text }
+          - label: Overview
+            name: overview
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraphs, name: paragraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - label: Values
+            name: values
+            widget: list
+            fields:
+              - { label: Icon class, name: icon, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Copy, name: copy, widget: text }
+          - label: How we work
+            name: approach
+            widget: list
+            fields:
+              - { label: Number, name: number, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Copy, name: copy, widget: text }
+          - label: Leadership
+            name: leadership
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Copy, name: copy, widget: text }
+          - label: Closing call to action
+            name: closing
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Copy, name: copy, widget: text }
   - label: Staff
     name: practitioners
     folder: src/content/practitioners
@@ -90,15 +176,240 @@ collections:
           - { label: Online, value: online }
       - { label: Feature on linked pages, name: featureOnLinkedPages, widget: boolean, default: true }
       - { label: Feature priority, name: featurePriority, widget: number, value_type: int, min: 1, max: 100, default: 50, hint: "Lower numbers appear first when more than one practitioner matches." }
+  - label: Staff Pages
+    name: staff_pages
+    format: json
+    extension: json
+    files:
+      - label: Dr Ashton Wilson
+        name: ashton
+        file: src/data/ashton.json
+        fields:
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - { label: Page title, name: title, widget: string }
+              - { label: Meta description, name: description, widget: text }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Portrait, name: portrait, widget: image }
+              - { label: Portrait alt text, name: portraitAlt, widget: string }
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Name, name: heading, widget: string }
+              - { label: Role, name: role, widget: text }
+              - { label: Introduction, name: intro, widget: text }
+          - label: Approach
+            name: intro
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraphs, name: paragraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - { label: Clinical interests heading, name: interestsHeading, widget: string }
+          - { label: Clinical interests introduction, name: interestsIntro, widget: text }
+          - label: Clinical interests
+            name: interests
+            widget: list
+            fields:
+              - { label: Icon class, name: icon, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Copy, name: copy, widget: text }
+          - { label: Qualifications, name: qualifications, widget: list, field: { label: Qualification, name: qualification, widget: string } }
+          - label: Personal section
+            name: personal
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Copy, name: copy, widget: text }
+          - label: Closing call to action
+            name: closing
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Copy, name: copy, widget: text }
   - label: Services
     name: services_pages
+    format: json
+    extension: json
     files:
-      - { label: Osteopathy, name: osteopathy_copy, file: content/osteopathy.md, fields: [{ label: Body, name: body, widget: markdown }] }
+      - label: Osteopathy
+        name: osteopathy
+        file: src/data/osteopathy.json
+        fields: &clinical_page_fields
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - { label: Page title, name: title, widget: string }
+              - { label: Meta description, name: description, widget: text }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Intro, name: subheading, widget: text }
+          - label: Introduction section
+            name: intro
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraphs, name: paragraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+              - { label: Image, name: image, widget: image, required: false }
+              - { label: Image alt text, name: imageAlt, widget: string, required: false }
+              - { label: Image caption, name: caption, widget: string, required: false }
+          - { label: Benefits heading, name: benefitsHeading, widget: string }
+          - { label: Benefits introduction, name: benefitsIntro, widget: text }
+          - label: Benefits
+            name: benefits
+            widget: list
+            fields:
+              - { label: Icon class, name: icon, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Copy, name: copy, widget: text }
+          - label: Team section
+            name: team
+            widget: object
+            fields:
+              - { label: Image, name: image, widget: image }
+              - { label: Image alt text, name: imageAlt, widget: string }
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Copy, name: copy, widget: text }
+          - label: FAQs
+            name: faqs
+            widget: list
+            fields:
+              - { label: Question, name: question, widget: string }
+              - { label: Answer, name: answer, widget: text }
+          - label: Closing call to action
+            name: closing
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Copy, name: copy, widget: text }
   - label: Locations
     name: location_pages
+    format: json
+    extension: json
     files:
-      - { label: Newport, name: newport_copy, file: content/newport.md, fields: [{ label: Body, name: body, widget: markdown }] }
+      - label: Newport
+        name: newport
+        file: src/data/newport.json
+        fields:
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - { label: Page title, name: title, widget: string }
+              - { label: Meta description, name: description, widget: text }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Intro, name: subheading, widget: text }
+              - { label: Address, name: address, widget: string }
+              - { label: Clinic image, name: image, widget: image }
+              - { label: Image alt text, name: imageAlt, widget: string }
+              - { label: Google Maps URL, name: mapUrl, widget: string }
+          - label: Introduction section
+            name: intro
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraphs, name: paragraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - label: Team section
+            name: team
+            widget: object
+            fields:
+              - { label: Image, name: image, widget: image }
+              - { label: Image alt text, name: imageAlt, widget: string }
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraphs, name: paragraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - label: Opening hours
+            name: hours
+            widget: list
+            fields:
+              - { label: Day, name: day, widget: string }
+              - { label: Hours, name: time, widget: string }
+          - label: FAQs
+            name: faqs
+            widget: list
+            fields:
+              - { label: Question, name: question, widget: string }
+              - { label: Answer, name: answer, widget: text }
+          - label: Closing call to action
+            name: closing
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Copy, name: copy, widget: text }
   - label: Conditions
     name: condition_pages
+    format: json
+    extension: json
     files:
-      - { label: Knee pain, name: knee_pain_copy, file: content/knee-pain.md, fields: [{ label: Body, name: body, widget: markdown }] }
+      - label: Knee pain
+        name: knee_pain
+        file: src/data/knee-pain.json
+        fields:
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - { label: Page title, name: title, widget: string }
+              - { label: Meta description, name: description, widget: text }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Intro, name: subheading, widget: text }
+          - label: Urgent-care notice
+            name: urgent
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Copy, name: copy, widget: text }
+              - { label: Link label, name: linkLabel, widget: string }
+              - { label: Link URL, name: linkUrl, widget: string }
+          - label: Pain regions
+            name: regions
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Trigger summary, name: kicker, widget: string }
+              - { label: Copy, name: copy, widget: text }
+          - label: Treatment process
+            name: process
+            widget: list
+            fields:
+              - { label: Number, name: number, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Copy, name: copy, widget: text }
+          - label: FAQs
+            name: faqs
+            widget: list
+            fields:
+              - { label: Question, name: question, widget: string }
+              - { label: Answer, name: answer, widget: text }
+          - label: Closing call to action
+            name: closing
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Copy, name: copy, widget: text }

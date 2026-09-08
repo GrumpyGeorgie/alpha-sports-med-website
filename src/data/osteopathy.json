@@ -1,0 +1,26 @@
+{
+  "seo": {"title": "Osteopath Melbourne | Alpha Sports Medicine", "description": "Hands-on osteopathy plus a practical rehab plan. AHPRA-registered osteopaths across Melbourne's west. No referral needed—book online."},
+  "hero": {"eyebrow": "Alpha Sports Medicine · Osteopathy", "heading": "Osteopathy in Melbourne to keep you moving", "subheading": "Hands-on osteopathic treatment, plus a rehabilitation plan to back it up—so you can get on with your training, your sport and your life."},
+  "intro": {"eyebrow": "Your recovery team", "heading": "Is an osteo on your recovery team?", "paragraphs": ["Whether you are chasing a personal best, getting back into the gym or simply want to move through your day without something nagging at you, an osteopath can help you work towards that goal.", "If an issue keeps returning after you thought it was sorted, it is worth looking at properly. We start by understanding the whole picture, not just the sore spot."], "image": "/assets/images/locations/hawthorn-clinic.jpg", "imageAlt": "Alpha Sports Medicine practitioner providing hands-on treatment", "caption": "Hands-on care with a practical next step"},
+  "explainer": {"eyebrow": "Plain-language care", "heading": "What is osteopathy?", "paragraphs": ["Osteopathy is a hands-on form of healthcare focused on the musculoskeletal system: your joints, muscles, ligaments and the connective tissue around them. In Australia, osteopaths are registered through AHPRA and complete five years of university training.", "Your body does not move as a set of separate parts. Load travels. A restricted hip may change how your lower back works; a stiff upper back may contribute to an overloaded neck. That is why your osteopath assesses more than the area that hurts.", "Treatment may include soft-tissue techniques, joint mobilisation, stretching and—where appropriate and with your consent—dry needling or manipulation. The aim is to pair treatment with a plan that supports the movement and capacity you need outside the clinic."]},
+  "benefitsHeading": "The Alpha osteo difference",
+  "benefitsIntro": "What happens on either side of the treatment table matters just as much as the hands-on care.",
+  "benefits": [
+    {"icon":"fa-comments","title":"We take the time","copy":"We start with your history, what you have tried and what you want to get back to."},
+    {"icon":"fa-search","title":"We look wider","copy":"Your assessment considers the painful area and how the regions around it may contribute."},
+    {"icon":"fa-clipboard-list","title":"You leave with a plan","copy":"Hands-on care is paired with practical exercises shaped around your life."},
+    {"icon":"fa-dumbbell","title":"We build you back up","copy":"Rehabilitation and strength support are available within the wider Alpha team."},
+    {"icon":"fa-sync-alt","title":"We re-test","copy":"We review how you move and respond, then adapt the plan with you."},
+    {"icon":"fa-user-check","title":"You stay in control","copy":"Every option is explained first; firmer techniques are consent-led and optional."}
+  ],
+  "team": {"image":"/assets/images/team/ashton-wilson.jpg","imageAlt":"Dr Ashton Wilson, osteopath at Alpha Sports Medicine","eyebrow":"Our osteopaths","heading":"Osteopathy is where Alpha started","copy":"Alpha was founded by osteopaths Dr Ashton Wilson and Dr Will Krithararis. They have built a multidisciplinary team around a shared approach: listen properly, explain clearly and connect hands-on care with meaningful rehabilitation."},
+  "faqs": [
+    {"question":"Do I need a referral?","answer":"No. You can book an osteopath directly without a GP referral."},
+    {"question":"Can I claim on private health?","answer":"Osteopathy may be covered when your extras policy includes it. On-site claiming is available; check your cover with your fund."},
+    {"question":"Is osteopathy safe, and does it hurt?","answer":"Osteopathy is generally low-risk when provided by a registered practitioner. Some techniques feel firm, so your osteopath will explain options and check in throughout."},
+    {"question":"Do osteopaths “crack” backs?","answer":"Joint manipulation is one option among many. It is only used when appropriate, discussed with you and consented to. You can always choose not to have it."},
+    {"question":"How many appointments will I need?","answer":"That depends on your presentation and response. Your osteopath will review progress with you rather than prescribe a fixed number upfront."},
+    {"question":"Can I see an osteopath while pregnant?","answer":"Care can be adapted during pregnancy, taking your stage, history and comfort into account and coordinating with your maternity team when needed."}
+  ],
+  "closing": {"eyebrow":"Your next step","heading":"Get support from a team that is on your side","copy":"Together, we can work out what is going on and build a plan around the way you want to move and live."}
+}
