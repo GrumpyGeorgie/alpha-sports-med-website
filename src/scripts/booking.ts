@@ -38,6 +38,7 @@ function render(focus = false) {
   get('appointment-filters').hidden = staffOnly;
   get('level-filter').hidden = levels.length < 2;
   get('level-help').hidden = levels.length < 2;
+  if (levels.length < 2) { get('level-explanation').hidden = true; get('level-info-toggle').setAttribute('aria-expanded', 'false'); }
   get('staff-help').hidden = !staffOnly;
   get('staff-results-heading').hidden = staffOnly || !staff.length;
   get('no-results').hidden = Boolean(visible.length || staff.length);
@@ -47,7 +48,7 @@ function render(focus = false) {
   if (focus) get(showResults ? 'results-heading' : path === 'home' ? 'start-heading' : 'category-heading').focus();
 }
 function reset() {
-  path = 'home'; category = ''; patient = 'all'; level = ''; search.value = ''; render();
+  path = 'home'; category = ''; patient = 'all'; level = ''; search.value = ''; render(true);
 }
 document.querySelectorAll<HTMLButtonElement>('[data-path]').forEach(button => button.addEventListener('click', () => {
   path = button.dataset.path as typeof path; category = ''; level = '';
@@ -65,3 +66,9 @@ search.addEventListener('keydown', event => { if (event.key === 'Escape') { sear
 patientButtons.forEach(button => button.addEventListener('click', () => { patient = button.dataset.patient as Patient; if (category && !search.value.trim()) path = patient === 'all' ? 'home' : patient; level = ''; render(); }));
 levelSelect.addEventListener('change', () => { level = levelSelect.value; render(); });
 render();
+
+get('level-info-toggle').addEventListener('click', () => {
+  const panel = get('level-explanation');
+  panel.hidden = !panel.hidden;
+  get('level-info-toggle').setAttribute('aria-expanded', String(!panel.hidden));
+});

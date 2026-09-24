@@ -35,11 +35,7 @@ const asap = data.appointments.find(a => a.category === 'asap')!;
             <h1>Find your appointment.<br /><span>Get back to you.</span></h1>
             <p class="hero-intro">Know who you want to see? Search below.<br class="desktop-break" /> Need a little guidance? We’ll help you find a starting point.</p>
           </div>
-          <div class="hero-aside">
-            <span class="aside-number" aria-hidden="true">01 / 02</span>
-            <p><strong>Find your appointment here.</strong><br />Choose your location and time in Cliniko.</p>
-            <div class="clinic-list">Newport · Ascot Vale<br />Hawthorn · Bacchus Marsh</div>
-          </div>
+
         </div>
       </section>
       <div class="booking-wrap booking-content" id="booking">
@@ -55,8 +51,8 @@ const asap = data.appointments.find(a => a.category === 'asap')!;
         <div id="wizard">
           <div class="flow-toolbar" hidden id="flow-toolbar">
             <button type="button" id="flow-back">← Back</button>
+            <button type="button" id="flow-reset"><span aria-hidden="true">↻</span> Start again</button>
             <p id="flow-trail"></p>
-            <button type="button" id="flow-reset">Start again</button>
           </div>
           <section id="start-options" aria-labelledby="start-heading">
             <div class="section-label"><span>LET’S MAKE IT SIMPLE</span><span class="section-rule"></span></div>
@@ -80,7 +76,16 @@ const asap = data.appointments.find(a => a.category === 'asap')!;
           <div class="results-heading-row"><div><p id="results-eyebrow" class="booking-eyebrow light-eyebrow">YOUR BOOKING OPTIONS</p><h2 id="results-heading" tabindex="-1">Appointments</h2></div><p id="result-count" role="status" aria-live="polite" aria-atomic="true"></p></div>
           <div id="appointment-filters" class="appointment-filters">
             <fieldset><legend>Appointment</legend><div class="segmented">{[['all','All'],['new','First visit'],['return','Return visit']].map(([value,label])=><button type="button" data-patient={value} aria-pressed={value==='all'?'true':'false'}>{label}</button>)}</div></fieldset>
-            <div id="level-filter" hidden><label for="practitioner-level">Practitioner level</label><select id="practitioner-level"><option value="">All levels</option><option>Associate</option><option>Senior</option><option>Director</option></select></div>
+            <div id="level-filter" hidden><div class="level-label-row"><label for="practitioner-level">Practitioner level</label><button type="button" id="level-info-toggle" aria-label="About practitioner levels" aria-expanded="false" aria-controls="level-explanation"><span aria-hidden="true">i</span></button></div><select id="practitioner-level"><option value="">All levels</option><option>Associate</option><option>Senior</option><option>Director</option></select></div>
+          </div>
+          <div id="level-explanation" class="level-explanation" hidden>
+            <h3>What do the practitioner levels mean?</h3>
+            <dl>
+              <div><dt>Associate</dt><dd>Alpha’s base practitioner fee tier.</dd></div>
+              <div><dt>Senior</dt><dd>Practitioners with 5+ years of experience.</dd></div>
+              <div><dt>Director</dt><dd>Appointments with clinic directors Dr Ashton Wilson or Dr William Krithararis.</dd></div>
+            </dl>
+            <p>Available practitioners and fees depend on the appointment. You can check these in Cliniko before booking, or book a free call if you’re unsure.</p>
           </div>
           <p id="level-help" class="results-note" hidden>Choose from the practitioner levels available for this appointment. Fees and availability are shown in Cliniko.</p>
           <p id="staff-help" class="results-note" hidden>Choose your practitioner below. Cliniko will show their locations, appointment types and available times.</p>
