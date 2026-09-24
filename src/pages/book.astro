@@ -1,0 +1,115 @@
+---
+import data from '../data/bookings.json';
+import home from '../data/home.json';
+import '../styles/booking.css';
+const call = data.appointments.find(a => a.id === '1391529387089724965')!;
+const asap = data.appointments.find(a => a.category === 'asap')!;
+---
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book an appointment | Alpha Sports Medicine</title>
+    <meta name="description" content="Find your Alpha Sports Medicine appointment. Search by practitioner, treatment or focus area, then book your time and location in Cliniko." />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="/assets/images/alpha-icon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body class="booking-page">
+    <a class="skip-link" href="#booking">Skip to booking options</a>
+    <header class="booking-header">
+      <div class="booking-wrap header-inner">
+        <img src="/assets/images/alpha-logo-lockup.webp" width="218" height="60" alt="Alpha Sports Medicine" />
+        <a href={home.site.phoneHref} class="phone-link"><span>Need a hand?</span> {home.site.phoneDisplay}</a>
+      </div>
+    </header>
+    <main>
+      <section class="booking-hero">
+        <div class="booking-wrap hero-layout">
+          <div>
+            <p class="booking-eyebrow">YOUR NEXT STEP STARTS HERE</p>
+            <h1>Find your appointment.<br /><span>Get back to you.</span></h1>
+            <p class="hero-intro">Know who you want to see? Search below.<br class="desktop-break" /> Need a little guidance? We’ll help you find a starting point.</p>
+          </div>
+          <div class="hero-aside">
+            <span class="aside-number" aria-hidden="true">01 / 02</span>
+            <p><strong>Find your appointment here.</strong><br />Choose your location and time in Cliniko.</p>
+            <div class="clinic-list">Newport · Ascot Vale<br />Hawthorn · Bacchus Marsh</div>
+          </div>
+        </div>
+      </section>
+      <div class="booking-wrap booking-content" id="booking">
+        <section class="search-panel" aria-label="Search bookings">
+          <label for="booking-search">Already know what you’re looking for?</label>
+          <div class="search-input-wrap">
+            <svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+            <input id="booking-search" type="search" placeholder="Try “William”, “physio” or “running assessment”" autocomplete="off" aria-describedby="search-hint" aria-controls="results" />
+            <button id="clear-search" type="button" hidden>Clear</button>
+          </div>
+          <p id="search-hint">Search by practitioner, treatment or appointment. Booking links open Cliniko in a new tab <span aria-hidden="true">↗</span></p>
+        </section>
+        <div id="wizard">
+          <div class="flow-toolbar" hidden id="flow-toolbar">
+            <button type="button" id="flow-back">← Back</button>
+            <p id="flow-trail"></p>
+            <button type="button" id="flow-reset">Start again</button>
+          </div>
+          <section id="start-options" aria-labelledby="start-heading">
+            <div class="section-label"><span>LET’S MAKE IT SIMPLE</span><span class="section-rule"></span></div>
+            <h2 id="start-heading" tabindex="-1">How would you like to book?</h2>
+            <p class="section-intro">Choose a path. We’ll take it one step at a time.</p>
+            <div class="path-grid">
+              <button class="path-card" type="button" data-path="new"><span class="card-icon" aria-hidden="true">＋</span><h3>I’m a new patient</h3><p>Find your first appointment by treatment or focus area.</p><span class="card-bottom">Let’s get started <span aria-hidden="true">→</span></span></button>
+              <button class="path-card" type="button" data-path="return"><span class="card-icon" aria-hidden="true">↻</span><h3>I’m coming back</h3><p>Find a return appointment for the care you’re continuing.</p><span class="card-bottom">Find a return visit <span aria-hidden="true">→</span></span></button>
+              <button class="path-card" type="button" data-path="staff"><span class="card-icon" aria-hidden="true">◎</span><h3>Book by practitioner</h3><p>Know who you want to see? Go straight to their bookings.</p><span class="card-bottom">Choose your practitioner <span aria-hidden="true">→</span></span></button>
+              <a class="path-card asap-card" href={asap.url} target="_blank" rel="noopener noreferrer"><span class="card-icon" aria-hidden="true">↗</span><h3>I need someone ASAP</h3><p>A return appointment with any available practitioner.</p><span class="card-bottom">Existing patients only <span aria-hidden="true">↗</span></span><span class="sr-only">Opens Cliniko in a new tab</span></a>
+            </div>
+          </section>
+          <section id="category-options" aria-labelledby="category-heading">
+            <div class="category-heading-row"><div><p class="booking-eyebrow light-eyebrow">EXPLORE YOUR OPTIONS</p><h2 id="category-heading" tabindex="-1">Or browse by what you need</h2></div><p id="category-context">First and return appointments</p></div>
+            <div class="category-columns">
+              {['treatment','focus'].map(group => <div><h3 class="category-group-title">{group === 'treatment' ? 'By treatment' : 'By focus area'}</h3><div class="category-grid">{data.categories.filter(c => c.group === group).map(c => <button type="button" class="category-button" data-category={c.id}><span>{c.label}</span><span aria-hidden="true">→</span></button>)}</div></div>)}
+            </div>
+          </section>
+        </div>
+        <section id="results" hidden aria-labelledby="results-heading">
+          <div class="results-heading-row"><div><p id="results-eyebrow" class="booking-eyebrow light-eyebrow">YOUR BOOKING OPTIONS</p><h2 id="results-heading" tabindex="-1">Appointments</h2></div><p id="result-count" role="status" aria-live="polite" aria-atomic="true"></p></div>
+          <div id="appointment-filters" class="appointment-filters">
+            <fieldset><legend>Appointment</legend><div class="segmented">{[['all','All'],['new','First visit'],['return','Return visit']].map(([value,label])=><button type="button" data-patient={value} aria-pressed={value==='all'?'true':'false'}>{label}</button>)}</div></fieldset>
+            <div id="level-filter" hidden><label for="practitioner-level">Practitioner level</label><select id="practitioner-level"><option value="">All levels</option><option>Associate</option><option>Senior</option><option>Director</option></select></div>
+          </div>
+          <p id="level-help" class="results-note" hidden>Choose from the practitioner levels available for this appointment. Fees and availability are shown in Cliniko.</p>
+          <p id="staff-help" class="results-note" hidden>Choose your practitioner below. Cliniko will show their locations, appointment types and available times.</p>
+          <div id="no-results" class="empty-state" hidden><h3>No matching bookings</h3><p>Try a practitioner’s first name or a treatment such as “osteopathy”. You can also change the filters or book a free call below.</p><button type="button" id="reset-results">Show all booking options</button></div>
+          <div class="results-grid" id="appointment-results">
+            {data.appointments.map(a => <a class="appointment-card" data-appointment={a.id} href={a.url} target="_blank" rel="noopener noreferrer" hidden>
+              <div class="appointment-tags"><span>{a.patient==='return'?'Existing patients':a.patient==='new'?'First visit':'Appointment'}</span>{a.level && <span class="level-tag">{a.level}</span>}</div>
+              <h3>{a.label}</h3>
+              {a.locations.length > 0 && <p class="appointment-location">{a.locations.join(' · ')}</p>}
+              <div class="appointment-bottom"><span>{a.price ? <><strong class="price">${a.price}</strong><span class="fee-note">Confirm fee in Cliniko</span></> : a.category==='call' ? <strong>Free · 15 minutes</strong> : 'View times & fees'}</span><span class="book-link">Book <span aria-hidden="true">↗</span></span></div>
+              <span class="sr-only">Opens Cliniko in a new tab</span>
+            </a>)}
+          </div>
+          <h3 id="staff-results-heading" class="staff-results-heading" hidden>Practitioners</h3>
+          <div class="staff-grid" id="staff-results">
+            {data.practitioners.map(p => <a class="staff-card" data-practitioner={p.id} href={p.url} target="_blank" rel="noopener noreferrer" hidden><img src={p.image} alt="" width="68" height="68" loading="lazy" /><span><strong>{p.name}</strong><span>View appointments</span></span><span class="staff-arrow" aria-hidden="true">↗</span><span class="sr-only">Opens Cliniko in a new tab</span></a>)}
+          </div>
+        </section>
+        <aside class="call-panel">
+          <div class="call-symbol" aria-hidden="true">?</div><div><p class="booking-eyebrow light-eyebrow">A LITTLE GUIDANCE GOES A LONG WAY</p><h2>Not sure who to see?</h2><p>Have a free 15-minute call with a practitioner to talk through your next step.</p></div>
+          <a class="call-button" href={call.url} target="_blank" rel="noopener noreferrer">Book a free call <span aria-hidden="true">↗</span><span class="sr-only">Opens Cliniko in a new tab</span></a>
+        </aside>
+        <noscript><p class="no-script">The guided search needs JavaScript. <a href="https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings" target="_blank" rel="noopener noreferrer">View all appointments in Cliniko ↗ (opens in a new tab)</a>, or use the free call link above.</p></noscript>
+        <p class="booking-reassurance">Your appointment is completed in Cliniko. This page helps you find the right booking link.</p>
+      </div>
+    </main>
+    <footer class="booking-footer"><div class="booking-wrap"><p>© {new Date().getFullYear()} Alpha Sports Medicine</p><p>Newport · Ascot Vale · Hawthorn · Bacchus Marsh</p></div></footer>
+    <script>
+      import '../scripts/booking';
+    </script>
+  </body>
+</html>

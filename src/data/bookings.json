@@ -1,0 +1,708 @@
+{
+  "source": "https://docs.google.com/spreadsheets/d/1dnWaKnxeFewdszJTl3ixnidkNAENUKEcUeUIJSVrop8/edit",
+  "categories": [
+    {
+      "id": "osteopathy",
+      "label": "Osteopathy",
+      "group": "treatment",
+      "aliases": "osteo osteopath"
+    },
+    {
+      "id": "physiotherapy",
+      "label": "Physiotherapy",
+      "group": "treatment",
+      "aliases": "physio physiotherapist"
+    },
+    {
+      "id": "chiropractic",
+      "label": "Chiropractic",
+      "group": "treatment",
+      "aliases": "chiro chiropractor"
+    },
+    {
+      "id": "dietetics",
+      "label": "Dietetics",
+      "group": "treatment",
+      "aliases": "dietician dietitian nutrition"
+    },
+    {
+      "id": "exercise-physiology",
+      "label": "Exercise physiology",
+      "group": "treatment",
+      "aliases": "exercise rehab rehabilitation"
+    },
+    {
+      "id": "myotherapy",
+      "label": "Myotherapy",
+      "group": "treatment",
+      "aliases": "myotherapist massage"
+    },
+    {
+      "id": "running",
+      "label": "Running assessments",
+      "group": "focus",
+      "aliases": "runner runners running assessment treatment"
+    },
+    {
+      "id": "hypermobility",
+      "label": "Hypermobility",
+      "group": "focus",
+      "aliases": "hypermobile eds hsd"
+    },
+    {
+      "id": "concussion",
+      "label": "Concussion",
+      "group": "focus",
+      "aliases": "baseline head injury"
+    },
+    {
+      "id": "lymphatic",
+      "label": "Manual lymphatic drainage",
+      "group": "focus",
+      "aliases": "mld lymph lymphatic drainage"
+    },
+    {
+      "id": "lipoedema",
+      "label": "Lipoedema",
+      "group": "focus",
+      "aliases": "lipedema"
+    },
+    {
+      "id": "pregnancy",
+      "label": "Pregnancy & paediatrics",
+      "group": "focus",
+      "aliases": "pregnant paediatric pediatric children child baby"
+    },
+    {
+      "id": "pilates",
+      "label": "Pilates",
+      "group": "focus",
+      "aliases": "one to one 1:1"
+    },
+    {
+      "id": "online",
+      "label": "Online consultations",
+      "group": "focus",
+      "aliases": "telehealth virtual online"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "1731450674480154130",
+      "label": "ASAP appointment any practitioner",
+      "sourceLabel": "ASAP appointment any practitioner",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1731450674480154130",
+      "category": "asap",
+      "patient": "return",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "2025106687471387668",
+      "label": "Chiropractic \u2014 Initial consult (senior)",
+      "sourceLabel": "Chiro - Initial consult (senior)",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=2025106687471387668",
+      "category": "chiropractic",
+      "patient": "new",
+      "level": "Senior",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1649740251293287871",
+      "label": "Chiropractic \u2014 Return consult (senior)",
+      "sourceLabel": "Chiro - Return consult (senior)",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1649740251293287871",
+      "category": "chiropractic",
+      "patient": "return",
+      "level": "Senior",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1085770670555530334",
+      "label": "Concussion - baseline testing",
+      "sourceLabel": "Concussion - baseline testing",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1085770670555530334",
+      "category": "concussion",
+      "patient": "both",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1400398642992383215",
+      "label": "Concussion - Initial assessment",
+      "sourceLabel": "Concussion - Initial assessment",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1400398642992383215",
+      "category": "concussion",
+      "patient": "new",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1400401954965816560",
+      "label": "Concussion - post concussion management",
+      "sourceLabel": "Concussion - post concussion management",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1400401954965816560",
+      "category": "concussion",
+      "patient": "return",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1830921055888213287",
+      "label": "Dietetics \u2014 Initial consult",
+      "sourceLabel": "Dietician - Initial consult",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1830921055888213287",
+      "category": "dietetics",
+      "patient": "new",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1830921765153408298",
+      "label": "Dietetics \u2014 Follow up consult",
+      "sourceLabel": "Dietician - Follow up consult",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1830921765153408298",
+      "category": "dietetics",
+      "patient": "return",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1300984187905378090",
+      "label": "First Exercise Physiology",
+      "sourceLabel": "First Exercise Physiology",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1300984187905378090",
+      "category": "exercise-physiology",
+      "patient": "new",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1300985157804623659",
+      "label": "Return physiotherapylogy session",
+      "sourceLabel": "Return Physiology session",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1300985157804623659",
+      "category": "exercise-physiology",
+      "patient": "return",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1836556250398066047",
+      "label": "Free 15 min call with Alex (dietician)",
+      "sourceLabel": "Free 15 min call with Alex (dietician)",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1836556250398066047",
+      "category": "call",
+      "patient": "both",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1391529387089724965",
+      "label": "Free 15 min call with practitioner",
+      "sourceLabel": "Free 15 min call with practitioner",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1391529387089724965",
+      "category": "call",
+      "patient": "both",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "852276732374287838",
+      "label": "Hypermobility new patient",
+      "sourceLabel": "Hypermobile new patient",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=852276732374287838",
+      "category": "hypermobility",
+      "patient": "new",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1299494720585598328",
+      "label": "Hypermobility return patient",
+      "sourceLabel": "Hypermobile return patient",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1299494720585598328",
+      "category": "hypermobility",
+      "patient": "return",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "448262",
+      "label": "Senior Practitioner: Initial Hypermobility Consult with Dr Ashton Wilson",
+      "sourceLabel": "Senior Practitioner: Initial Hypermobility Consult with Dr Ashton Wilson",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=448262",
+      "category": "hypermobility",
+      "patient": "new",
+      "level": "Senior",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1731446097194255887",
+      "label": "Senior Practitioner: Follow up Consult with Dr Ashton Wilson",
+      "sourceLabel": "Senior Practitioner: Follow up Consult with Dr Ashton Wilson",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1731446097194255887",
+      "category": "hypermobility",
+      "patient": "return",
+      "level": "Senior",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "2001145700523443529",
+      "label": "Lipoedema Consultation",
+      "sourceLabel": "Lipoedema Consultation",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=2001145700523443529",
+      "category": "lipoedema",
+      "patient": "both",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1938037484533319062",
+      "label": "Manual lymphatic drainage \u2014 extended appointment",
+      "sourceLabel": "MLD extended appointment",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1938037484533319062",
+      "category": "lymphatic",
+      "patient": "both",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "267375",
+      "label": "First Osteopathy Consult - Associate",
+      "sourceLabel": "First Osteopathy Consult - Associate",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=267375",
+      "category": "osteopathy",
+      "patient": "new",
+      "level": "Associate",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1253970401101350035",
+      "label": "First Osteopathy Consult - Senior Osteopath (5+ years)",
+      "sourceLabel": "First Osteopathy Consult - Senior Osteopath (5+ years)",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1253970401101350035",
+      "category": "osteopathy",
+      "patient": "new",
+      "level": "Senior",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "2034024309554415571",
+      "label": "First Osteopathy Appointment - With Director Dr. William Krithararis",
+      "sourceLabel": "First Osteopathy Appointment - With Director Dr. William Krithararis",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=2034024309554415571",
+      "category": "osteopathy",
+      "patient": "new",
+      "level": "Director",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "541684",
+      "label": "Extended Return Osteopathy Consult (60mins)",
+      "sourceLabel": "Extended Return Osteopathy Consult (60mins)",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=541684",
+      "category": "osteopathy",
+      "patient": "return",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "267374",
+      "label": "Return Osteopathy Consult - Associate",
+      "sourceLabel": "Return Osteopathy Consult - Associate",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=267374",
+      "category": "osteopathy",
+      "patient": "return",
+      "level": "Associate",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "335581",
+      "label": "Return Osteopathy Consult - Senior Practitioner (5+ years)",
+      "sourceLabel": "Return Osteopathy Consult - Senior Practitioner (5+ years)",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=335581",
+      "category": "osteopathy",
+      "patient": "return",
+      "level": "Senior",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1391533340472903207",
+      "label": "Return Osteopathy Consult with Director - Dr Ashton Wilson",
+      "sourceLabel": "Return Osteopathy Consult with Director - Dr Ashton Wilson",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1391533340472903207",
+      "category": "osteopathy",
+      "patient": "return",
+      "level": "Director",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1857798007257302085",
+      "label": "Return Osteopathy Consult with Director - Dr William Krithararis",
+      "sourceLabel": "Return Osteopathy Consult with Director - Dr William Krithararis",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1857798007257302085",
+      "category": "osteopathy",
+      "patient": "return",
+      "level": "Director",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "479980",
+      "label": "First physiotherapy Consult - Senior Practitioner",
+      "sourceLabel": "First Physio Consult - Senior Practitioner",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=479980",
+      "category": "physiotherapy",
+      "patient": "new",
+      "level": "Senior",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "479981",
+      "label": "Return physiotherapy Consult - Senior Practitioner",
+      "sourceLabel": "Return Physio Consult - Senior Practitioner",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=479981",
+      "category": "physiotherapy",
+      "patient": "return",
+      "level": "Senior",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "538388",
+      "label": "Return physiotherapy Extended with Senior Physio",
+      "sourceLabel": "Return Physio Extended with Senior Physio",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=538388",
+      "category": "physiotherapy",
+      "patient": "return",
+      "level": "Senior",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1620580991682741940",
+      "label": "Pilates - 1:1",
+      "sourceLabel": "Pilates - 1:1",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1620580991682741940",
+      "category": "pilates",
+      "patient": "both",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1624952540510553447",
+      "label": "Initial Paediatric Appointment",
+      "sourceLabel": "Initial Paediatric Appointment",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1624952540510553447",
+      "category": "pregnancy",
+      "patient": "new",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1624947024531031394",
+      "label": "Initial Pregnancy Appointment",
+      "sourceLabel": "Initial Pregnancy Appointment",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1624947024531031394",
+      "category": "pregnancy",
+      "patient": "new",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1624950300047574373",
+      "label": "Return Pregnancy Consult",
+      "sourceLabel": "Return Pregnancy Consult",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1624950300047574373",
+      "category": "pregnancy",
+      "patient": "return",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1435914119780763200",
+      "label": "Myotherapy Appointment (60)",
+      "sourceLabel": "Myotherapy Appointment (60)",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1435914119780763200",
+      "category": "myotherapy",
+      "patient": "both",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1435915348686669377",
+      "label": "Myotherapy Appointment (90)",
+      "sourceLabel": "Myotherapy Appointment (90)",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1435915348686669377",
+      "category": "myotherapy",
+      "patient": "both",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1476533830453036632",
+      "label": "Initial running assessment \u2014 practitioner team",
+      "sourceLabel": "Initial Runners Assessment & Treatment",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1476533830453036632",
+      "category": "running",
+      "patient": "new",
+      "level": "",
+      "price": 210,
+      "locations": [
+        "Newport",
+        "Ascot Vale"
+      ],
+      "aliases": ""
+    },
+    {
+      "id": "1857784117802828867",
+      "label": "Initial running assessment \u2014 Dr William Krithararis",
+      "sourceLabel": "Initial Runners Assessment & Treatment",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1857784117802828867",
+      "category": "running",
+      "patient": "new",
+      "level": "Director",
+      "price": 250,
+      "locations": [
+        "Ascot Vale",
+        "Hawthorn"
+      ],
+      "aliases": "will william"
+    },
+    {
+      "id": "1085769854100702301",
+      "label": "Return Running Assessment & Treatment",
+      "sourceLabel": "Return Running Assessment & Treatment",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1085769854100702301",
+      "category": "running",
+      "patient": "return",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "2030308101567022441",
+      "label": "Return Running Assessment & Treatment with Director - Dr William Krithararis",
+      "sourceLabel": "Return Running Assessment & Treatment with Director - Dr William Krithararis",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=2030308101567022441",
+      "category": "running",
+      "patient": "return",
+      "level": "Director",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1857799024216638534",
+      "label": "Return Running Assessment & Treatment with Director - Dr William Krithararis (Extended)",
+      "sourceLabel": "Return Running Assessment & Treatment with Director - Dr William Krithararis (Extended)",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1857799024216638534",
+      "category": "running",
+      "patient": "return",
+      "level": "Director",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1574513176014227345",
+      "label": "Check-In Online Consult",
+      "sourceLabel": "Check-In Online Consult",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1574513176014227345",
+      "category": "online",
+      "patient": "return",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    },
+    {
+      "id": "1511148738104526480",
+      "label": "In-Depth Online Hypermobility Consult",
+      "sourceLabel": "In-Depth Online Hypermobility Consult",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1511148738104526480",
+      "category": "online",
+      "patient": "both",
+      "level": "",
+      "price": null,
+      "locations": [],
+      "aliases": ""
+    }
+  ],
+  "practitioners": [
+    {
+      "id": "91847",
+      "name": "Ashton Wilson",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?practitioner_id=91847",
+      "image": "/assets/images/team/ashton-wilson.jpg",
+      "aliases": ""
+    },
+    {
+      "id": "108771",
+      "name": "Matthew O'Neill",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?practitioner_id=108771",
+      "image": "/assets/images/team/matt-oneill.jpg",
+      "aliases": "matt oneill"
+    },
+    {
+      "id": "115387",
+      "name": "Caitlin O'Farrell",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?practitioner_id=115387",
+      "image": "/assets/images/team/caitlin-ofarrell.jpg",
+      "aliases": "ofarrell"
+    },
+    {
+      "id": "152932",
+      "name": "William Krithararis",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?practitioner_id=152932",
+      "image": "/assets/images/team/will-krithararis.jpg",
+      "aliases": "will"
+    },
+    {
+      "id": "1097305613328712709",
+      "name": "Christina Kripintiris",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?practitioner_id=1097305613328712709",
+      "image": "/assets/images/team/christina-kripintiris.jpg",
+      "aliases": ""
+    },
+    {
+      "id": "1237898519075882281",
+      "name": "Lara Trevorrow",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?practitioner_id=1237898519075882281",
+      "image": "/assets/images/team/lara-trevorrow.jpg",
+      "aliases": ""
+    },
+    {
+      "id": "1300980378470712344",
+      "name": "Jordan Tripodi",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?practitioner_id=1300980378470712344",
+      "image": "/assets/images/team/jordan-tripodi.jpg",
+      "aliases": ""
+    },
+    {
+      "id": "1393123637367669916",
+      "name": "Wei Song",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?practitioner_id=1393123637367669916",
+      "image": "/assets/images/team/wei-song.png",
+      "aliases": ""
+    },
+    {
+      "id": "1475733870539179375",
+      "name": "Disha Ganglani",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?practitioner_id=1475733870539179375",
+      "image": "/assets/images/team/disha-ganglani.jpg",
+      "aliases": ""
+    },
+    {
+      "id": "1475825994987210106",
+      "name": "Patricia Macandog",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?practitioner_id=1475825994987210106",
+      "image": "/assets/images/team/patricia-macandog.jpg",
+      "aliases": ""
+    },
+    {
+      "id": "1609671425239549612",
+      "name": "Felicity Lorimer",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?practitioner_id=1609671425239549612",
+      "image": "/assets/images/team/felicity-lorimer.png",
+      "aliases": ""
+    },
+    {
+      "id": "1649737812154517006",
+      "name": "Nick Naimo",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?practitioner_id=1649737812154517006",
+      "image": "/assets/images/team/nick-naimo.png",
+      "aliases": ""
+    },
+    {
+      "id": "1726560833367967019",
+      "name": "Oscar Taylor",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?practitioner_id=1726560833367967019",
+      "image": "/assets/images/team/oscar-taylor.png",
+      "aliases": ""
+    },
+    {
+      "id": "1770213842027022246",
+      "name": "Anna Lawther",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?practitioner_id=1770213842027022246",
+      "image": "/assets/images/team/anna-lawther.png",
+      "aliases": ""
+    },
+    {
+      "id": "1830918517411546174",
+      "name": "Alexandra Clay",
+      "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?practitioner_id=1830918517411546174",
+      "image": "/assets/images/team/alexandra-clay.png",
+      "aliases": "alex"
+    }
+  ]
+}

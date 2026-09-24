@@ -1,0 +1,114 @@
+.booking-page [hidden] { display: none !important; }
+.booking-page { background: #f7f8f9; }
+.booking-page .booking-wrap { max-width: 1160px; padding-inline: 32px; margin-inline: auto; }
+.booking-page :is(a,button,input,select):focus-visible { outline: 3px solid #b53a11; outline-offset: 4px; }
+.booking-page :is(h2,h3)[tabindex]:focus { outline: none; }
+.booking-page .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.skip-link { position: absolute; top: -100px; left: 20px; z-index: 10; background: white; padding: 12px; }
+.skip-link:focus { top: 10px; }
+.booking-header { background: var(--color-navy); border-bottom: 1px solid #3b4d58; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 100px; gap: 20px; }
+.header-inner img { width: 218px; height: auto; }
+.phone-link { font-size: 17px; font-weight: 600; color: #fff; }
+.phone-link span { font-weight: 400; color: #b8c5cd; margin-right: 14px; }
+.booking-hero { background: var(--color-navy); color: #e0e6eb; padding: 62px 0 90px; }
+.hero-layout { display: grid; grid-template-columns: 1fr 280px; gap: 64px; align-items: center; }
+.booking-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .15em; color: #ff916b; margin-bottom: 16px; }
+.booking-hero h1 { font-size: clamp(34px,4vw,52px); letter-spacing: -.04em; line-height: 1.12; color: #fff; }
+.booking-hero h1 span { color: #ff916b; }
+.hero-intro { font-size: 18px; line-height: 1.55; margin-top: 24px; max-width: 570px; }
+.hero-aside { padding-left: 32px; border-left: 1px solid #4e5a62; font-size: 16px; }
+.aside-number { display: block; font-size: 12px; letter-spacing: .14em; color: #aebcc5; margin-bottom: 20px; }
+.hero-aside strong { color: white; font-weight: 600; }
+.clinic-list { margin-top: 24px; font-size: 14px; color: #b8c5cd; }
+.booking-content { padding-bottom: 48px; }
+.search-panel { position: relative; margin-top: -38px; background: #fff; border: 1px solid var(--color-border); border-radius: 12px; padding: 25px 30px 19px; box-shadow: 0 8px 32px #172b3709; margin-bottom: 46px; }
+.search-panel label { display: block; color: var(--color-navy); font-weight: 600; font-size: 19px; margin-bottom: 10px; }
+.search-input-wrap { display: flex; align-items: center; gap: 14px; border: 1px solid #a9b4ba; border-radius: 6px; padding: 0 18px; min-height: 60px; color: #63727b; }
+.search-input-wrap:focus-within { border-color: var(--color-primary); box-shadow: 0 0 0 3px var(--color-primary-tint); }
+.search-input-wrap input { width: 100%; min-width: 0; border: 0; background: transparent; padding: 15px 0; font-size: 18px; color: var(--color-navy); outline: none !important; }
+.search-input-wrap input::placeholder { color: #737d85; opacity: 1; }
+.search-input-wrap svg { flex-shrink: 0; }
+#clear-search { color: #a63812; font-weight: 600; padding: 10px 0 10px 6px; }
+#search-hint { font-size: 14px; color: #5f6b75; margin-top: 10px; }
+.section-label { display: flex; align-items: center; gap: 20px; font-size: 11px; letter-spacing: .15em; font-weight: 700; color: #68747d; margin-bottom: 14px; }
+.section-rule { height: 1px; background: #dce1e5; flex: 1; }
+.booking-page h2 { font-size: clamp(25px,3vw,32px); font-weight: 500; letter-spacing: -.025em; }
+.booking-page .section-intro { margin: 10px 0 0; max-width: none; text-align: left; color: #63707b; }
+.path-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-top: 24px; }
+.path-card { text-align: left; background: white; border: 1px solid #dce1e5; border-radius: 8px; padding: 24px 21px 18px; display: flex; flex-direction: column; transition: border-color .15s, box-shadow .15s; color: var(--color-foreground); }
+.path-card:hover { border-color: var(--color-primary); box-shadow: 0 5px 20px #172b3708; }
+.card-icon { background: var(--color-primary-tint); color: #b13e17; width: 40px; height: 40px; display: grid; place-items: center; font-size: 25px; line-height: 1; border-radius: 50%; margin-bottom: 25px; }
+.path-card h3 { font-size: 20px; font-weight: 500; line-height: 1.25; letter-spacing: -.02em; margin-bottom: 12px; }
+.path-card p { font-size: 16px; line-height: 1.45; margin-bottom: 24px; color: #5a6872; }
+.card-bottom { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 14px; font-weight: 600; color: #9d3513; padding-top: 16px; border-top: 1px solid #edf0f2; }
+.card-bottom span { font-size: 20px; }
+.asap-card { background: #edf2f4; }
+.asap-card .card-icon { background: #dce5ea; color: var(--color-navy); }
+.asap-card .card-bottom { color: var(--color-navy); border-color: #d8e0e5; }
+#category-options { margin-top: 46px; }
+.category-heading-row,.results-heading-row { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 24px; }
+.light-eyebrow { color: #a03916; margin-bottom: 8px; font-size: 11px; }
+#category-context,#result-count { font-size: 14px; color: #62717b; flex-shrink: 0; }
+.category-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+.category-group-title { font-size: 16px; font-weight: 600; margin-bottom: 14px; }
+.category-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.category-button { display: flex; text-align: left; justify-content: space-between; align-items: center; gap: 12px; background: white; padding: 14px 16px; border: 1px solid #dce1e5; border-radius: 6px; font-size: 16px; line-height: 1.3; color: var(--color-navy); min-height: 57px; }
+.category-button span:last-child { color: #a73b17; }
+.category-button:hover { border-color: var(--color-primary); background: #fffaf8; }
+.flow-toolbar { display: flex; align-items: center; gap: 20px; margin-bottom: 26px; padding-bottom: 18px; border-bottom: 1px solid #dce1e5; font-size: 15px; }
+.flow-toolbar button { color: #9d3513; font-weight: 600; padding: 5px 0; }
+.flow-toolbar p { color: #64727c; flex: 1; }
+.appointment-filters { display: flex; flex-wrap: wrap; gap: 24px; align-items: end; margin-bottom: 20px; }
+.appointment-filters fieldset { border: 0; }
+.appointment-filters legend,.appointment-filters label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 7px; color: #4c5a65; }
+.segmented { display: flex; gap: 3px; background: #e9edef; padding: 4px; border-radius: 7px; }
+.segmented button { padding: 8px 17px; border-radius: 4px; color: #4c5a65; font-size: 15px; }
+.segmented button[aria-pressed="true"] { background: #fff; color: var(--color-navy); box-shadow: 0 1px 4px #172b3718; font-weight: 600; }
+#practitioner-level { padding: 10px 36px 10px 12px; font-size: 15px; background: white; border: 1px solid #c7d0d6; border-radius: 6px; color: var(--color-navy); min-height: 44px; }
+.results-note { color: #5e6b75; font-size: 15px; margin: 0 0 20px; }
+.results-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.appointment-card { background: white; border: 1px solid #dce1e5; border-radius: 8px; display: flex; flex-direction: column; padding: 24px; transition: border-color .15s; }
+.appointment-card:hover,.staff-card:hover { border-color: var(--color-primary); }
+.appointment-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.appointment-tags span { font-size: 12px; background: #edf2f4; color: #405561; padding: 3px 9px; border-radius: 3px; font-weight: 600; }
+.appointment-tags .level-tag { background: var(--color-primary-tint); color: #a03916; }
+.appointment-card h3 { font-size: 21px; font-weight: 500; line-height: 1.35; margin-bottom: 12px; }
+.appointment-location { color: #60717d; font-size: 15px; margin-bottom: 20px; }
+.appointment-bottom { margin-top: auto; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 15px; color: #63717a; }
+.price { font-size: 26px; color: var(--color-navy); font-family: var(--font-heading); }
+.fee-note { display: block; font-size: 12px; }
+.book-link { color: #a03916; font-weight: 700; white-space: nowrap; }
+.book-link span { margin-left: 10px; font-size: 22px; }
+.staff-results-heading { margin: 30px 0 16px; font-size: 20px; }
+.staff-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
+.staff-card { display: flex; align-items: center; gap: 14px; background: white; border: 1px solid #dce1e5; border-radius: 8px; padding: 18px; }
+.staff-card img { width: 58px; height: 68px; object-fit: cover; object-position: top; border-radius: 4px; background: #edf2f4; flex-shrink: 0; }
+.staff-card strong { font-size: 17px; font-weight: 600; color: var(--color-navy); display: block; line-height: 1.25; }
+.staff-card span span { display: block; font-size: 13px; color: #63717a; margin-top: 6px; }
+.staff-arrow { color: #a03916; margin-left: auto; font-size: 23px; }
+.empty-state { border: 1px dashed #aebbc3; padding: 30px; border-radius: 8px; background: white; }
+.empty-state h3 { margin-bottom: 10px; }.empty-state button { margin-top: 16px; color: #a03916; text-decoration: underline; }
+.call-panel { display: flex; align-items: center; gap: 24px; padding: 28px; background: var(--color-primary-tint); border: 1px solid #f1d7cb; border-radius: 8px; margin-top: 48px; }
+.call-symbol { width: 48px; height: 48px; background: #fff; border: 1px solid #ebc5b5; border-radius: 50%; display: grid; place-items: center; color: #aa3d17; font-size: 25px; flex-shrink: 0; }
+.call-panel h2 { font-size: 25px; margin-bottom: 7px; }.call-panel p:not(.booking-eyebrow) { font-size: 16px; max-width: 510px; }
+.call-button { margin-left: auto; flex-shrink: 0; display: inline-flex; align-items: center; gap: 20px; background: var(--color-navy); color: white; padding: 13px 22px; border-radius: 5px; font-weight: 600; font-size: 16px; }.call-button:hover { background: #2d4859; }
+.booking-reassurance { text-align: center; font-size: 13px; color: #63717a; margin-top: 22px; }
+.booking-footer { border-top: 1px solid #dce1e5; padding-block: 25px; color: #63717a; font-size: 13px; }.booking-footer .booking-wrap { display: flex; justify-content: space-between; gap: 20px; }
+.no-script { margin-top: 24px; padding: 20px; background: white; border: 1px solid #dce1e5; }.no-script a { text-decoration: underline; }
+@media(max-width: 1000px) {
+ .hero-layout { grid-template-columns: 1fr 230px; gap: 28px; }.hero-aside { padding-left: 24px; }
+ .path-grid { grid-template-columns: repeat(2,1fr); }.path-card { padding: 22px; }.card-icon { margin-bottom: 18px; }
+ .category-columns { gap: 24px; }.category-grid { grid-template-columns: 1fr; }.staff-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+ .call-symbol { display: none; }.call-panel { gap: 18px; }
+}
+@media(max-width: 640px) {
+ .booking-page .booking-wrap { padding-inline: 20px; }.header-inner { min-height: 80px; }.header-inner img { width: 165px; }.phone-link { font-size: 14px; }.phone-link span { display: none; }
+ .booking-hero { padding: 36px 0 66px; }.hero-layout { grid-template-columns: 1fr; gap: 0; }.hero-aside { display: none; }.hero-intro { font-size: 16px; margin-top: 18px; }.desktop-break { display: none; }.booking-hero h1 { font-size: 36px; }
+ .search-panel { padding: 19px 17px 16px; margin-bottom: 32px; }.search-panel label { font-size: 17px; }.search-input-wrap { padding-inline: 12px; gap: 10px; min-height: 54px; }.search-input-wrap input { font-size: 16px; }#search-hint { font-size: 12px; }
+ .path-grid { gap: 10px; margin-top: 20px; }.path-card { padding: 18px 15px 14px; }.path-card h3 { font-size: 18px; }.path-card p { font-size: 14px; margin-bottom: 16px; }.card-bottom { font-size: 12px; gap: 5px; }.card-icon { width: 34px; height: 34px; font-size: 23px; margin-bottom: 16px; }
+ #category-options { margin-top: 34px; }.category-heading-row,.results-heading-row { display: block; }#category-context,#result-count { margin-top: 10px; }.category-columns { grid-template-columns: 1fr; gap: 26px; }.category-grid { grid-template-columns: 1fr 1fr; gap: 8px; }.category-button { font-size: 14px; padding: 12px; min-height: 54px; }
+ .flow-toolbar { gap: 12px; flex-wrap: wrap; font-size: 13px; }.flow-toolbar p { min-width: 130px; }.results-grid,.staff-grid { grid-template-columns: 1fr; }.appointment-card { padding: 21px; }.appointment-card h3 { font-size: 20px; }.appointment-filters { gap: 16px; }.segmented button { padding-inline: 15px; }
+ .call-panel { margin-top: 34px; padding: 24px; flex-direction: column; align-items: flex-start; gap: 22px; }.call-panel .booking-eyebrow { font-size: 10px; }.call-button { margin-left: 0; }.booking-footer .booking-wrap { display: block; }.booking-footer p + p { margin-top: 6px; }
+}
+@media(prefers-reduced-motion: reduce) { .booking-page * { transition: none !important; scroll-behavior: auto !important; } }
