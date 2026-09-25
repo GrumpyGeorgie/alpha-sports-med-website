@@ -95,7 +95,7 @@ const asap = data.appointments.find(a => a.category === 'asap')!;
               <div class="appointment-tags"><span>{a.patient==='return'?'Existing patients':a.patient==='new'?'First visit':'Appointment'}</span>{a.level && <span class="level-tag">{a.level}</span>}</div>
               <h3>{a.label}</h3>
               {a.locations.length > 0 && <p class="appointment-location">{a.locations.join(' · ')}</p>}
-              <div class="appointment-bottom"><span>{a.price ? <><strong class="price">${a.price}</strong><span class="fee-note">Confirm fee in Cliniko</span></> : a.category==='call' ? <strong>Free · 15 minutes</strong> : 'View times & fees'}</span><span class="book-link">Book <span aria-hidden="true">↗</span></span></div>
+              <div class="appointment-bottom"><span>{a.category==='call' ? <strong>Free · 15 minutes</strong> : 'View times & fees'}</span><span class="book-link">Book <span aria-hidden="true">↗</span></span></div>
               <span class="sr-only">Opens Cliniko in a new tab</span>
             </a>)}
           </div>

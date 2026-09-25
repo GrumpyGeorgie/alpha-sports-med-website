@@ -95,31 +95,28 @@
       "category": "asap",
       "patient": "return",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
     {
       "id": "2025106687471387668",
-      "label": "Chiropractic \u2014 Initial consult (senior)",
+      "label": "Chiropractic — Initial consult (senior)",
       "sourceLabel": "Chiro - Initial consult (senior)",
       "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=2025106687471387668",
       "category": "chiropractic",
       "patient": "new",
       "level": "Senior",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
     {
       "id": "1649740251293287871",
-      "label": "Chiropractic \u2014 Return consult (senior)",
+      "label": "Chiropractic — Return consult (senior)",
       "sourceLabel": "Chiro - Return consult (senior)",
       "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1649740251293287871",
       "category": "chiropractic",
       "patient": "return",
       "level": "Senior",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -131,7 +128,6 @@
       "category": "concussion",
       "patient": "both",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -143,7 +139,6 @@
       "category": "concussion",
       "patient": "new",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -155,31 +150,28 @@
       "category": "concussion",
       "patient": "return",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
     {
       "id": "1830921055888213287",
-      "label": "Dietetics \u2014 Initial consult",
+      "label": "Dietetics — Initial consult",
       "sourceLabel": "Dietician - Initial consult",
       "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1830921055888213287",
       "category": "dietetics",
       "patient": "new",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
     {
       "id": "1830921765153408298",
-      "label": "Dietetics \u2014 Follow up consult",
+      "label": "Dietetics — Follow up consult",
       "sourceLabel": "Dietician - Follow up consult",
       "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1830921765153408298",
       "category": "dietetics",
       "patient": "return",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -191,7 +183,6 @@
       "category": "exercise-physiology",
       "patient": "new",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -203,7 +194,6 @@
       "category": "exercise-physiology",
       "patient": "return",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -215,7 +205,6 @@
       "category": "call",
       "patient": "both",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -227,7 +216,6 @@
       "category": "call",
       "patient": "both",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -239,7 +227,6 @@
       "category": "hypermobility",
       "patient": "new",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -251,7 +238,6 @@
       "category": "hypermobility",
       "patient": "return",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -263,7 +249,6 @@
       "category": "hypermobility",
       "patient": "new",
       "level": "Senior",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -275,7 +260,6 @@
       "category": "hypermobility",
       "patient": "return",
       "level": "Senior",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -287,19 +271,17 @@
       "category": "lipoedema",
       "patient": "both",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
     {
       "id": "1938037484533319062",
-      "label": "Manual lymphatic drainage \u2014 extended appointment",
+      "label": "Manual lymphatic drainage — extended appointment",
       "sourceLabel": "MLD extended appointment",
       "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1938037484533319062",
       "category": "lymphatic",
       "patient": "both",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -311,7 +293,6 @@
       "category": "osteopathy",
       "patient": "new",
       "level": "Associate",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -323,7 +304,6 @@
       "category": "osteopathy",
       "patient": "new",
       "level": "Senior",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -335,7 +315,6 @@
       "category": "osteopathy",
       "patient": "new",
       "level": "Director",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -347,7 +326,6 @@
       "category": "osteopathy",
       "patient": "return",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -359,7 +337,6 @@
       "category": "osteopathy",
       "patient": "return",
       "level": "Associate",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -371,7 +348,6 @@
       "category": "osteopathy",
       "patient": "return",
       "level": "Senior",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -383,7 +359,6 @@
       "category": "osteopathy",
       "patient": "return",
       "level": "Director",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -395,7 +370,6 @@
       "category": "osteopathy",
       "patient": "return",
       "level": "Director",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -407,7 +381,6 @@
       "category": "physiotherapy",
       "patient": "new",
       "level": "Senior",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -419,7 +392,6 @@
       "category": "physiotherapy",
       "patient": "return",
       "level": "Senior",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -431,7 +403,6 @@
       "category": "physiotherapy",
       "patient": "return",
       "level": "Senior",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -443,7 +414,6 @@
       "category": "pilates",
       "patient": "both",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -455,7 +425,6 @@
       "category": "pregnancy",
       "patient": "new",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -467,7 +436,6 @@
       "category": "pregnancy",
       "patient": "new",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -479,7 +447,6 @@
       "category": "pregnancy",
       "patient": "return",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -491,7 +458,6 @@
       "category": "myotherapy",
       "patient": "both",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -503,19 +469,17 @@
       "category": "myotherapy",
       "patient": "both",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
     {
       "id": "1476533830453036632",
-      "label": "Initial running assessment \u2014 practitioner team",
+      "label": "Initial running assessment — practitioner team",
       "sourceLabel": "Initial Runners Assessment & Treatment",
       "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1476533830453036632",
       "category": "running",
       "patient": "new",
       "level": "",
-      "price": 210,
       "locations": [
         "Newport",
         "Ascot Vale"
@@ -524,13 +488,12 @@
     },
     {
       "id": "1857784117802828867",
-      "label": "Initial running assessment \u2014 Dr William Krithararis",
+      "label": "Initial running assessment — Dr William Krithararis",
       "sourceLabel": "Initial Runners Assessment & Treatment",
       "url": "https://alpha-sports-medicine-osteopathy.au1.cliniko.com/bookings?appointment_type_id=1857784117802828867",
       "category": "running",
       "patient": "new",
       "level": "Director",
-      "price": 250,
       "locations": [
         "Ascot Vale",
         "Hawthorn"
@@ -545,7 +508,6 @@
       "category": "running",
       "patient": "return",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -557,7 +519,6 @@
       "category": "running",
       "patient": "return",
       "level": "Director",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -569,7 +530,6 @@
       "category": "running",
       "patient": "return",
       "level": "Director",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -581,7 +541,6 @@
       "category": "online",
       "patient": "return",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     },
@@ -593,7 +552,6 @@
       "category": "online",
       "patient": "both",
       "level": "",
-      "price": null,
       "locations": [],
       "aliases": ""
     }

@@ -25,11 +25,11 @@ test('new patient journey excludes ASAP and return-only consultations', () => {
 test('return journey excludes first-only consultations', () => {
   assert.ok(filter({patient:'return'}).every(a => a.patient !== 'new'));
 });
-test('running choices retain confirmed prices, locations and separate IDs', () => {
+test('running choices retain locations and separate IDs', () => {
   const items = filter({category:'running',patient:'new'});
-  assert.deepEqual(items.map(a => [a.id,a.price,a.locations]), [
-    ['1476533830453036632',210,['Newport','Ascot Vale']],
-    ['1857784117802828867',250,['Ascot Vale','Hawthorn']],
+  assert.deepEqual(items.map(a => [a.id,a.locations]), [
+    ['1476533830453036632',['Newport','Ascot Vale']],
+    ['1857784117802828867',['Ascot Vale','Hawthorn']],
   ]);
   assert.equal(items[0].level,'');
   assert.equal(items[1].level,'Director');
