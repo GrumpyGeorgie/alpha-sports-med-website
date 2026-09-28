@@ -236,11 +236,11 @@ import SiteNavigation from "../components/SiteNavigation.astro";
       </div>
       <div class="location-card location-card--hawthorn">
         <span class="location-card__pin"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
-        <a href="https://maps.app.goo.gl/bBiEZyTG2B6cS8ry8" target="_blank" rel="noopener noreferrer" class="location-card__link" aria-label="View Hawthorn clinic on Google Maps"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+        <a href="/locations/hawthorn/" class="location-card__link" aria-label="View Hawthorn clinic"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
         <h3>Hawthorn</h3>
-        <p class="location-card__address"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>432 Burwood Rd, Hawthorn VIC 3122</p>
+        <p class="location-card__address"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>1/432 Burwood Rd, Hawthorn</p>
         <div class="btn-group">
-          <a href="https://maps.app.goo.gl/bBiEZyTG2B6cS8ry8" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View on Maps</a>
+          <a href={home.site.bookingUrl} class="btn btn--primary">Book</a>
         </div>
       </div>
     </div>
@@ -436,7 +436,7 @@ import SiteNavigation from "../components/SiteNavigation.astro";
             <li><a href="/locations/ascot-vale/">Ascot Vale</a></li>
             <li><a href="/locations/newport/">Newport</a></li>
             <li><a href="/locations/bacchus-marsh/">Bacchus Marsh</a></li>
-            <li><a href="https://maps.app.goo.gl/bBiEZyTG2B6cS8ry8" target="_blank" rel="noopener noreferrer">Hawthorn</a></li>
+            <li><a href="/locations/hawthorn/">Hawthorn</a></li>
           </ul>
         </div>
         <div>
