@@ -1,0 +1,96 @@
+{
+  "seo": {
+    "title": "Shockwave Therapy Melbourne | ESWT | Alpha Sports Medicine",
+    "description": "Shockwave therapy at Alpha Sports Medicine treats stubborn tendon and joint pain that hasn't improved with other care. Book your session today."
+  },
+  "hero": {
+    "eyebrow": "ALPHA Sports Medicine Clinic",
+    "heading": "Shockwave Therapy",
+    "subheading": "Delivering Shockwave Therapy services to the communities of Newport, Altona, Yarraville, Spotswood, Sunshine, Williamstown and Bacchus Marsh."
+  },
+  "intro": {
+    "eyebrow": "Shockwave Therapy",
+    "heading": "What is Shockwave Therapy?",
+    "paragraphs": [
+      "Shockwave therapy, also known as extracorporeal shockwave therapy (ESWT), uses acoustic sound wave pulses directed at an injured or painful area of the body.",
+      "The pulses create controlled micro-stress in the tissue, which prompts the body to respond as though the injury is new again. This triggers a fresh healing response: increased blood flow, an influx of repair cells, and a breakdown of old scar tissue or calcium buildup that hasn't cleared on its own.",
+      "The biological effects of shockwave on tendon tissue, including this stimulation of blood supply and cell repair activity, are documented in a <a href=\"https://pubmed.ncbi.nlm.nih.gov/36684664/\" target=\"_blank\" rel=\"noopener\">systematic review of shockwave therapy's biological effects on tendons</a>."
+    ],
+    "image": "/assets/images/locations/hawthorn-clinic.jpg",
+    "imageAlt": "Alpha Sports Medicine practitioner providing treatment (placeholder image)",
+    "caption": "Assessment always comes before treatment"
+  },
+  "explainer": {
+    "eyebrow": "Why shockwave",
+    "heading": "Why Shockwave Therapy?",
+    "paragraphs": [
+      "Shockwave therapy is used at Alpha Sports Medicine for chronic injuries that haven't responded to standard care. Stretching, strength work and manual therapy remain the foundation of most recovery plans, but some tendon and joint conditions plateau despite consistent effort.",
+      "Shockwave is applied in those cases to restart the healing process, working alongside physiotherapy, osteopathy and exercise-based rehabilitation rather than replacing them.",
+      "Getting the diagnosis right matters here. Shockwave is most effective when it's targeted at the correct structure, so an assessment always comes before treatment begins."
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "Shockwave Therapy for Chronic Injuries",
+    "heading": "How does Shockwave Therapy work?",
+    "paragraphs": [
+      "Treatment is delivered through a handheld device that directs acoustic pulses at the affected area. Most people need three to six sessions, roughly a week apart, with the exact number depending on how the tissue responds along the way.",
+      "It isn't a one-off fix, and it isn't designed for injuries that are only days or weeks old. Shockwave works best on chronic, slow-healing issues that have been present for weeks to months.",
+      "Sessions can be a little uncomfortable, particularly as the intensity increases, and some soreness in the treated area for a day or two afterward is common. Research into shockwave for tendinopathy reports strong outcomes when the underlying diagnosis is accurate, with a <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC12936064/\" target=\"_blank\" rel=\"noopener\">2026 systematic review and meta-analysis on radial and focused shockwave therapy</a> supporting its use for chronic tendon conditions."
+    ],
+    "highlight": "Our practitioners at Alpha Sports Medicine tailor their approach to your specific goals, lifestyle, and treatment plan, combining these strategies to support recovery, performance, and long-term wellbeing."
+  },
+  "conditions": {
+    "heading": "What conditions do Shockwave Therapy help with?",
+    "intro": "Shockwave therapy is best suited to chronic, stubborn conditions that haven't progressed with standard treatment, rather than acute or recent injuries. Our practitioners use shockwave therapy for:",
+    "items": [
+      { "icon": "fa-running", "title": "Chronic Achilles tendinopathy" },
+      { "icon": "fa-shoe-prints", "title": "Plantar fasciitis", "copy": "Including cases that haven't settled with <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11561739/\" target=\"_blank\" rel=\"noopener\">other conservative treatment</a>." },
+      { "icon": "fa-table-tennis", "title": "Tennis elbow and golfer's elbow" },
+      { "icon": "fa-walking", "title": "Patellar tendinopathy" },
+      { "icon": "fa-dumbbell", "title": "Calcific tendonitis", "copy": "Commonly affecting the shoulder." },
+      { "icon": "fa-hand-paper", "title": "Trigger points", "copy": "Persistent muscle tightness that hasn't eased with other treatment." },
+      { "icon": "fa-notes-medical", "title": "Bursitis" }
+    ],
+    "note": "If your pain is recent or came on suddenly, shockwave is unlikely to be the right starting point. Your practitioner will discuss whether it's appropriate once they understand your injury."
+  },
+  "visit": {
+    "eyebrow": "Shockwave Therapy Clinic in Newport, Ascot Vale, and Bacchus Marsh",
+    "heading": "What to expect in your first Shockwave Therapy appointment",
+    "steps": [
+      { "title": "Assessment first", "copy": "Your first appointment starts with a thorough assessment, not the treatment itself. Your practitioner will discuss your injury history, how long it's been going on, and what you've already tried." },
+      { "title": "Is shockwave right for you?", "copy": "From there, they'll confirm whether shockwave is a suitable option and explain what the sessions will involve, including the sensation you can expect and how many treatments are likely to be needed." },
+      { "title": "Pacing your sessions", "copy": "If shockwave is the right fit, your practitioner will talk you through pacing between sessions and what to do (or avoid) in between appointments to support the healing response." }
+    ]
+  },
+  "team": {
+    "image": "/assets/images/team/ashton-wilson.jpg",
+    "imageAlt": "Alpha Sports Medicine practitioner (placeholder image)",
+    "eyebrow": "How we work",
+    "heading": "The ALPHA Shockwave Therapy difference",
+    "paragraphs": [
+      "Our practitioners administering shockwave therapy at Alpha Sports Medicine are trained in its use, with direct clinical experience and ongoing CPD in operating the equipment safely and effectively.",
+      "Shockwave is never offered as a standalone quick fix here. It's built into a broader treatment plan alongside physiotherapy, osteopathy and rehabilitation exercise, so the gains made in each session are supported rather than left to fade. This combined approach reflects the evidence base too: <a href=\"https://www.sciencedirect.com/science/article/pii/S2666337621000706\" target=\"_blank\" rel=\"noopener\">a narrative review on combining shockwave therapy with exercise for tendinopathy</a> points to better outcomes when the two are used together rather than shockwave alone.",
+      "Alpha Sports Medicine is located in Newport, Ascot Vale, and Bacchus Marsh, and supports the surrounding communities with shockwave therapy and complementary care."
+    ]
+  },
+  "faqs": [
+    { "question": "Do I need a referral for Shockwave Therapy?", "answer": "No referral is required. You can book an assessment directly with our team, and if shockwave is the right treatment for your condition, we'll build it into your plan from there." },
+    { "question": "Is Shockwave Therapy painful?", "answer": "It can be uncomfortable, particularly during the session, and some soreness afterward is normal. The intensity is adjusted to what you can tolerate while still being effective, and your practitioner will talk you through what to expect before starting." },
+    { "question": "How many sessions will I need?", "answer": "Most people need three to six sessions, spaced roughly a week apart. The exact number depends on the condition being treated and how your tissue responds along the way." },
+    { "question": "What conditions is Shockwave Therapy suitable for?", "answer": "It's used for chronic tendon and joint conditions such as Achilles tendinopathy, plantar fasciitis, tennis and golfer's elbow, patellar tendinopathy, calcific tendonitis and persistent trigger points. It isn't intended for acute or recent injuries." },
+    { "question": "How effective is Shockwave Therapy?", "answer": "Research, including a randomised controlled trial on shockwave for calcific tendonitis of the shoulder, supports its use for chronic tendon conditions when the diagnosis is accurate. Results vary from person to person, which is why an assessment always comes before treatment starts, to confirm shockwave is targeting the right structure." },
+    { "question": "Does Shockwave Therapy replace physiotherapy or other treatment?", "answer": "No. Shockwave works best as part of a broader plan alongside rehab exercise, physiotherapy or osteopathy, not as a substitute for them." }
+  ],
+  "references": [
+    { "label": "Notarnicola, A. et al. Biological effects of extracorporeal shockwave therapy in tendons: A systematic review. PubMed.", "url": "https://pubmed.ncbi.nlm.nih.gov/36684664/" },
+    { "label": "Efficacy of radial and focused shockwave therapy for tendinopathy: a systematic review and meta-analysis. PMC / Scientific Reports, 2026.", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12936064/" },
+    { "label": "Efficacy and tolerability of extracorporeal shock wave therapy in patients with plantar fasciopathy: a systematic review with meta-analysis and meta-regression. PMC, 2024.", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11561739/" },
+    { "label": "Gerdesmeyer, L. et al. Extracorporeal Shock Wave Therapy for the Treatment of Chronic Calcifying Tendonitis of the Rotator Cuff: A Randomized Controlled Trial. JAMA.", "url": "https://jamanetwork.com/journals/jama/fullarticle/197669" },
+    { "label": "Combined extracorporeal shockwave therapy and exercise for the treatment of tendinopathy: A narrative review. ScienceDirect.", "url": "https://www.sciencedirect.com/science/article/pii/S2666337621000706" }
+  ],
+  "closing": {
+    "eyebrow": "Your next step",
+    "heading": "Book a shockwave therapy assessment",
+    "copy": "An assessment always comes first, so we can confirm whether shockwave is the right fit for your injury and build it into a plan that supports your recovery."
+  }
+}

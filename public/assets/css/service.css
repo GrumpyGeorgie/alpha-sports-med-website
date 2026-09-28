@@ -69,3 +69,17 @@
 .visit-notes article + article { border-top: 1px solid var(--color-border); }
 .service-team .btn-group { margin-top: 0; }
 @media (min-width: 768px) { .visit-notes { grid-template-columns: repeat(3, 1fr); } }
+
+/* Long-form copy blocks (Shockwave Therapy) */
+.service-prose { max-width: 760px; margin: 0 auto; }
+.service-prose p { margin: 0 0 var(--space-4); line-height: 1.7; }
+.section--navy .service-prose a { color: var(--color-white); text-decoration: underline; }
+.service-intro a, .service-explainer a, .service-team a:not(.btn), .condition-card a { color: var(--color-primary); text-decoration: underline; }
+.service-note { max-width: 760px; margin: var(--space-6) auto 0; text-align: center; color: var(--color-muted); }
+.service-note i { color: var(--color-primary); margin-right: var(--space-1); }
+.service-team__description + .service-team__description { margin-top: var(--space-3); }
+.service-references ol { max-width: 900px; margin: 0; padding-left: 1.25rem; color: var(--color-muted); font-size: 0.9rem; line-height: 1.6; }
+.service-references a { color: var(--color-foreground); }
+/* Non-link condition cards: no arrow or hover lift */
+div.condition-card::after { content: none; }
+div.condition-card { cursor: default; }
