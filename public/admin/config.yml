@@ -9,6 +9,7 @@ backend:
   site_domain: alpha-sports-med-prototype.pages.dev
 
 local_backend: true
+publish_mode: editorial_workflow
 site_url: https://alpha-sports-med-prototype.pages.dev
 display_url: https://alpha-sports-med-prototype.pages.dev
 logo_url: /assets/images/alpha-logo-lockup.webp
