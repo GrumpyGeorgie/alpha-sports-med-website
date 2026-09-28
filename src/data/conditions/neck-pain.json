@@ -1,0 +1,214 @@
+{
+  "seo": {
+    "title": "Neck Pain Treatment Melbourne | Alpha Sports Medicine",
+    "description": "Neck pain, stiffness and the headaches that come with it. Osteo, physio and chiro across Melbourne—no referral needed. Book online."
+  },
+  "breadcrumb": "Neck pain",
+  "hero": {
+    "eyebrow": "Neck pain treatment · Melbourne",
+    "heading": "The neck pain you have got used to is worth a proper look",
+    "subheading": "The stiffness that builds through the week, the ache between your shoulder blades, the headache that starts at the base of your skull—often these are the same problem. We work out what is driving it and build a plan around your week.",
+    "trust": [
+      "No referral needed",
+      "Four Melbourne clinics",
+      "Health fund claiming"
+    ]
+  },
+  "urgent": {
+    "eyebrow": "When to seek urgent care",
+    "heading": "Some neck symptoms need medical assessment first",
+    "paragraphs": [
+      "Call 000 or go to an emergency department if neck pain follows a significant fall, collision or car accident, or comes with a sudden, severe headache, fever with a stiff neck, difficulty swallowing or speaking, or changes to your vision.",
+      "Seek urgent medical care through your GP or an emergency department for new weakness or numbness in your arms or legs, or difficulty with balance or walking."
+    ],
+    "linkLabel": "Read Healthdirect guidance",
+    "linkUrl": "https://www.healthdirect.gov.au/neck-pain"
+  },
+  "pattern": {
+    "ghost": "SEEN",
+    "eyebrow": "What we see most",
+    "heading": "Does one of these sound familiar?",
+    "intro": "Neck pain rarely arrives as a diagnosis. It usually arrives as a pattern you have learned to work around.",
+    "items": [
+      {
+        "title": "The desk neck",
+        "kicker": "Fine on Monday, sore by Thursday",
+        "copy": "It eases on holidays and is back within a week of returning to work. Long days at a screen, busy periods and long drives tend to make it louder."
+      },
+      {
+        "title": "The neck that will not turn",
+        "kicker": "Checking a blind spot",
+        "copy": "Stiffness on one side that limits turning, often worse in the car or first thing in the morning."
+      },
+      {
+        "title": "Waking with it",
+        "kicker": "“I must have slept funny”",
+        "copy": "Sometimes it is mild stiffness. Sometimes it is acute wry neck, where the neck locks and small movements hurt sharply. It is painful and frightening, but it is common, and early care may help you move more comfortably."
+      },
+      {
+        "title": "Between the shoulder blades",
+        "kicker": "“I thought it was my shoulder”",
+        "copy": "Pain across the top of the shoulder or beside the shoulder blade often starts in the neck. We assess both before deciding which one is doing the talking.",
+        "link": {
+          "label": "Shoulder pain",
+          "href": "/conditions/shoulder-pain/"
+        }
+      },
+      {
+        "title": "Headaches or arm symptoms",
+        "kicker": "Base of the skull, or down the arm",
+        "copy": "Neck pain that travels into the head, or comes with pins and needles into the arm, is worth assessing properly rather than waiting out.",
+        "link": {
+          "label": "Headaches",
+          "href": "/conditions/headaches/"
+        }
+      },
+      {
+        "title": "After a car accident",
+        "kicker": "Symptoms a day or two later",
+        "copy": "<a href=\"https://www.healthdirect.gov.au/whiplash\">Whiplash</a> symptoms often build over the following day or two. Get medical assessment first after any significant accident; we can then help with the recovery."
+      }
+    ]
+  },
+  "explainer": {
+    "ghost": "WHY",
+    "eyebrow": "Why necks get sore",
+    "heading": "Your posture is not the villain",
+    "paragraphs": [
+      "Most people with a sore neck have been told their posture is to blame, and quietly feel it is their fault. The more useful truth is that there is no single correct posture, and “bad posture” predicts neck pain far less than most people believe.",
+      "The common thread is sustained position. Hold any position long enough—upright or slouched—and you load tissue that is not built to stay still. Posture still matters, but variation matters more than alignment. The best position is usually the next one.",
+      "Other loads add up too. Stress and busy weeks tend to show up in the neck and shoulders, and many people clench their jaw, especially at night, without realising. Sleep position and pillow height are real, practical factors.",
+      "Neck joints, discs and muscles can all become sensitised. Scans often show changes that do not match symptoms, so we assess how your neck moves and behaves rather than relying on an image alone. A sensitised neck can also refer pain into the head, across the shoulder blade and down the arm."
+    ]
+  },
+  "focus": {
+    "eyebrow": "Neck pain, headaches and jaw pain",
+    "heading": "Three problems that are often one pattern",
+    "paragraphs": [
+      "The upper neck joints can refer pain into the head. This is called cervicogenic headache: it typically starts at the base of the skull and comes over one side, often alongside neck stiffness. Some people who have been managing what they thought were tension headaches or migraines find their neck is part of the picture.",
+      "The jaw and upper neck share muscular and nerve connections, and people who clench often have both jaw and neck symptoms. Treating each in isolation is a common reason people only get part of the way.",
+      "If this sounds like you, read more about <a href=\"/conditions/headaches/\">headaches</a> and <a href=\"/conditions/tmj-jaw-pain/\">jaw pain and TMJ</a>. At your appointment, we look at how they connect."
+    ],
+    "caption": "Neck, head and jaw—assessed together"
+  },
+  "process": {
+    "eyebrow": "How we treat neck pain",
+    "heading": "A plan built around your week",
+    "steps": [
+      {
+        "title": "Start with your week",
+        "copy": "We ask about your work, sleep, stress and driving—not just where it hurts."
+      },
+      {
+        "title": "Assess what connects",
+        "copy": "We examine the neck, upper back and shoulders, and the jaw where relevant."
+      },
+      {
+        "title": "Settle what is sore",
+        "copy": "Soft tissue work, joint mobilisation or dry needling may help, with manipulation used only where appropriate and after discussion and consent."
+      },
+      {
+        "title": "Free up the upper back",
+        "copy": "A stiff mid-back leaves the neck doing everything, so we work on restoring movement there too."
+      },
+      {
+        "title": "Build strength",
+        "copy": "Neck and shoulder-blade strength is the phase many people never reach, and it is central to longer-term management."
+      },
+      {
+        "title": "Change what you can",
+        "copy": "Desk setup, screen height, driving position, pillow and how often you move, with your progress re-tested each session."
+      }
+    ]
+  },
+  "servicesHeading": "Osteo, physio or chiro? Any can be a good place to start",
+  "services": [
+    {
+      "title": "Osteopathy",
+      "copy": "Hands-on assessment and treatment of the neck, upper back and surrounding structures, paired with a home program.",
+      "href": "/services/osteopathy/",
+      "icon": "fa-hands"
+    },
+    {
+      "title": "Physiotherapy",
+      "copy": "Assessment, hands-on care and progressive exercise to build neck and shoulder-blade strength.",
+      "href": "/services/physiotherapy/",
+      "icon": "fa-user-md"
+    },
+    {
+      "title": "Chiropractic",
+      "copy": "Assessment of how the neck and spine move, with treatment options discussed and agreed with you.",
+      "href": "/services/chiropractic/",
+      "icon": "fa-bone"
+    },
+    {
+      "title": "Myotherapy",
+      "copy": "Soft tissue treatment that may complement your main plan when muscle tension is a large part of the picture.",
+      "href": "/services/myotherapy/",
+      "icon": "fa-spa"
+    }
+  ],
+  "related": [
+    {
+      "title": "Headaches",
+      "href": "/conditions/headaches/"
+    },
+    {
+      "title": "Jaw pain and TMJ",
+      "href": "/conditions/tmj-jaw-pain/"
+    },
+    {
+      "title": "Shoulder pain",
+      "href": "/conditions/shoulder-pain/"
+    },
+    {
+      "title": "Back pain",
+      "href": "/conditions/back-pain/"
+    },
+    {
+      "title": "Concussion",
+      "href": "/conditions/sports-injuries/concussion/"
+    }
+  ],
+  "locationsEyebrow": "Neck pain treatment in Melbourne",
+  "faqHeading": "Neck pain FAQs",
+  "faqs": [
+    {
+      "question": "Can my neck cause my headaches?",
+      "answer": "It can. The upper neck joints can refer pain into the head, usually starting at the base of the skull and spreading over one side. Headaches that come with neck stiffness, or change with neck movement or sustained positions, may have a neck contribution. Our headaches page explains more, and an assessment can help work out whether your neck is involved."
+    },
+    {
+      "question": "Is cracking my own neck bad for me?",
+      "answer": "Plenty of people do it, and an occasional crack on its own is not usually a cause for concern. If you feel you need to crack it often to get relief, that suggests your neck is stiff or sensitive and worth assessing. Avoid forcing it, and seek medical advice if cracking your neck is ever followed by dizziness, headache, changes to your vision or pins and needles."
+    },
+    {
+      "question": "Do I need a scan?",
+      "answer": "Most neck pain can be assessed clinically first. Scans often show age-related changes that do not match symptoms. Imaging may be useful after significant trauma, with progressive nerve symptoms, or when the result would change management, and we will discuss that with you and your GP if needed."
+    },
+    {
+      "question": "What pillow is best for neck pain?",
+      "answer": "There is no single right pillow. A usable principle: in the position you actually sleep in, your pillow should keep your head roughly level with the rest of your spine. Side sleepers usually need more height than back sleepers, and stomach sleeping keeps the neck turned for hours. If you wake stiff most mornings, it is worth reviewing."
+    },
+    {
+      "question": "Should I see an osteo, physio or chiro for neck pain?",
+      "answer": "Osteopaths, physiotherapists and chiropractors all commonly assess and treat neck pain, and their approaches overlap more than most people expect. The right starting point often comes down to your preference and availability. If you are unsure, tell us what is going on and we will help you choose."
+    },
+    {
+      "question": "Do I need a referral?",
+      "answer": "No. You can book directly."
+    },
+    {
+      "question": "How many sessions will I need?",
+      "answer": "It depends on how long the pain has been there, what is driving it and what you want to get back to. We will give you an estimate after your first assessment and review it as you progress."
+    },
+    {
+      "question": "Is neck manipulation safe?",
+      "answer": "Neck manipulation is one option some practitioners use, and it is never compulsory. Before it is considered, your practitioner screens your history and symptoms, explains what it involves along with its potential benefits and risks, and asks for your consent. Neck pain can also be treated without it, using soft tissue work, mobilisation and exercise, and you can say no at any point."
+    }
+  ],
+  "closing": {
+    "eyebrow": "Your next step",
+    "heading": "How long have you been working around your neck?",
+    "copy": "Tell us how your week affects it and what you want to get back to. We will assess the neck, explain what we find and build the next step with you."
+  }
+}

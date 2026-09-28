@@ -1,0 +1,106 @@
+{
+  "seo": {
+    "title": "Conditions We Treat | Alpha Sports Medicine",
+    "description": "From knee and back pain to sports injuries, headaches and running injuries: find the condition, or just tell us what's going on. Four Melbourne clinics."
+  },
+  "hero": {
+    "eyebrow": "Alpha Sports Medicine · Conditions",
+    "heading": "Conditions We Treat",
+    "subheading": "You don't need to arrive with a diagnosis, and you don't need to know which practitioner to book. Find the area closest to what you're feeling, or tell us what's going on and we'll work it out with you.",
+    "trust": ["No referral needed", "Four Melbourne clinics", "Health fund claiming"]
+  },
+  "unsure": {
+    "eyebrow": "If you're not sure what's wrong",
+    "heading": "Not knowing is completely normal",
+    "paragraphs": [
+      "Pain doesn't always stay where the problem is. A stiff hip can show up as back pain. A tight neck can show up as a headache. Some pain moves around, and some starts without any obvious event at all.",
+      "That's why you're not expected to diagnose yourself before you book. Working out what is going on is the first job of your appointment.",
+      "Pick the page closest to where it hurts, or <a href=\"/contact/\">tell us what's going on</a> and we'll point you to the right person."
+    ]
+  },
+  "groups": [
+    {
+      "id": "sport-activity",
+      "title": "Sport & Activity",
+      "items": [
+        { "title": "Running Injuries", "href": "/conditions/running-injuries/", "copy": "The niggle that turns up at the same point in every run." },
+        { "title": "Sports Injuries", "href": "/conditions/sports-injuries/", "copy": "Hurt at training or on game day and want to get back safely.",
+          "children": [
+            { "title": "ACL injury", "href": "/conditions/sports-injuries/acl-injury/" },
+            { "title": "Ankle sprain", "href": "/conditions/sports-injuries/ankle-sprain/" },
+            { "title": "Concussion", "href": "/conditions/sports-injuries/concussion/" },
+            { "title": "Rib sprain", "href": "/conditions/sports-injuries/rib-sprain/" },
+            { "title": "Tendon pain", "href": "/conditions/sports-injuries/tendonitis-tendinopathy/" },
+            { "title": "Tennis elbow", "href": "/conditions/sports-injuries/tennis-elbow/" }
+          ] },
+        { "title": "Running Assessment", "href": "/running-assessment/", "copy": "Want someone to look at how you run before the next block." }
+      ]
+    },
+    {
+      "id": "pain-areas",
+      "title": "Pain Areas",
+      "items": [
+        { "title": "Back Pain", "href": "/conditions/back-pain/", "copy": "A back that went when you bent down, or keeps coming back." },
+        { "title": "Neck Pain", "href": "/conditions/neck-pain/", "copy": "Stiff, sore or stuck when you turn your head." },
+        { "title": "Headaches & Migraines", "href": "/conditions/headaches/", "copy": "Headaches that seem to start from your neck or shoulders." },
+        { "title": "TMJ & Jaw Pain", "href": "/conditions/tmj-jaw-pain/", "copy": "Clicking, clenching or an ache when you chew." },
+        { "title": "Shoulder Pain", "href": "/conditions/shoulder-pain/", "copy": "Pain reaching overhead, sleeping on it or lifting at the gym." },
+        { "title": "Knee Pain", "href": "/conditions/knee-pain/", "copy": "Knees that complain on stairs, squats or runs." },
+        { "title": "Hip Pain", "href": "/conditions/hip-pain/", "copy": "An ache in the hip or groin when you walk, sit or train." },
+        { "title": "Hand & Wrist Pain", "href": "/conditions/hand-wrist-pain/", "copy": "Wrists and hands that ache with typing, gripping or lifting." },
+        { "title": "Foot Pain & Plantar Fasciitis", "href": "/conditions/foot-pain-plantar-fasciitis/", "copy": "The heel that's worst on your first steps out of bed." }
+      ]
+    },
+    {
+      "id": "womens-health",
+      "title": "Women's Health",
+      "items": [
+        { "title": "Pregnancy-Related Pain", "href": "/conditions/pregnancy-pain/", "copy": "Back, pelvic or hip pain as your body changes through pregnancy." },
+        { "title": "Postpartum Pain", "href": "/conditions/postpartum-pain/", "copy": "Aches that have hung around since having your baby." }
+      ]
+    },
+    {
+      "id": "complex",
+      "title": "Complex Conditions",
+      "items": [
+        { "title": "Hypermobility & EDS", "href": "/conditions/hypermobility/", "copy": "Joints that move a lot, and pain that no one has quite explained." },
+        { "title": "Invisible Illnesses", "href": "/conditions/invisible-illnesses/", "copy": "Living with a condition others can't see, and wanting care that gets it." }
+      ]
+    }
+  ],
+  "approach": {
+    "eyebrow": "How we approach any condition",
+    "heading": "The same careful process, whatever brings you in",
+    "steps": [
+      { "title": "Understand you first", "copy": "What your week looks like, what you've already tried and what this is stopping you doing." },
+      { "title": "Look above and below", "copy": "We assess the painful area and the regions around it that share its workload." },
+      { "title": "Treat and plan together", "copy": "Hands-on care is paired with something to do between visits, built around your week." },
+      { "title": "Stay through the strength phase", "copy": "We keep working with you after the pain settles, while you rebuild capacity." }
+    ]
+  },
+  "services": {
+    "heading": "You don't have to pick the right practitioner",
+    "copy": "We'll match you with the right person, and our practitioners talk to each other about your care.",
+    "items": [
+      { "title": "Osteopathy", "href": "/services/osteopathy/", "icon": "fa-hands" },
+      { "title": "Physiotherapy", "href": "/services/physiotherapy/", "icon": "fa-user-md" },
+      { "title": "Chiropractic", "href": "/services/chiropractic/", "icon": "fa-bone" },
+      { "title": "Myotherapy", "href": "/services/myotherapy/", "icon": "fa-spa" },
+      { "title": "Exercise Physiology", "href": "/services/exercise-physiology/", "icon": "fa-heartbeat" },
+      { "title": "Clinical Pilates", "href": "/services/clinical-pilates/", "icon": "fa-child" },
+      { "title": "Strength & Conditioning", "href": "/services/strength-conditioning/", "icon": "fa-dumbbell" }
+    ]
+  },
+  "faqs": [
+    { "question": "Do I need a referral?", "answer": "No. You can book directly with any of our practitioners. If you have a GP care plan, WorkCover or TAC claim, mention it when booking so the team can guide you." },
+    { "question": "What if I don't know what's wrong?", "answer": "That's what the first appointment is for. Book with the practitioner you feel suits you best, or call us and describe what's going on. We'll work out a starting point together." },
+    { "question": "How much does it cost, and can I claim it?", "answer": "Our services may be claimable through private health extras cover, depending on your policy, and on-site claiming is available. Check your cover with your fund, or call us for current fees." },
+    { "question": "How many sessions will I need?", "answer": "It depends on what's going on, how long it has been present and what you're working back towards. Your practitioner will talk you through a likely plan after your assessment and review it with you as you go." },
+    { "question": "Should I rest until my appointment?", "answer": "Complete rest isn't usually needed. Keep moving in ways that feel comfortable and ease back on what clearly aggravates it. If you have severe pain, significant swelling after an injury or symptoms that worry you, see your GP or seek urgent care." }
+  ],
+  "closing": {
+    "eyebrow": "Your next step",
+    "heading": "Tell us what's going on",
+    "copy": "Book online, give us a call, or describe the problem and we'll point you to the right person."
+  }
+}
