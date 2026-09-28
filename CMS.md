@@ -1,6 +1,18 @@
 # Decap CMS
 
 The CMS is available at `/admin/` and edits content stored in this repository.
+The staging CMS is https://alpha-sports-med-prototype.pages.dev/admin/#/.
+
+## Editorial workflow
+
+Decap uses `publish_mode: editorial_workflow`. Client edits should be saved as
+Draft, moved to In Review for the LHM team, then moved to Ready and published
+only after approval. Publishing writes the approved content to `main`; GitHub
+Actions then builds and deploys the Astro site to Cloudflare Pages.
+
+Editable page groups currently include Core Pages, Staff Pages, Staff routing,
+Services, Locations and Conditions. The six connected pages are Home, About,
+Osteopathy, Knee Pain, Newport and Dr Ashton Wilson.
 
 ## Local editing
 
@@ -30,5 +42,5 @@ Do not place the GitHub client secret or an access token in this repository or
 in the browser bundle. The callback validates a short-lived OAuth `state` cookie
 and only returns credentials to the configured CMS origin.
 
-CMS commits to `main`; the GitHub Actions workflow builds Astro and deploys the
+Approved CMS changes are published to `main`; the GitHub Actions workflow builds Astro and deploys the
 result to the existing `alpha-sports-med-prototype` Cloudflare Pages project.

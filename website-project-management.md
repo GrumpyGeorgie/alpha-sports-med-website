@@ -7,9 +7,9 @@
 - **Project folder:** Alpha Sports Med/astro-new/
 - **Platform:** Astro (Phase 5 build skills in this plugin are WordPress-only — see note in Phase 5)
 - **Owners:** Aiya (build), Krystalyn (PM), Jaimee (SEO), Michael (strategy)
-- **Last Updated:** 2026-08-03
-- **Current Phase:** Phase 3 (Step 3.2) + Phase 4 (Step 4.1) running in parallel
-- **Current Step:** Phase 3 Step 3.2 — **homepage copy drafted (content/home.md) and sent to Michael for internal review** (BasicOps task 2170328, 2026-07-22). Still awaiting his sign-off as of 2026-08-03 (no reply in BasicOps). Phase 4 Step 4.1 (Brand Guidelines) started 2026-08-03 in parallel, ahead of copy sign-off — decision made to not block homepage design on Michael's review. The Bacchus Marsh conflict and practitioner-detail blockers do not affect the homepage.
+- **Last Updated:** 2026-09-28
+- **Current Phase:** Astro prototype build + client-editable CMS rollout
+- **Current Step:** Six priority pages are built and deployed to Cloudflare Pages. Their primary content is connected to Decap CMS, and the editorial workflow is enabled so client edits move through Draft → In Review → Ready before publishing. Next: complete remaining secondary CMS fields, run a real end-to-end edit/approval test, and obtain Michael/client staging sign-off.
 - **BasicOps:** *Web Projects → Design & Content → "Alpha Sports: Astro Build" (task 2170328, Aiya)
 
 ## Reference Documents
@@ -34,12 +34,13 @@
 - **Environment:** TBD (Local by Flywheel / wp-env / Docker)
 
 ### LHM Design Staging (Phase 4 prototype)
-- **URL:** lhmstaging.net/design/alpha-sports-med/ (TBD)
-- **SSH access:** TBD
+- **URL:** https://alpha-sports-med-prototype.pages.dev/
+- **CMS:** https://alpha-sports-med-prototype.pages.dev/admin/#/
+- **Hosting:** Cloudflare Pages, deployed from GitHub main
 
 ### LHM Site Staging (Phase 5 site)
-- **URL:** TBD
-- **SSH access:** TBD
+- **URL:** https://alpha-sports-med-prototype.pages.dev/
+- **Deployment:** GitHub Actions → Cloudflare Pages
 
 ### Production
 - **URL:** https://alphasportsmed.com.au/
@@ -69,6 +70,32 @@ Status values: Brief / Copy-Locked / Built / QA-Passed / Live
 | Date | Phase | Artefact | Sent to Client | Approved | Notes |
 |------|-------|----------|----------------|----------|-------|
 | 2026-06-11 | 1 | Campaign Playbook | — | Internal | Playbook created from founder transcripts; saved at client root |
+| 2026-09-28 | Prototype/CMS | Six-page Astro prototype + Decap CMS | Staging | Internal QA passed | Home, About, Osteopathy, Knee Pain, Newport and Dr Ashton Wilson deployed; editorial workflow enabled |
+
+## Current Prototype and CMS Status — 2026-09-28
+
+### Built and deployed pages
+- Home: https://alpha-sports-med-prototype.pages.dev/
+- About: https://alpha-sports-med-prototype.pages.dev/about/
+- Osteopathy: https://alpha-sports-med-prototype.pages.dev/services/osteopathy/
+- Knee Pain: https://alpha-sports-med-prototype.pages.dev/conditions/knee-pain/
+- Newport: https://alpha-sports-med-prototype.pages.dev/locations/newport/
+- Dr Ashton Wilson: https://alpha-sports-med-prototype.pages.dev/staff/dr-ashton-wilson/
+
+### CMS and deployment
+- Decap CMS: https://alpha-sports-med-prototype.pages.dev/admin/#/
+- Content is grouped into Core Pages, Staff, Services, Locations and Conditions.
+- Six structured page data sources are connected to the live Astro templates.
+- Editorial workflow: Draft → In Review → Ready → Publish.
+- GitHub Actions and Cloudflare Pages deployment passed.
+- All six routes and CMS endpoints returned HTTP 200.
+
+### Remaining work
+- Connect remaining secondary cards, supporting copy, button labels and navigation labels still managed in templates.
+- Perform one harmless CMS test edit through the full editorial workflow.
+- Confirm who may move entries to Ready and Publish.
+- Obtain internal approval and client staging sign-off before production rollout.
+
 
 ---
 
