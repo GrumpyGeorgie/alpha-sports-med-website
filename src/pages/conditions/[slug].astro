@@ -5,16 +5,17 @@
 import home from '../../data/home.json';
 import FeaturedPractitioner from '../../components/FeaturedPractitioner.astro';
 import SiteNavigation from '../../components/SiteNavigation.astro';
+import type { ConditionPage } from '../../data/conditions/types';
 
 export function getStaticPaths() {
-  const modules = import.meta.glob('../../data/conditions/*.json', { eager: true });
+  const modules = import.meta.glob<{ default: ConditionPage }>('../../data/conditions/*.json', { eager: true });
   return Object.entries(modules).map(([path, mod]) => {
-    const slug = path.split('/').pop().replace('.json', '');
-    return { params: { slug }, props: { page: mod.default ?? mod } };
+    const slug = (path.split('/').pop() ?? '').replace('.json', '');
+    return { params: { slug }, props: { page: mod.default } };
   });
 }
 
-const { page } = Astro.props;
+const { page } = Astro.props as { page: ConditionPage };
 const { slug } = Astro.params;
 const bookingUrl = home.site.bookingUrl.startsWith('#') ? `/${home.site.bookingUrl}` : home.site.bookingUrl;
 const pageUrl = `https://alpha-sports-med-prototype.pages.dev/conditions/${slug}/`;

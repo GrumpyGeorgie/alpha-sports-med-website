@@ -3,14 +3,17 @@
 // Per the brief, no card may link to a page that doesn't exist: cards for pages not yet built
 // render as non-clickable "page in progress" cards until their page ships.
 import home from '../../data/home.json';
-import page from '../../data/conditions-hub.json';
+import hubData from '../../data/conditions-hub.json';
 import SiteNavigation from '../../components/SiteNavigation.astro';
+import type { ConditionsHub } from '../../data/conditions/types';
+
+const page = hubData as ConditionsHub;
 
 const builtPaths = new Set([
   ...Object.keys(import.meta.glob('/src/pages/**/index.astro')).map((p) => p.replace(/^\/src\/pages/, '').replace(/index\.astro$/, '')),
-  ...Object.keys(import.meta.glob('../../data/conditions/*.json')).map((p) => `/conditions/${p.split('/').pop().replace('.json', '')}/`),
+  ...Object.keys(import.meta.glob('../../data/conditions/*.json')).map((p) => `/conditions/${(p.split('/').pop() ?? '').replace('.json', '')}/`),
 ]);
-const isBuilt = (href) => builtPaths.has(href);
+const isBuilt = (href: string) => builtPaths.has(href);
 const bookingUrl = home.site.bookingUrl.startsWith('#') ? `/${home.site.bookingUrl}` : home.site.bookingUrl;
 const pageUrl = 'https://alpha-sports-med-prototype.pages.dev/conditions/';
 const schema = {'@context':'https://schema.org','@graph':[
