@@ -1,0 +1,102 @@
+{
+  "seo": {
+    "title": "Chiropractor Melbourne | Alpha Sports Medicine",
+    "description": "Evidence-informed chiropractic care across Melbourne's west, backed by a full rehab team. Consent-led treatment, finite plans. No referral needed."
+  },
+  "breadcrumb": "Chiropractic",
+  "hero": {
+    "eyebrow": "Alpha Sports Medicine · Chiropractic",
+    "heading": "Chiropractic care in Melbourne",
+    "subheading": "Assessment-led chiropractic for back, neck and joint pain, inside a multidisciplinary team with rehab on hand. Nothing happens that you haven't agreed to."
+  },
+  "intro": {
+    "eyebrow": "Why people come in",
+    "heading": "What brings people to a chiropractor?",
+    "paragraphs": [
+      "Most people who see our chiropractors are dealing with something ordinary and frustrating: a lower back that locks up after sitting or lifting, a stiff neck and the headaches that come with it, or mid-back and rib pain that builds over a week at the desk.",
+      "Some have managed the same problem with occasional treatment for years and would like it to change. Hands-on care may help settle things. If it keeps coming back, though, it's worth finding out what's driving it, and that's where we start."
+    ],
+    "caption": "Assessment first, then a plan you agree to"
+  },
+  "explainer": {
+    "eyebrow": "Plain-language care",
+    "heading": "How chiropractic works at Alpha",
+    "paragraphs": [
+      "Chiropractic is a registered health profession focused on the musculoskeletal system, particularly the spine and joints. In Australia, chiropractors are registered through AHPRA, complete five years of university training and keep their skills current through ongoing professional development. At Alpha, our chiropractors work on musculoskeletal pain and movement, as part of a wider team.",
+      "Every first visit starts with assessment: your history, how you move and some simple testing. Only then do we talk about treatment. Depending on what we find, that may include joint mobilisation, soft tissue work, exercise prescription and, where appropriate and you agree, spinal manipulation.",
+      "Manipulation is one option, not the whole service. We'll explain what it involves and why we're suggesting it, and you can say no. There are gentler alternatives, and plenty of effective care happens without it. Nothing happens that you haven't agreed to.",
+      "Your plan has clear goals and a point where we review progress together. As things improve, the focus shifts towards strength and load capacity, so you can manage well on your own rather than rely on regular treatment.",
+      "Chiropractic is generally low-risk when provided by a registered practitioner, and we take the safety question seriously. Mild soreness or stiffness for a day or two afterwards is common. Serious complications are rare, and careful history-taking and screening are there to identify anyone for whom certain techniques aren't suitable. You can check any chiropractor's registration on the <a href=\"https://www.ahpra.gov.au/Registration/Registers-of-Practitioners.aspx\">AHPRA register</a> and read about our team's <a href=\"/about/qualifications/\">qualifications and training</a>."
+    ],
+    "concept": {
+      "icon": "fa-user-check",
+      "title": "Consent-led care",
+      "copy": "Every technique is explained first, and every one is optional."
+    }
+  },
+  "benefits": {
+    "eyebrow": "How we work",
+    "heading": "What sits around your treatment",
+    "intro": "Hands-on care may help settle symptoms; strength and load capacity help keep them settled.",
+    "items": [
+      {"icon": "fa-search", "title": "Assessment first", "copy": "History, movement and testing come before any treatment."},
+      {"icon": "fa-user-check", "title": "You choose", "copy": "Every technique is explained first, and manipulation is always optional."},
+      {"icon": "fa-dumbbell", "title": "Rehab down the hall", "copy": "Exercise physiology, clinical Pilates and strength work can sit in the same plan."},
+      {"icon": "fa-exchange-alt", "title": "One shared story", "copy": "Your chiropractor can bring in a colleague without you starting from scratch."},
+      {"icon": "fa-sync-alt", "title": "We re-test", "copy": "We check how you move at the end of each session and adapt the plan with you."},
+      {"icon": "fa-flag-checkered", "title": "A plan with a review point", "copy": "Goals and a review point are agreed with you, not an open-ended schedule."}
+    ]
+  },
+  "conditions": {
+    "heading": "What chiropractic may help with",
+    "intro": "Choose what sounds closest to what you're dealing with.",
+    "items": [
+      {"title": "Back pain", "href": "/conditions/back-pain/", "icon": "fa-user-injured", "copy": "A lower back that locks up after sitting, lifting or a long day."},
+      {"title": "Neck pain", "href": "/conditions/neck-pain/", "icon": "fa-head-side-virus", "copy": "Stiffness that makes turning your head hard work."},
+      {"title": "Headaches", "href": "/conditions/headaches/", "icon": "fa-brain", "copy": "Headaches linked with neck or upper-back tension."},
+      {"title": "Shoulder pain", "href": "/conditions/shoulder-pain/", "icon": "fa-dumbbell", "copy": "Discomfort reaching, lifting or getting back to training."},
+      {"title": "Hip pain", "href": "/conditions/hip-pain/", "icon": "fa-walking", "copy": "When sitting, walking or running is uncomfortable."},
+      {"title": "Rib sprain", "href": "/conditions/sports-injuries/rib-sprain/", "icon": "fa-band-aid", "copy": "Sharp mid-back or rib pain when you twist or reach."},
+      {"title": "Sports injuries", "href": "/conditions/sports-injuries/", "icon": "fa-futbol", "copy": "Hands-on care paired with a rehab-led route back to sport."},
+      {"title": "TMJ and jaw pain", "href": "/conditions/tmj-jaw-pain/", "icon": "fa-teeth-open", "copy": "Jaw tension and clicking, often alongside neck discomfort."}
+    ]
+  },
+  "visit": {
+    "heading": "Your first chiropractic appointment",
+    "intro": "A clear, conversational process with no surprises.",
+    "steps": [
+      {"title": "Tell us what's going on", "copy": "We discuss your history, what you've tried and what you want to get back to."},
+      {"title": "Move through an assessment", "copy": "Your chiropractor looks at how you move, runs some simple tests and explains what they notice."},
+      {"title": "Agree on treatment", "copy": "Options are explained, including alternatives to manipulation, before any hands-on care begins."},
+      {"title": "Leave with a plan", "copy": "You'll usually have exercises or advice for between visits, plus a clear point where we review progress."}
+    ],
+    "notes": [
+      {"icon": "fa-tshirt", "title": "Come in comfortable clothes", "copy": "Wear something you can move in; activewear works well."},
+      {"icon": "fa-hand-paper", "title": "Nothing without your say-so", "copy": "Tell us what feels okay. You can pause, change your mind or skip a technique at any point."},
+      {"icon": "fa-notes-medical", "title": "Tell us your health history", "copy": "Let us know about osteoporosis, blood-thinning medication, recent injuries or any other changes to your health."}
+    ]
+  },
+  "team": {
+    "eyebrow": "Our chiropractors",
+    "heading": "Registered chiropractors inside a wider team",
+    "copy": "Our chiropractors are AHPRA-registered and work alongside osteopaths, physiotherapists, exercise physiologists and strength coaches. Your care can draw on the right mix of skills, and if a colleague is better placed to help with part of your plan, we'll tell you."
+  },
+  "clinics": ["bacchus-marsh", "ascot-vale", "newport"],
+  "locationsHeading": "Chiropractic across Melbourne's west",
+  "faqHeading": "Chiropractic FAQs",
+  "faqs": [
+    {"question": "Are chiropractors registered, and is chiropractic safe?", "answer": "Yes, chiropractors in Australia must be registered with AHPRA, and you can check any practitioner on the public register. Chiropractic is generally low-risk when provided by a registered practitioner. Mild soreness or stiffness for a day or two is common. Serious complications, including those linked with neck manipulation, are rare but can occur, which is why we take a full history and screen before treatment. Neck manipulation is always discussed first, never required, and other options are available."},
+    {"question": "Do I need a referral?", "answer": "No. You can book a chiropractor directly. If your GP has set you up with a chronic condition management plan, you may be eligible for some Medicare-subsidised visits, so it's worth mentioning when you book."},
+    {"question": "Can I claim on private health?", "answer": "Chiropractic may be covered when your extras policy includes it. Check your level of cover with your fund before your visit."},
+    {"question": "Does an adjustment hurt? What's the noise?", "answer": "Most people feel pressure rather than pain, and some feel a little sore afterwards. The click you sometimes hear is a pressure change in the fluid inside the joint, not a bone moving back into place. If you'd rather not have manipulation, just say so."},
+    {"question": "Do I have to keep coming forever?", "answer": "No. Your plan has goals and a review point that we agree with you. As things improve, visits usually space out and the focus moves to exercises you can do yourself. We won't recommend ongoing treatment without a clinical reason."},
+    {"question": "Can I be treated without manipulation?", "answer": "Yes. Manipulation is one option among many. Mobilisation, soft tissue work and exercise can be used instead, and you can change your mind at any point."},
+    {"question": "What's the difference between a chiro, an osteo and a physio?", "answer": "All three are AHPRA-registered and the conditions they treat often overlap. The approaches differ in emphasis: chiropractic focuses closely on the spine and joints, osteopathy takes a broad hands-on view, and physiotherapy tends to focus on movement and exercise. At Alpha, we work as one team to help you find the right fit. There's more on this on our blog."},
+    {"question": "Can I see a chiropractor while pregnant?", "answer": "Care can be adapted during pregnancy, taking your stage, history and comfort into account. Let us know you're pregnant when you book, and we'll coordinate with your maternity care team when needed."}
+  ],
+  "closing": {
+    "eyebrow": "Your next step",
+    "heading": "Talk it through before anything happens",
+    "copy": "Book an assessment with one of our chiropractors, or give us a call and we'll help you find the right fit. Nothing happens that you haven't agreed to."
+  }
+}

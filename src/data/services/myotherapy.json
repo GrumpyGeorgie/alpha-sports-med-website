@@ -1,0 +1,219 @@
+{
+  "seo": {
+    "title": "Myotherapy Melbourne | Alpha Sports Medicine",
+    "description": "Clinical myotherapy in Melbourne: soft tissue treatment, optional dry needling and an assessment that looks at why it keeps tightening. Book online."
+  },
+  "breadcrumb": "Myotherapy",
+  "hero": {
+    "eyebrow": "Alpha Sports Medicine · Myotherapy",
+    "heading": "Myotherapy in Melbourne",
+    "subheading": "Hands-on treatment for tight, sore muscles and soft tissue, with a proper assessment behind it—so you find out why it keeps tightening, not just that it does."
+  },
+  "intro": {
+    "eyebrow": "Sound familiar?",
+    "heading": "When your body keeps holding on",
+    "paragraphs": [
+      "Your neck and upper traps are hard as a rock by Wednesday. Headaches start at the base of your skull and creep forward. Your calves and glutes will not let go, no matter how much you foam roll. Your lower back feels more tight than painful, until one morning it is not. Maybe you have caught yourself clenching your jaw at your desk.",
+      "Or you book a monthly massage that feels amazing and lasts about four days.",
+      "That relief is real, and it is worth having. But if the same tightness comes back on the same schedule, something is usually loading that tissue. That is worth finding, and it is where myotherapy starts."
+    ],
+    "caption": "Hands-on care with an assessment behind it"
+  },
+  "explainer": {
+    "eyebrow": "Plain-language care",
+    "heading": "What is myotherapy?",
+    "paragraphs": [
+      "Myotherapy is the assessment and treatment of musculoskeletal pain and dysfunction that comes from muscles and soft tissue: the muscles, fascia, tendons and connective tissue that let you move.",
+      "Myotherapists train through an advanced diploma of myotherapy or a bachelor of health science in clinical myotherapy. Unlike our <a href=\"/services/osteopathy/\">osteopaths</a>, <a href=\"/services/physiotherapy/\">physiotherapists</a> and <a href=\"/services/chiropractic/\">chiropractors</a>, myotherapists are not registered through AHPRA. The profession is self-regulated through professional associations, and we would rather say that plainly. See how each of our disciplines is qualified on our <a href=\"/about/qualifications/\">qualifications page</a>.",
+      "A session may include soft tissue and deep tissue techniques, trigger point therapy, myofascial techniques, dry needling, joint mobilisation, stretching, taping and home advice. When people talk about “knots”, they usually mean trigger points: small, tender, tight spots within a muscle that can feel sore when pressed and sometimes send discomfort elsewhere.",
+      "What sets myotherapy apart is the assessment. Your myotherapist tests how you move, checks range of motion and looks at the tissue involved, then builds a working explanation of why it is behaving the way it is.",
+      "<strong>Myotherapy or remedial massage?</strong> Both are hands-on soft tissue treatments, and both can help a tight back feel better. Remedial massage therapists typically train to diploma level and focus on treating the tissue presented. Myotherapists train for longer, use a broader set of techniques including dry needling, and add an assessment step aimed at the source of the problem as well as its site. If you want a good treatment for a tight back, either can help. If you want someone to work out why the same back keeps tightening, myotherapy is set up for that.",
+      "<strong>What about dry needling?</strong> Dry needling places fine, single-use filament needles into trigger points within a muscle. It uses the same kind of needle as acupuncture but different reasoning: dry needling is based on a Western musculoskeletal framework, while acupuncture comes from traditional Chinese medicine. Most people feel a brief twitch or a deep ache, and next-day soreness similar to a hard training session is common. Bruising can occur, and like any needle-based technique there are less common risks, which your myotherapist will explain first. It is always optional, and you can have a full treatment without it."
+    ],
+    "concept": {
+      "icon": "fa-search",
+      "title": "Assessment first",
+      "copy": "We look at why the tissue is behaving this way, not only where it hurts."
+    }
+  },
+  "benefits": {
+    "eyebrow": "How we work",
+    "heading": "The Alpha myotherapy difference",
+    "intro": "Hands-on care for how you feel now, and a clearer idea of why it keeps coming back.",
+    "items": [
+      {
+        "icon": "fa-search",
+        "title": "Assessment every time",
+        "copy": "We assess before we treat at every appointment, not only the first."
+      },
+      {
+        "icon": "fa-crosshairs",
+        "title": "Aimed at the driver",
+        "copy": "Treatment looks at what may be loading the tissue, not only the sore spot."
+      },
+      {
+        "icon": "fa-clipboard-list",
+        "title": "You leave knowing more",
+        "copy": "We explain what we found and give you something practical to do between visits."
+      },
+      {
+        "icon": "fa-users",
+        "title": "One team, one plan",
+        "copy": "If a joint, load or training issue is involved, our osteos, physios, chiros and exercise physiologists are part of the same team, so you do not have to retell your story."
+      },
+      {
+        "icon": "fa-sync-alt",
+        "title": "Re-test before you leave",
+        "copy": "We re-check how you move at the end of each session so you can see where things are at."
+      },
+      {
+        "icon": "fa-user-check",
+        "title": "Your choice of plan",
+        "copy": "Some people come for regular maintenance and others want to understand why it keeps returning; we plan around what you want."
+      }
+    ]
+  },
+  "conditions": {
+    "heading": "What myotherapy may help with",
+    "intro": "Choose what sounds closest to what you are dealing with.",
+    "items": [
+      {
+        "title": "Neck pain",
+        "href": "/conditions/neck-pain/",
+        "icon": "fa-head-side-virus",
+        "copy": "A neck and upper back that tighten up by midweek."
+      },
+      {
+        "title": "Headaches",
+        "href": "/conditions/headaches/",
+        "icon": "fa-brain",
+        "copy": "Headaches linked with neck and upper-back tension."
+      },
+      {
+        "title": "Back pain",
+        "href": "/conditions/back-pain/",
+        "icon": "fa-user-injured",
+        "copy": "A lower back that feels tight, stiff or overloaded."
+      },
+      {
+        "title": "Shoulder pain",
+        "href": "/conditions/shoulder-pain/",
+        "icon": "fa-dumbbell",
+        "copy": "Tight, sore shoulders from desk work, lifting or sport."
+      },
+      {
+        "title": "TMJ and jaw pain",
+        "href": "/conditions/tmj-jaw-pain/",
+        "icon": "fa-teeth-open",
+        "copy": "Jaw tension, clenching and related neck discomfort."
+      },
+      {
+        "title": "Hip pain",
+        "href": "/conditions/hip-pain/",
+        "icon": "fa-walking",
+        "copy": "Tight hips and glutes that make sitting, walking or running uncomfortable."
+      },
+      {
+        "title": "Running injuries",
+        "href": "/conditions/running-injuries/",
+        "icon": "fa-running",
+        "copy": "Calves, hamstrings and glutes that never quite let go."
+      },
+      {
+        "title": "Sports injuries",
+        "href": "/conditions/sports-injuries/",
+        "icon": "fa-futbol",
+        "copy": "Soft tissue strains and niggles from training and sport."
+      }
+    ]
+  },
+  "visit": {
+    "heading": "Your first myotherapy appointment",
+    "intro": "A clear, conversational process with no surprises.",
+    "steps": [
+      {
+        "title": "Tell us what is going on",
+        "copy": "We ask about your symptoms, your history, your work and training, and what you want to get back to."
+      },
+      {
+        "title": "Move through an assessment",
+        "copy": "Your myotherapist checks how you move and the tissue involved, and explains what they notice."
+      },
+      {
+        "title": "Agree on treatment",
+        "copy": "Options, including whether dry needling is suitable for you, are explained before hands-on care begins."
+      },
+      {
+        "title": "Leave with a plan",
+        "copy": "You will usually leave with stretches, exercises or advice to keep things moving between visits."
+      }
+    ],
+    "notes": [
+      {
+        "icon": "fa-tshirt",
+        "title": "Come in comfortable clothes",
+        "copy": "Activewear or loose clothing works well, so we can reach the area and see how you move."
+      },
+      {
+        "icon": "fa-hand-paper",
+        "title": "You set the pressure",
+        "copy": "Firm does not have to mean painful. Tell us what feels okay and we will adjust."
+      },
+      {
+        "icon": "fa-bed",
+        "title": "Expect some soreness",
+        "copy": "Feeling sore for a day or two is common, especially after deep tissue work or dry needling."
+      }
+    ]
+  },
+  "team": {
+    "eyebrow": "Our myotherapists",
+    "heading": "Clinically trained, part of the wider team",
+    "copy": "Our myotherapists work alongside Alpha's osteopaths, physiotherapists, chiropractors and exercise physiologists, with the same approach: listen properly, assess first and explain clearly. You can find each myotherapist's qualifications on our team page."
+  },
+  "clinics": [
+    "newport",
+    "ascot-vale"
+  ],
+  "locationsHeading": "Myotherapy across Melbourne",
+  "faqHeading": "Myotherapy FAQs",
+  "faqs": [
+    {
+      "question": "What is the difference between myotherapy and remedial massage?",
+      "answer": "Both are hands-on soft tissue treatments. Myotherapists complete longer training, use a broader range of techniques including dry needling, and assess where a problem may be coming from as well as where you feel it. Remedial massage is a good option with a different scope."
+    },
+    {
+      "question": "Can I claim myotherapy on private health?",
+      "answer": "You may be able to. Cover for myotherapy depends on your fund, your level of extras cover and the myotherapist's professional association membership. Check with your fund before your appointment."
+    },
+    {
+      "question": "Do I need a referral?",
+      "answer": "No. You can book a myotherapist directly without a GP referral."
+    },
+    {
+      "question": "Does it hurt, and will I be sore afterwards?",
+      "answer": "Some techniques feel firm or tender, especially on tight areas, and we will work within what is comfortable for you. Soreness for a day or two afterwards is common, a bit like after a hard training session. If anything feels unusual or does not settle, let us know or speak with your GP."
+    },
+    {
+      "question": "What is dry needling, and do I have to have it?",
+      "answer": "Dry needling places fine, single-use needles into trigger points within a muscle. It can cause a twitch, a deep ache and next-day soreness, and bruising is possible. It is always optional: your myotherapist will explain it, check it is suitable for you and only go ahead with your consent."
+    },
+    {
+      "question": "How often should I come?",
+      "answer": "It depends on what is going on and what you want. Some people book regular maintenance sessions; others want to understand why a problem keeps returning. Your myotherapist will suggest a plan after your assessment and review it with you."
+    },
+    {
+      "question": "Should I book myotherapy, or see an osteo or physio first?",
+      "answer": "If your main concern is tight, sore muscles, myotherapy is a reasonable place to start. If you have had a recent injury, or your pain is sharp, worsening or spreading, an osteopath or physiotherapist may be a better first step. If you are not sure, tell us what is going on and we will point you to the right person. For new or unexplained symptoms, your GP is always a good place to start."
+    },
+    {
+      "question": "What should I wear?",
+      "answer": "Comfortable clothing you can move in, such as activewear. We may need access to the area being treated, and we will always explain what we are doing and check you are comfortable first."
+    }
+  ],
+  "closing": {
+    "eyebrow": "Your next step",
+    "heading": "Get hands-on care, and find out why",
+    "copy": "Book a myotherapy appointment for hands-on treatment and a clear explanation of what is going on. Not sure it is the right service? Tell us what is happening and we will help you find the right fit."
+  }
+}

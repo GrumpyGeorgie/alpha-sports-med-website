@@ -1,0 +1,103 @@
+{
+  "seo": {
+    "title": "Sports Physio Melbourne | Alpha Sports Medicine",
+    "description": "Sports physiotherapy for runners, lifters and club athletes in Melbourne. We work out what your body can handle, then build from there. Book online."
+  },
+  "breadcrumb": "Physiotherapy",
+  "hero": {
+    "eyebrow": "Alpha Sports Medicine · Physiotherapy",
+    "heading": "Sports physiotherapy in Melbourne",
+    "subheading": "Our first move isn't to stop you training. It's to work out what your body can handle right now, then build from there with a plan around your week."
+  },
+  "intro": {
+    "eyebrow": "The rest question",
+    "heading": "“Just rest it” is not a plan",
+    "paragraphs": [
+      "You were told to stop running for six weeks. You did. A fortnight after you started again, the same thing flared up. If that sounds familiar, you're not alone. It's one of the most common stories we hear from people who come through our door.",
+      "Rest has its place, and some injuries genuinely need offloading for a while. But complete rest can also decondition the tissue you need to load, so it may be less ready for training when you return. For many active people, a managed, gradual return is a more useful default than stopping altogether. The difference is knowing which situation you're in, and that's what your assessment is for."
+    ],
+    "caption": "A plan built around your training, not instead of it"
+  },
+  "explainer": {
+    "eyebrow": "Plain-language care",
+    "heading": "What is sports physiotherapy?",
+    "paragraphs": [
+      "Physiotherapy uses exercise, movement, hands-on techniques and education to help improve how you move and function, and to help manage pain and stiffness. Physiotherapists in Australia are registered with AHPRA through the Physiotherapy Board of Australia, and you don't need a referral to see one.",
+      "Sports physiotherapy applies that to people who train. The central idea is load. Tissue adapts to what you ask of it, so the aim is to find the dose your body can handle today, then build it up in steps you can see. That might mean adjusting your runs or modifying your lifts rather than parking them for weeks.",
+      "We commonly work with <a href=\"/conditions/running-injuries/\">runners</a> (road, trail and marathon build-ups), gym and group fitness members (CrossFit, F45, BFT, Olympic lifting and general strength), <a href=\"/conditions/sports-injuries/\">club players</a> across AFL, netball, soccer and cricket, people recovering from surgery such as <a href=\"/conditions/sports-injuries/acl-injury/\">ACL reconstruction</a>, and parents who just want to keep up.",
+      "<strong>Return to running and sport is criteria-based.</strong> You progress when you meet agreed markers of strength, control and tolerance, not simply because a set number of weeks has passed, and timeframes vary from person to person. A <a href=\"/running-assessment/\">running assessment</a> can be part of the picture, and <a href=\"/runwest-run-club/\">RunWest Run Club</a> is there when you're ready to run with others again. Rehab can continue with <a href=\"/services/exercise-physiology/\">exercise physiology</a> and <a href=\"/services/clinical-pilates/\">clinical Pilates</a> in the wider Alpha team."
+    ],
+    "concept": {
+      "icon": "fa-balance-scale",
+      "title": "Load, not just rest",
+      "copy": "We find what your body can handle today, then build from there."
+    }
+  },
+  "benefits": {
+    "eyebrow": "How we work",
+    "heading": "The Alpha physio difference",
+    "intro": "Plenty of clinics offer physiotherapy. What matters is how the plan is built around you and your training.",
+    "items": [
+      { "icon": "fa-comments", "title": "We start with your training", "copy": "Your history covers training load, how your week is structured and what you're working towards." },
+      { "icon": "fa-search", "title": "We assess the whole chain", "copy": "We look beyond the sore spot at how the regions above and below it may be contributing." },
+      { "icon": "fa-chart-line", "title": "We measure, not guess", "copy": "Strength and movement testing, where relevant, gives you numbers to track your progress against." },
+      { "icon": "fa-hand-paper", "title": "Hands-on where it helps", "copy": "Manual treatment may help settle symptoms, but it's one part of the plan, never the whole plan." },
+      { "icon": "fa-calendar-alt", "title": "Built around your week", "copy": "Your programme fits your sessions, your race date and the rest of your life." },
+      { "icon": "fa-dumbbell", "title": "The strength phase happens here", "copy": "Exercise physiology, clinical Pilates and strength work sit within the wider Alpha team, because pain settling isn't the finish line." }
+    ]
+  },
+  "conditions": {
+    "heading": "What physiotherapy may help with",
+    "intro": "Choose what sounds closest to what you're dealing with.",
+    "items": [
+      { "title": "Running injuries", "href": "/conditions/running-injuries/", "icon": "fa-running", "copy": "Niggles that keep interrupting your running block." },
+      { "title": "Sports injuries", "href": "/conditions/sports-injuries/", "icon": "fa-futbol", "copy": "A rehab-led route back to training and game day." },
+      { "title": "ACL injury", "href": "/conditions/sports-injuries/acl-injury/", "icon": "fa-walking", "copy": "Rehab before and after surgery, or without it." },
+      { "title": "Ankle sprain", "href": "/conditions/sports-injuries/ankle-sprain/", "icon": "fa-shoe-prints", "copy": "An ankle that keeps rolling or never feels quite right." },
+      { "title": "Knee pain", "href": "/conditions/knee-pain/", "icon": "fa-bone", "copy": "Knees that complain on stairs, squats or longer runs." },
+      { "title": "Shoulder pain", "href": "/conditions/shoulder-pain/", "icon": "fa-dumbbell", "copy": "Support for pressing, pulling, throwing and overhead work." },
+      { "title": "Back pain", "href": "/conditions/back-pain/", "icon": "fa-user-injured", "copy": "Pain that keeps interrupting lifting, work or sleep." },
+      { "title": "Hip pain", "href": "/conditions/hip-pain/", "icon": "fa-child", "copy": "When running, lifting or sitting feels uncomfortable." },
+      { "title": "Foot pain and plantar fasciitis", "href": "/conditions/foot-pain-plantar-fasciitis/", "icon": "fa-shoe-prints", "copy": "Heel and arch pain that shows up with your first steps." },
+      { "title": "Hypermobility", "href": "/conditions/hypermobility/", "icon": "fa-notes-medical", "copy": "Training shaped around control, strength and capacity." }
+    ]
+  },
+  "visit": {
+    "heading": "Your first physiotherapy appointment",
+    "intro": "A clear, conversational process built around what you want to get back to.",
+    "steps": [
+      { "title": "Talk us through your training", "copy": "We discuss your injury history, your current load and what you're working towards." },
+      { "title": "Get assessed and tested", "copy": "Your physio assesses how you move and, where relevant, tests strength so there's a baseline to work from." },
+      { "title": "Agree on a plan", "copy": "We explain what we're finding in plain language and agree on treatment and training changes with you." },
+      { "title": "Re-test before you leave", "copy": "We check how you respond and send you off with a programme that fits your week." }
+    ],
+    "notes": [
+      { "icon": "fa-tshirt", "title": "Come ready to move", "copy": "Wear activewear, and bring your usual runners if your issue shows up when you run." },
+      { "icon": "fa-clipboard-list", "title": "Bring your training details", "copy": "A rough idea of your weekly sessions, upcoming events and any scans or surgical notes is useful." },
+      { "icon": "fa-route", "title": "We plan as we go", "copy": "There's no stock number of visits. We'll give you an honest view after your assessment and review it as you progress." }
+    ]
+  },
+  "team": {
+    "eyebrow": "Our physiotherapists",
+    "heading": "Physios who understand training",
+    "copy": "Our physiotherapists work with active people every day, and many train themselves. They're part of a multidisciplinary team, so if your plan would benefit from osteopathy, exercise physiology or clinical Pilates, the right colleague is close by."
+  },
+  "clinics": ["newport", "ascot-vale", "bacchus-marsh"],
+  "locationsHeading": "Physiotherapy across Melbourne",
+  "faqHeading": "Physiotherapy FAQs",
+  "faqs": [
+    { "question": "Do I need a GP referral to see a physio?", "answer": "No. You can book a physiotherapist directly. Referrals are always welcome, and your GP remains an important part of your care." },
+    { "question": "Can I claim on private health or Medicare?", "answer": "Physiotherapy may be covered if your extras policy includes it, so check your level of cover with your fund. Medicare may subsidise a limited number of allied health sessions each calendar year, but only if your GP has set up an eligible chronic condition care plan and referred you. Let us know when you book." },
+    { "question": "Do I have to stop training?", "answer": "Not always. Some injuries do need a period of offloading, and we'll tell you if yours is one of them. For many people, though, training can be modified rather than stopped, and your physio will work with you to find what your body can handle right now." },
+    { "question": "What's the difference between a physio and an osteo?", "answer": "Both are AHPRA-registered and the conditions they see often overlap. The approaches differ in emphasis: physiotherapy tends to centre on movement and exercise, while osteopathy takes a broad, whole-body hands-on view. At Alpha both work as one team, so we'll help you find the right fit. There's more on this on our blog." },
+    { "question": "Do you offer dry needling, taping or shockwave?", "answer": "Techniques vary between practitioners, and we'll only suggest options that suit your presentation and that you're comfortable with. Ask us when you book and we'll match you with the right physio." },
+    { "question": "How many sessions will I need?", "answer": "It depends on the injury, how long it's been there and how you respond. We'll give you an honest view after your assessment and review it with you as you progress, rather than lock you into a set number." },
+    { "question": "Can I see a physio after surgery?", "answer": "Yes. We commonly see people after procedures such as ACL reconstruction, shoulder repairs and joint replacement. We follow your surgeon's guidance and, with your consent, keep your surgical team updated." },
+    { "question": "Do you offer telehealth?", "answer": "Yes. Some assessments and programme reviews can be done online. See our online consults page for how it works." }
+  ],
+  "closing": {
+    "eyebrow": "Your next step",
+    "heading": "Keep training with a plan that fits",
+    "copy": "Book online with one of our physiotherapists, give us a call, or tell us what's going on and we'll help you find the right fit."
+  }
+}
