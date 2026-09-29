@@ -30,5 +30,7 @@ For future dynamic data, replace the booking dataset through a separately author
 - Added “Post-operative / Fracture rehab” as a focus area, mapped to the existing physiotherapy category. First/return filtering and existing Cliniko IDs remain unchanged.
 - Searches for post-operative, postoperative, post op, fracture and broken bone find physiotherapy appointments without duplicating results.
 - No individual practitioner suitability has been inferred. Cliniko controls practitioners and availability; Alpha should confirm any restrictions for this focus area before launch.
-- William’s 29 September email supplies two unlabelled JPEG portraits. Identity-to-filename confirmation is pending; existing portraits are preserved until confirmed. Both supplied JPEGs are 215 × 320 pixels.
+- Michael confirmed William is in the green T-shirt (Headshot-Alpha1 3.JPEG), with Oscar in the navy zip-top (HeadshotsHigh ResHeadshot-Alpha7.JPEG). Both homepage and booking portraits use the supplied originals with new filenames to avoid stale caches. Both supplied JPEGs are 215 × 320 pixels.
 - Manual GitHub deployment runs now target their selected branch, enabling separate Cloudflare previews without deploying main.
+
+- Michael proposes dedicated Post-operative / Fracture rehab appointment types so Alpha can support suitable practitioners across modalities. Current physiotherapy routing is provisional in this review preview; replace with Alpha-approved Cliniko appointment links once provided. Do not infer clinical suitability or invent appointment IDs.
