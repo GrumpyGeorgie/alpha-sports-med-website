@@ -38,6 +38,13 @@
       "aliases": "myotherapist massage"
     },
     {
+      "id": "post-operative-fracture-rehab",
+      "label": "Post-operative / Fracture rehab",
+      "group": "focus",
+      "appointmentCategory": "physiotherapy",
+      "aliases": "postoperative post operative post op surgery surgical fracture broken bone rehab rehabilitation"
+    },
+    {
       "id": "running",
       "label": "Running assessments",
       "group": "focus",

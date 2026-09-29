@@ -2,6 +2,7 @@ name: Build and deploy Astro site to Cloudflare Pages
 
 # Builds Astro and deploys it to the existing Cloudflare Pages project
 # (alpha-sports-med-prototype) on every push to main.
+# Manual runs on feature branches create isolated previews.
 # Keeps the live URL: https://alpha-sports-med-prototype.pages.dev
 #
 # Required repo secrets (Settings → Secrets and variables → Actions):
@@ -40,4 +41,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=alpha-sports-med-prototype --branch=main
+          command: pages deploy dist --project-name=alpha-sports-med-prototype --branch=${{ github.ref_name }}

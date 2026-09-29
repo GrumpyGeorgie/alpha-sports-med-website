@@ -23,3 +23,12 @@ New and return paths filter explicitly named first/initial/new and return/follow
 The page is a review prototype, marked noindex. It is not launched at `book.alphasportsmed.com.au`. Before launch: review patient eligibility and grouping, verify Cliniko routing, configure the booking subdomain so it serves `/book` without exposing unfinished site navigation, and decide the production canonical/indexing policy. No DNS, API access or production deployment is included in this change.
 
 For future dynamic data, replace the booking dataset through a separately authorised server-side Cliniko integration. Never expose an API key in client-side code.
+
+
+## September 2026 feedback preview
+
+- Added “Post-operative / Fracture rehab” as a focus area, mapped to the existing physiotherapy category. First/return filtering and existing Cliniko IDs remain unchanged.
+- Searches for post-operative, postoperative, post op, fracture and broken bone find physiotherapy appointments without duplicating results.
+- No individual practitioner suitability has been inferred. Cliniko controls practitioners and availability; Alpha should confirm any restrictions for this focus area before launch.
+- William’s 29 September email supplies two unlabelled JPEG portraits. Identity-to-filename confirmation is pending; existing portraits are preserved until confirmed. Both supplied JPEGs are 215 × 320 pixels.
+- Manual GitHub deployment runs now target their selected branch, enabling separate Cloudflare previews without deploying main.

@@ -53,3 +53,17 @@ test('every browsable category has a usable appointment for both patient paths',
     assert.ok(filter({category:c.id,patient}).length,`${c.id}: ${patient}`);
   }
 });
+
+
+test('post-operative and fracture rehab reuses physiotherapy links for each patient path', () => {
+  for (const patient of ['all', 'new', 'return']) {
+    assert.deepEqual(filter({ category: 'post-operative-fracture-rehab', patient }),
+      filter({ category: 'physiotherapy', patient }));
+  }
+  for (const query of ['post-operative', 'postoperative', 'post op', 'fracture rehab', 'broken bone']) {
+    const items = filter({ query });
+    assert.ok(items.length, query);
+    assert.ok(items.every(a => a.category === 'physiotherapy'), query);
+    assert.equal(new Set(items.map(a => a.id)).size, items.length);
+  }
+});
