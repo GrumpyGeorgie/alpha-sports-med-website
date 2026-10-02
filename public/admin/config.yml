@@ -2,7 +2,7 @@
 # immediately with `npx decap-server` alongside `npm run dev`.
 backend:
   name: github
-  repo: GrumpyGeorgie/alpha-sports-med-website
+  repo: lhmorg/alpha-sports-med-website
   branch: main
   base_url: https://alpha-sports-med-prototype.pages.dev
   auth_endpoint: api/auth
@@ -264,6 +264,24 @@ collections:
               - { label: Image, name: image, widget: image, required: false }
               - { label: Image alt text, name: imageAlt, widget: string, required: false }
               - { label: Image caption, name: caption, widget: string, required: false }
+          - label: Explainer
+            name: explainer
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Paragraphs
+                name: paragraphs
+                widget: list
+                field:
+                  label: Paragraph
+                  name: paragraph
+                  widget: text
+                hint: 'Links and bold use HTML: <a href="/page/">text</a>, <strong>text</strong>'
           - { label: Benefits heading, name: benefitsHeading, widget: string }
           - { label: Benefits introduction, name: benefitsIntro, widget: text }
           - label: Benefits
@@ -295,6 +313,207 @@ collections:
               - { label: Eyebrow, name: eyebrow, widget: string }
               - { label: Heading, name: heading, widget: string }
               - { label: Copy, name: copy, widget: text }
+      - label: Shockwave Therapy
+        name: shockwave_therapy
+        file: src/data/shockwave-therapy.json
+        fields:
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - label: Page title
+                name: title
+                widget: string
+              - label: Meta description
+                name: description
+                widget: text
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Intro
+                name: subheading
+                widget: text
+          - label: Introduction section
+            name: intro
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Paragraphs
+                name: paragraphs
+                widget: list
+                field:
+                  label: Paragraph
+                  name: paragraph
+                  widget: text
+                hint: 'Links and bold use HTML: <a href="/page/">text</a>, <strong>text</strong>'
+              - label: Image
+                name: image
+                widget: image
+              - label: Image alt text
+                name: imageAlt
+                widget: string
+              - label: Image caption
+                name: caption
+                widget: string
+          - label: What is shockwave therapy
+            name: explainer
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Paragraphs
+                name: paragraphs
+                widget: list
+                field:
+                  label: Paragraph
+                  name: paragraph
+                  widget: text
+                hint: 'Links and bold use HTML: <a href="/page/">text</a>, <strong>text</strong>'
+          - label: How it works
+            name: howItWorks
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Paragraphs
+                name: paragraphs
+                widget: list
+                field:
+                  label: Paragraph
+                  name: paragraph
+                  widget: text
+                hint: 'Links and bold use HTML: <a href="/page/">text</a>, <strong>text</strong>'
+              - label: Highlight
+                name: highlight
+                widget: text
+          - label: Conditions
+            name: conditions
+            widget: object
+            fields:
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Intro
+                name: intro
+                widget: text
+              - label: Items
+                name: items
+                widget: list
+                summary: '{{fields.title}}'
+                fields:
+                  - label: Icon class
+                    name: icon
+                    widget: string
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Copy (optional)
+                    name: copy
+                    widget: text
+                    required: false
+              - label: Note
+                name: note
+                widget: text
+          - label: Your visit
+            name: visit
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Steps
+                name: steps
+                widget: list
+                summary: '{{fields.title}}'
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Copy
+                    name: copy
+                    widget: text
+          - label: Team section
+            name: team
+            widget: object
+            fields:
+              - label: Image
+                name: image
+                widget: image
+              - label: Image alt text
+                name: imageAlt
+                widget: string
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Paragraphs
+                name: paragraphs
+                widget: list
+                field:
+                  label: Paragraph
+                  name: paragraph
+                  widget: text
+                hint: 'Links and bold use HTML: <a href="/page/">text</a>, <strong>text</strong>'
+          - label: FAQs
+            name: faqs
+            widget: list
+            summary: '{{fields.question}}'
+            fields:
+              - label: Question
+                name: question
+                widget: string
+              - label: Answer
+                name: answer
+                widget: text
+          - label: References
+            name: references
+            widget: list
+            summary: '{{fields.label}}'
+            fields:
+              - label: Label
+                name: label
+                widget: string
+              - label: URL
+                name: url
+                widget: string
+          - label: Closing call to action
+            name: closing
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Copy
+                name: copy
+                widget: text
   - label: Locations
     name: location_pages
     format: json
@@ -414,3 +633,729 @@ collections:
               - { label: Eyebrow, name: eyebrow, widget: string }
               - { label: Heading, name: heading, widget: string }
               - { label: Copy, name: copy, widget: text }
+      - label: Conditions hub
+        name: conditions_hub
+        file: src/data/conditions-hub.json
+        fields:
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - label: Page title
+                name: title
+                widget: string
+              - label: Meta description
+                name: description
+                widget: text
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Intro
+                name: subheading
+                widget: text
+              - label: Trust points
+                name: trust
+                widget: list
+                field:
+                  label: Point
+                  name: point
+                  widget: string
+          - label: Not sure where to start
+            name: unsure
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Paragraphs
+                name: paragraphs
+                widget: list
+                field:
+                  label: Paragraph
+                  name: paragraph
+                  widget: text
+                hint: 'Links and bold use HTML: <a href="/page/">text</a>, <strong>text</strong>'
+          - label: Condition groups
+            name: groups
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - label: Anchor ID
+                name: id
+                widget: string
+                hint: Lowercase, no spaces. Used for in-page links.
+              - label: Title
+                name: title
+                widget: string
+              - label: Conditions
+                name: items
+                widget: list
+                summary: '{{fields.title}}'
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Link
+                    name: href
+                    widget: string
+                  - label: Short description
+                    name: copy
+                    widget: text
+                  - label: Sub-pages (optional)
+                    name: children
+                    widget: list
+                    summary: '{{fields.title}}'
+                    required: false
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Link
+                        name: href
+                        widget: string
+          - label: Our approach
+            name: approach
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Steps
+                name: steps
+                widget: list
+                summary: '{{fields.title}}'
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Copy
+                    name: copy
+                    widget: text
+          - label: Services
+            name: services
+            widget: object
+            fields:
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Copy
+                name: copy
+                widget: text
+              - label: Items
+                name: items
+                widget: list
+                summary: '{{fields.title}}'
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Link
+                    name: href
+                    widget: string
+                  - label: Icon class
+                    name: icon
+                    widget: string
+          - label: FAQs
+            name: faqs
+            widget: list
+            summary: '{{fields.question}}'
+            fields:
+              - label: Question
+                name: question
+                widget: string
+              - label: Answer
+                name: answer
+                widget: text
+          - label: Closing call to action
+            name: closing
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Copy
+                name: copy
+                widget: text
+  - label: Condition pages
+    name: condition_template_pages
+    description: Pages built from the shared condition template (/conditions/<file name>/).
+    folder: src/data/conditions
+    extension: json
+    format: json
+    create: false
+    delete: false
+    identifier_field: breadcrumb
+    summary: '{{breadcrumb}}'
+    fields:
+      - label: SEO
+        name: seo
+        widget: object
+        fields:
+          - label: Page title
+            name: title
+            widget: string
+          - label: Meta description
+            name: description
+            widget: text
+      - label: Breadcrumb name
+        name: breadcrumb
+        widget: string
+      - label: Hero
+        name: hero
+        widget: object
+        fields:
+          - label: Eyebrow
+            name: eyebrow
+            widget: string
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Intro
+            name: subheading
+            widget: text
+          - label: Trust points (optional)
+            name: trust
+            widget: list
+            required: false
+            field:
+              label: Point
+              name: point
+              widget: string
+      - label: Urgent-care notice
+        name: urgent
+        widget: object
+        fields:
+          - label: Eyebrow
+            name: eyebrow
+            widget: string
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Paragraphs
+            name: paragraphs
+            widget: list
+            field:
+              label: Paragraph
+              name: paragraph
+              widget: text
+            hint: 'Links and bold use HTML: <a href="/page/">text</a>, <strong>text</strong>'
+            required: false
+          - label: Copy
+            name: copy
+            widget: text
+            required: false
+          - label: Link label
+            name: linkLabel
+            widget: string
+            required: false
+          - label: Link URL
+            name: linkUrl
+            widget: string
+            required: false
+      - label: Pain patterns (optional)
+        name: pattern
+        widget: object
+        required: false
+        fields:
+          - label: Background word
+            name: ghost
+            widget: string
+            required: false
+          - label: Eyebrow
+            name: eyebrow
+            widget: string
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Intro
+            name: intro
+            widget: text
+            required: false
+          - label: Items
+            name: items
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Short label
+                name: kicker
+                widget: string
+                required: false
+              - label: Copy
+                name: copy
+                widget: text
+              - label: Link (optional)
+                name: link
+                widget: object
+                required: false
+                fields:
+                  - label: Label
+                    name: label
+                    widget: string
+                  - label: URL
+                    name: href
+                    widget: string
+                  - label: Opens in new tab
+                    name: external
+                    widget: boolean
+                    required: false
+      - label: Explainer (optional)
+        name: explainer
+        widget: object
+        required: false
+        fields:
+          - label: Background word
+            name: ghost
+            widget: string
+            required: false
+          - label: Eyebrow
+            name: eyebrow
+            widget: string
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Paragraphs
+            name: paragraphs
+            widget: list
+            field:
+              label: Paragraph
+              name: paragraph
+              widget: text
+            hint: 'Links and bold use HTML: <a href="/page/">text</a>, <strong>text</strong>'
+          - label: Link (optional)
+            name: link
+            widget: object
+            required: false
+            fields:
+              - label: Label
+                name: label
+                widget: string
+              - label: URL
+                name: href
+                widget: string
+              - label: Opens in new tab
+                name: external
+                widget: boolean
+                required: false
+      - label: Focus section (optional)
+        name: focus
+        widget: object
+        required: false
+        fields:
+          - label: Eyebrow
+            name: eyebrow
+            widget: string
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Paragraphs
+            name: paragraphs
+            widget: list
+            field:
+              label: Paragraph
+              name: paragraph
+              widget: text
+            hint: 'Links and bold use HTML: <a href="/page/">text</a>, <strong>text</strong>'
+          - label: Link (optional)
+            name: link
+            widget: object
+            required: false
+            fields:
+              - label: Label
+                name: label
+                widget: string
+              - label: URL
+                name: href
+                widget: string
+              - label: Opens in new tab
+                name: external
+                widget: boolean
+                required: false
+          - label: Caption
+            name: caption
+            widget: string
+          - label: Image
+            name: image
+            widget: image
+            required: false
+          - label: Image alt text
+            name: imageAlt
+            widget: string
+            required: false
+      - label: Treatment process
+        name: process
+        widget: object
+        fields:
+          - label: Eyebrow
+            name: eyebrow
+            widget: string
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Steps
+            name: steps
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Copy
+                name: copy
+                widget: text
+      - label: Note (optional)
+        name: note
+        widget: object
+        required: false
+        fields:
+          - label: Eyebrow
+            name: eyebrow
+            widget: string
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Paragraphs
+            name: paragraphs
+            widget: list
+            field:
+              label: Paragraph
+              name: paragraph
+              widget: text
+            hint: 'Links and bold use HTML: <a href="/page/">text</a>, <strong>text</strong>'
+          - label: Icon class
+            name: icon
+            widget: string
+            required: false
+      - label: Services heading (optional)
+        name: servicesHeading
+        widget: string
+        required: false
+      - label: Services
+        name: services
+        widget: list
+        summary: '{{fields.title}}'
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Copy
+            name: copy
+            widget: text
+          - label: Link
+            name: href
+            widget: string
+          - label: Icon class
+            name: icon
+            widget: string
+      - label: Related conditions
+        name: related
+        widget: list
+        summary: '{{fields.title}}'
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Link
+            name: href
+            widget: string
+      - label: Locations eyebrow
+        name: locationsEyebrow
+        widget: string
+      - label: FAQ heading
+        name: faqHeading
+        widget: string
+      - label: FAQs
+        name: faqs
+        widget: list
+        summary: '{{fields.question}}'
+        fields:
+          - label: Question
+            name: question
+            widget: string
+          - label: Answer
+            name: answer
+            widget: text
+      - label: Closing call to action
+        name: closing
+        widget: object
+        fields:
+          - label: Eyebrow
+            name: eyebrow
+            widget: string
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Copy
+            name: copy
+            widget: text
+  - label: Service pages
+    name: service_template_pages
+    description: Pages built from the shared service template (/services/<file name>/).
+    folder: src/data/services
+    extension: json
+    format: json
+    create: false
+    delete: false
+    identifier_field: breadcrumb
+    summary: '{{breadcrumb}}'
+    fields:
+      - label: SEO
+        name: seo
+        widget: object
+        fields:
+          - label: Page title
+            name: title
+            widget: string
+          - label: Meta description
+            name: description
+            widget: text
+      - label: Breadcrumb name
+        name: breadcrumb
+        widget: string
+      - label: Hero
+        name: hero
+        widget: object
+        fields:
+          - label: Eyebrow
+            name: eyebrow
+            widget: string
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Intro
+            name: subheading
+            widget: text
+      - label: Introduction section
+        name: intro
+        widget: object
+        fields:
+          - label: Eyebrow
+            name: eyebrow
+            widget: string
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Paragraphs
+            name: paragraphs
+            widget: list
+            field:
+              label: Paragraph
+              name: paragraph
+              widget: text
+            hint: 'Links and bold use HTML: <a href="/page/">text</a>, <strong>text</strong>'
+          - label: Image (optional)
+            name: image
+            widget: image
+            required: false
+          - label: Image alt text
+            name: imageAlt
+            widget: string
+            required: false
+          - label: Image caption
+            name: caption
+            widget: string
+      - label: Explainer
+        name: explainer
+        widget: object
+        fields:
+          - label: Eyebrow
+            name: eyebrow
+            widget: string
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Paragraphs
+            name: paragraphs
+            widget: list
+            field:
+              label: Paragraph
+              name: paragraph
+              widget: text
+            hint: 'Links and bold use HTML: <a href="/page/">text</a>, <strong>text</strong>'
+          - label: Key idea (optional)
+            name: concept
+            widget: object
+            required: false
+            fields:
+              - label: Icon class
+                name: icon
+                widget: string
+              - label: Title
+                name: title
+                widget: string
+              - label: Copy
+                name: copy
+                widget: string
+      - label: Benefits
+        name: benefits
+        widget: object
+        fields:
+          - label: Eyebrow (optional)
+            name: eyebrow
+            widget: string
+            required: false
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Intro
+            name: intro
+            widget: text
+          - label: Items (6)
+            name: items
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - label: Icon class
+                name: icon
+                widget: string
+              - label: Title
+                name: title
+                widget: string
+              - label: Copy
+                name: copy
+                widget: text
+      - label: Conditions
+        name: conditions
+        widget: object
+        fields:
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Intro
+            name: intro
+            widget: text
+          - label: Items
+            name: items
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Link
+                name: href
+                widget: string
+              - label: Icon class
+                name: icon
+                widget: string
+              - label: Copy
+                name: copy
+                widget: string
+      - label: First appointment
+        name: visit
+        widget: object
+        fields:
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Intro
+            name: intro
+            widget: text
+          - label: Steps (4)
+            name: steps
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Copy
+                name: copy
+                widget: text
+          - label: Notes (optional)
+            name: notes
+            widget: list
+            summary: '{{fields.title}}'
+            required: false
+            fields:
+              - label: Icon class
+                name: icon
+                widget: string
+              - label: Title
+                name: title
+                widget: string
+              - label: Copy
+                name: copy
+                widget: text
+      - label: Team section
+        name: team
+        widget: object
+        fields:
+          - label: Eyebrow
+            name: eyebrow
+            widget: string
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Copy
+            name: copy
+            widget: text
+          - label: Image (optional)
+            name: image
+            widget: image
+            required: false
+          - label: Image alt text
+            name: imageAlt
+            widget: string
+            required: false
+      - label: Clinics offering this service
+        name: clinics
+        widget: select
+        multiple: true
+        options:
+          - label: Ascot Vale
+            value: ascot-vale
+          - label: Newport
+            value: newport
+          - label: Bacchus Marsh
+            value: bacchus-marsh
+          - label: Hawthorn
+            value: hawthorn
+      - label: Locations heading
+        name: locationsHeading
+        widget: string
+      - label: FAQ heading
+        name: faqHeading
+        widget: string
+      - label: FAQs
+        name: faqs
+        widget: list
+        summary: '{{fields.question}}'
+        fields:
+          - label: Question
+            name: question
+            widget: string
+          - label: Answer
+            name: answer
+            widget: text
+      - label: Closing call to action
+        name: closing
+        widget: object
+        fields:
+          - label: Eyebrow
+            name: eyebrow
+            widget: string
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Copy
+            name: copy
+            widget: text
